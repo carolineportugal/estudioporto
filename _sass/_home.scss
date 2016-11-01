@@ -1,0 +1,132 @@
+// Variables
+// $transition-time:.2s;
+
+// Mixins
+@mixin thin() {
+  font-family:"sommet";
+  font-weight:100;
+  font-style: normal;
+}
+
+@mixin thin-italic() {
+  font-family:"sommet";
+  font-weight:100;
+  font-style: italic;
+}
+
+@mixin light() {
+  font-family:"sommet";
+  font-weight:300;
+  font-style: normal;
+}
+
+@mixin light-italic() {
+  font-family:"sommet";
+  font-weight:300;
+  font-style: italic;
+}
+
+@mixin regular() {
+  font-family:"sommet";
+  font-weight:400;
+  font-style: normal;
+}
+
+@mixin regular-italic() {
+  font-family:"sommet";
+  font-weight:400;
+  font-style: italic;
+}
+
+@mixin bold() {
+  font-family:"sommet";
+  font-weight:700;
+  font-style: normal;
+}
+
+@mixin bold-italic() {
+  font-family:"sommet";
+  font-weight:700;
+  font-style: italic;
+}
+
+@mixin black() {
+  font-family:"sommet";
+  font-weight:800;
+  font-style: normal;
+}
+
+@mixin black-italic() {
+  font-family:"sommet";
+  font-weight:800;
+  font-style: italic;
+}
+
+@mixin heavy() {
+  font-family:"sommet";
+  font-weight:900;
+  font-style: normal;
+}
+
+@mixin heavy-italic() {
+  font-family:"sommet";
+  font-weight:900;
+  font-style: italic;
+}
+
+@mixin background-home() {
+  background: #fff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #fff, #f5f5f5); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #fff, #f5f5f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+// Code
+#home{
+  @include background-home();
+
+  .project-wrapper{
+    margin-top:5rem;
+    text-align: center;
+    border-top:1px solid rgba(black, .1);
+    padding-top:2rem;
+
+    .image{
+      height:80px;
+      width:80px;
+      background:#eee;
+      border-radius: 50%;
+      margin:0 auto;
+      margin-bottom:2rem;
+    }
+
+    .quote-generator{
+      background:url("/media/quote-generator.png");
+      background-position:center;
+      background-size: cover;
+    }
+
+    .music-hill{
+      background:url("/media/music-hill.png");
+      background-position:center;
+      background-size: cover;
+    }
+
+    .type{
+      color:rgba(black, .3);
+    }
+
+    h4{
+      @include bold();
+    }
+
+    .date{
+      text-transform: uppercase;
+      font-size:11px;
+      @include regular();
+    }
+
+  }
+
+
+}
