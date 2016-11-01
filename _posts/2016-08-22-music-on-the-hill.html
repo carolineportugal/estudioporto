@@ -797,50 +797,34 @@ $(document).ready(function() {
 
 //animations===========================================================================
 
-function animations(){
-
-  var rotationOne = new TimelineMax({repeat:-1,yoyo:true});
-  rotationOne.to("#box3",1.5,{rotation:-3,transformOrigin:"100% 50%", ease:Power1.easeInOut});
-
-  var rotationTwo = new TimelineMax({repeat:-1,yoyo:true});
-  rotationTwo.to("#box4",1.5,{rotation:-3,transformOrigin:"0% 50%", ease:Power1.easeInOut});
-
-  var rotationThree = new TimelineMax({repeat:-1,yoyo:true});
-  rotationThree.to("#box2",1.5,{rotation:1,transformOrigin:"50% 100%", ease:Power1.easeInOut});
-
-  var blink = new TimelineMax({repeat:-1,yoyo:true});
-  blink.to(".jazz-blink",0.3,{opacity:0, ease:Power1.easeInOut});
-
-  var rotateX = new TimelineMax({repeat:-1});
-  rotateX.to(".band1",2,{rotationX:360, transformOrigin:"50% 50%", ease:Linear.easeNone});
-
-  var rotateXBack = new TimelineMax({repeat:-1});
-  rotateXBack.to(".band2",2,{rotationX:360, transformOrigin:"50% 50%", ease:Linear.easeNone});
-
-  var rotateY = new TimelineMax({repeat:-1});
-  rotateY.to(".spine",2,{rotationY:360, transformOrigin:"50% 50%", ease:Linear.easeNone});
-
-  TweenMax.set(".rectangle", {x:-803.4});
-  var slideMain = new TimelineMax({repeat:-1, yoyo:true});
-  slideMain.to(".rectangle",4,{x:0,transformOrigin:"0% 0%", ease:Linear.easeNone})
-
-  var slideSmall = new TimelineMax({repeat:-1, yoyo:true});
-  slideSmall.to(".line",2,{x:-140.4,transformOrigin:"0% 100%", ease:Linear.easeNone});
-
-}
+  var posterOne = new TimelineMax()
+  posterOne.to("#box3",1,{rotation:-5,transformOrigin:"100% 50%", ease:Power1.easeInOut, repeat:-1, yoyo:true}, 0)
+           .to("#box4",1,{rotation:-5,transformOrigin:"0% 50%", ease:Power1.easeInOut, repeat:-1, yoyo:true}, 0)
+           .to("#box2",1,{rotation:2,transformOrigin:"50% 100%", ease:Power1.easeInOut, repeat:-1, yoyo:true}, 0)
+           .to(".jazz-blink",0.3,{opacity:0, ease:Power1.easeInOut, repeat:-1, yoyo:true}, 0);
 
 
-if ($(window).width() > 768) {
-  animations();
-}
+  var posterTwo = new TimelineMax({paused:true})
+  posterTwo.to(".band1",2,{rotationX:360, transformOrigin:"50% 50%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
+           .to(".band2",2,{rotationX:360, transformOrigin:"50% 50%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
+           .to(".spine",2,{rotationY:360, transformOrigin:"50% 50%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
+           .fromTo(".rectangle",4,{x:-805},{x:0,transformOrigin:"0% 0%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
+           .to(".line",2,{x:-140.4,transformOrigin:"0% 100%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0);
 
-$(window).resize(function(){
-    if($(window).width() > 768){
-      // animations();
-    }else {
-      // TweenMax.killAll();
+
+  function animations(){
+    if ($(window).width() > 768) {
+      posterOne.play(0);
+      posterTwo.play(0);
+    }else{
+      posterOne.pause(0);
+      posterTwo.pause(0);
     }
-});
+  }
+
+  animations();
+
+  $(window).resize(animations);
 
 });
 
