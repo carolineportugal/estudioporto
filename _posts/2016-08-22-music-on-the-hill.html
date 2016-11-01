@@ -804,11 +804,11 @@ $(document).ready(function() {
            .to(".jazz-blink",0.3,{opacity:0, ease:Power1.easeInOut, repeat:-1, yoyo:true}, 0);
 
 
-  var posterTwo = new TimelineMax({paused:true})
+  var posterTwo = new TimelineMax()
   posterTwo.to(".band1",2,{rotationX:360, transformOrigin:"50% 50%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
            .to(".band2",2,{rotationX:360, transformOrigin:"50% 50%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
            .to(".spine",2,{rotationY:360, transformOrigin:"50% 50%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
-           .fromTo(".rectangle",4,{x:-805},{x:0,transformOrigin:"0% 0%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
+           .fromTo(".rectangle",3,{x:-805},{x:0,transformOrigin:"0% 0%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
            .to(".line",2,{x:-140.4,transformOrigin:"0% 100%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0);
 
 
@@ -818,6 +818,7 @@ $(document).ready(function() {
       posterTwo.play(0);
     }else{
       posterOne.pause(0);
+      TweenMax.set(".rectangle", {x:0});
       posterTwo.pause(0);
     }
   }
