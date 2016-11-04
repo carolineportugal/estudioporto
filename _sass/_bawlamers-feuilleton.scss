@@ -1,15 +1,21 @@
-// Imports fonts
-// @import "https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900";
-// @import "https://fonts.googleapis.com/css?family=Fira+Sans:300,400i,700";
-
 // Variables
 // $serif-text:'Playfair Display', serif;
-// $sans-serif-text:'Fira Sans', sans-serif;
-// $charcoal: #3F3F3A;
-// $red: #F84339;
 // $beige:#F9F7ED;
 // $transition-time:.2s;
+$background: #ccc;
 
 // Code
-#quotes-generator{
+#bawlamers-feuilleton{
+  background: $background;
+  height:100vh;
+
+  .hands{
+    border-bottom: 1px solid #000;
+  }
+
+  .hands{
+    max-width: 500px;
+    margin-bottom:10rem;
+  }
+
 }
