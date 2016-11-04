@@ -2,37 +2,43 @@
 // $serif-text:'Playfair Display', serif;
 // $beige:#F9F7ED;
 // $transition-time:.2s;
-$background: #ddd;
+// $background: #000;
 
 // Code
 #bawlamers-feuilleton{
-  height:100vh;
+  height:100%;
+  background-color:#ccc;
+
 
   .left-column{
-    background: $background;
-    height:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color:#ccc;
+    padding:5rem 0;
 
     img{
       max-width: 700px;
     }
+
   }
 
   .right-column{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: $background;
-
+    // background-color:#ccc;
   }
 
   .hands{
-    width: 500px;
+    width: 100%;
     margin-bottom:10rem;
-    // border:1px solid #000;
-    background: #fff;
+    border-radius: .3rem;
+    border-bottom:1px solid #fff;
+  }
+
+  .hands:last-child{
+    margin-bottom:0rem;
   }
 
 }
