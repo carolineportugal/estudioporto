@@ -2,7 +2,7 @@
 // $serif-text:'Playfair Display', serif;
 // $beige:#F9F7ED;
 // $transition-time:.2s;
-$background:#aaa;
+$background:#ddd;
 
 // Code
 #bawlamers-feuilleton{
@@ -11,41 +11,47 @@ $background:#aaa;
   .left-column{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding:5rem 0;
-
-    img{
-      max-width: 700px;
-    }
-
-  }
-
-  .right-column{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
   }
 
   .hands{
-    width: 100%;
     margin-bottom:10rem;
     position:relative;
 
+    img{
+      mix-blend-mode:darken;
+      // mix-blend-mode:color-burn;
+      // filter:grayscale(.5);
+      width: 100%;
+    }
   }
 
-  .hands::after{
-    content:'';
-    position:absolute;
-    width:100px;
-    bottom:0;
-    left:0;
-    background:#fff;
-    height:1px;
-    z-index:10;
+  .hands:first-child{
+    margin-top:5.5rem;
   }
 
   .hands:last-child{
     margin-bottom:0rem;
+  }
+
+  .hands:after{
+    content:"";
+    position:absolute;
+    width:999px;
+    bottom:0;
+    right:0;
+    background:#fff;
+    height:1px;
+  }
+
+  .right-column{
+    padding:10rem 0;
+    position:relative;
+
+    img{
+      width: 100%;
+    }
+
   }
 
 }
