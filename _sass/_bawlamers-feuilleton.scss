@@ -1,6 +1,4 @@
 // Variables
-// $serif-text:'Playfair Display', serif;
-// $beige:#F9F7ED;
 $background:#ccc;
 
 // Code
@@ -8,58 +6,26 @@ $background:#ccc;
   background:$background;
 
   .left-column{
-    margin-top:10rem;
-    padding:5rem 0 20rem 0;
-    position:relative;
-  }
-
-  .left-column:after{
-    content: "";
-    border-right:2px dotted #aaa;
-    position: absolute;
-    top:0;
-    right:9px;
-    height: 100%;
-    width: 100%;
+    padding-top:6rem;
+    height:100%;
   }
 
   .hands{
-    margin-bottom:7rem;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    position: relative;
-    z-index: 10;
+    margin-bottom:8rem;
 
     img{
       mix-blend-mode:color-burn;
       filter:grayscale(1);
-      width: calc(100% - 29px);
-    }
-
-    &:hover{
+      margin-right:4rem;
+      width: calc(100% - 4rem);
       cursor: zoom-in;
-      img{
-        mix-blend-mode:unset;
-        filter:none;
+
+      &:hover{
+          mix-blend-mode:normal;
+          filter:none;
       }
     }
 
-  }
-
-  .icon-container{
-    background:#fff;
-    border-radius: 50%;
-    font-size:12px;
-    height:19px;
-    width:19px;
-    margin-left:10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, .3);
-    position: relative;
-    z-index:20;
   }
 
   .hands:last-child{
@@ -68,11 +34,11 @@ $background:#ccc;
 
   .right-column{
     padding:10rem 0;
-    position:relative;
 
     img{
       width: 100%;
       box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, .3);
+      cursor: zoom-in;
     }
 
   }
