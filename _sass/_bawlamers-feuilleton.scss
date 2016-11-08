@@ -6,7 +6,7 @@ $background:#ccc;
   background:$background;
 
   .left-column{
-    padding-top:6rem;
+    padding-top:5.5rem;
     height:100%;
   }
 
@@ -16,11 +16,11 @@ $background:#ccc;
     img{
       mix-blend-mode:color-burn;
       filter:grayscale(1);
-      margin-right:4rem;
       width: calc(100% - 4rem);
       cursor: zoom-in;
 
-      &:hover{
+      &:hover,
+      &:active {
           mix-blend-mode:normal;
           filter:none;
       }
@@ -33,12 +33,75 @@ $background:#ccc;
   }
 
   .right-column{
-    padding:10rem 0;
+    padding:10rem 0 15rem 0;
 
     img{
       width: 100%;
       box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, .3);
       cursor: zoom-in;
+    }
+
+  }
+
+  @media (max-width:1199px) {
+
+    .left-column{
+      padding-top:6.5rem;
+    }
+
+    .hands{
+      margin-bottom:7rem;
+
+      img{
+        width: calc(100% - 3rem);
+      }
+
+    }
+
+  }
+
+  @media (max-width:991px) {
+
+    .left-column{
+      padding-top:7.5rem;
+    }
+
+    .hands{
+      margin-bottom:6rem;
+
+      img{
+        width: calc(100% - 1rem);
+      }
+
+    }
+
+  }
+
+  @media (max-width:767px) {
+
+    .right-column{
+      padding:10rem 0 0rem 0;
+    }
+
+    .left-column{
+      padding-top:3rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .hands{
+      margin-bottom:7rem;
+      max-width: 300px;
+
+      img{
+        width: 100%;
+      }
+
+    }
+
+    .hands:last-child{
+      margin-bottom:10rem;
     }
 
   }
