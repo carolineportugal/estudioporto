@@ -15,7 +15,7 @@ description:
         <div class="row">
           <div class="col-sm-9 col-sm-push-3 col-md-7 col-md-push-4">
             <div class="right-column">
-                <img src="/media/bawlamers-feuilleton/zine_general.png">
+                <img src="/media/bawlamers-feuilleton/zine_general.jpg" data-toggle="lightbox" data-remote="/media/bawlamers-feuilleton/hand1.png">
             </div>
           </div>
 
@@ -54,7 +54,10 @@ description:
 $(document).ready(function() {
 
 //=====================================================================================
-
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
 
 //======================================================================================
 
