@@ -5,6 +5,18 @@
  * License: https://github.com/ashleydw/lightbox/blob/master/LICENSE
  */
 
+/* My customizations ===============================*/
+.modal-dialog{
+  width:auto;
+  max-width: 700px;
+}
+
+.modal-header,
+.modal-footer {
+  display: none;
+}
+/* My customizations =================================*/
+
 .ekko-lightbox-container {
   position: relative;
 }
