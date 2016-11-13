@@ -16,30 +16,42 @@ tags:
         <div class="row">
           <div class="col-sm-9 col-sm-push-3 col-md-7 col-md-push-4">
             <div class="right-column">
-                <img src="/media/bawlamers-feuilleton/zine_general.jpg" data-toggle="lightbox" data-remote="/media/bawlamers-feuilleton/zine_general.jpg">
+              <a href="/media/bawlamers-feuilleton/zine_general.jpg" data-lightbox="bf">
+                <img src="/media/bawlamers-feuilleton/zine_general.jpg">
+              </a>
             </div>
           </div>
 
           <div class="col-sm-3 col-sm-pull-9 col-md-3 col-md-pull-6">
             <div class="left-column">
                 <div class="hands">
-                  <img src="/media/bawlamers-feuilleton/hand1.png" data-toggle="lightbox" data-remote="/media/bawlamers-feuilleton/zine_general.jpg">
+                    <a href="/media/bawlamers-feuilleton/zine_detail1.jpg" data-lightbox="bf">
+                      <img src="/media/bawlamers-feuilleton/hand1.png">
+                    </a>
                   <div class="number">.01</div>
                 </div>
                 <div class="hands">
-                  <img src="/media/bawlamers-feuilleton/hand2.png" data-toggle="lightbox" data-remote="/media/bawlamers-feuilleton/zine_general.jpg">
+                  <a href="/media/bawlamers-feuilleton/zine_detail2.jpg" data-lightbox="bf">
+                    <img src="/media/bawlamers-feuilleton/hand2.png">
+                  </a>
                   <div class="number">.02</div>
                 </div>
                 <div class="hands">
-                  <img src="/media/bawlamers-feuilleton/hand3.png" data-toggle="lightbox" data-remote="/media/bawlamers-feuilleton/zine_detail3.jpg">
+                  <a href="/media/bawlamers-feuilleton/zine_detail3.jpg" data-lightbox="bf">
+                    <img src="/media/bawlamers-feuilleton/hand3.png">
+                  </a>
                   <div class="number">.03</div>
                 </div>
                 <div class="hands">
-                  <img src="/media/bawlamers-feuilleton/hand4.png" data-toggle="lightbox" data-remote="/media/bawlamers-feuilleton/zine_detail4.jpg">
+                  <a href="/media/bawlamers-feuilleton/zine_detail4.jpg" data-lightbox="bf">
+                    <img src="/media/bawlamers-feuilleton/hand4.png">
+                  </a>
                   <div class="number">.04</div>
                 </div>
                 <div class="hands">
-                  <img src="/media/bawlamers-feuilleton/hand5.png" data-toggle="lightbox" data-remote="/media/bawlamers-feuilleton/zine_general.jpg">
+                  <a href="/media/bawlamers-feuilleton/zine_detail5.jpg" data-lightbox="bf">
+                    <img src="/media/bawlamers-feuilleton/hand5.png">
+                  </a>
                   <div class="number">.05</div>
                 </div>
             </div>
@@ -50,17 +62,13 @@ tags:
 
 </section>
 
-<script type="text/javascript">
+<script>
 
 $(document).ready(function() {
 
-//=====================================================================================
-$(document).on('click', '[data-toggle="lightbox"]', function(event) {
-    event.preventDefault();
-    $(this).ekkoLightbox();
-});
-
-//======================================================================================
+  lightbox.option({
+    'disableScrolling':true
+  })
 
 });
 
