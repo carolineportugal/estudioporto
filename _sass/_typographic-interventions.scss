@@ -1,125 +1,91 @@
+//Fonts
+@font-face{
+  font-family:"Texgyreheros Bold";
+  src: url('/media/typographic-interventions/fonts/texgyreheros-bold.otf');
+}
+
+@font-face{
+  font-family:"Texgyreheros Bold Italic";
+  src: url('/media/typographic-interventions/fonts/texgyreheros-bolditalic.otf');
+}
+
+@font-face{
+  font-family:"Texgyreheros Regular";
+  src: url('/media/typographic-interventions/fonts/texgyreheros-regular.otf');
+}
+
+@font-face{
+  font-family:"Texgyreheros Italic";
+  src: url('/media/typographic-interventions/fonts/texgyreheros-italic.otf');
+}
+
+@font-face{
+  font-family:"Texgyreheros Condensed Bold";
+  src: url('/media/typographic-interventions/fonts/texgyreheroscn-bold.otf');
+}
+
+@font-face{
+  font-family:"Texgyreheros Condensed Bold Italic";
+  src: url('/media/typographic-interventions/fonts/texgyreheroscn-bolditalic.otf');
+}
+
+@font-face{
+  font-family:"Texgyreheros Condensed Regular";
+  src: url('/media/typographic-interventions/fonts/texgyreheroscn-regular.otf');
+}
+
+@font-face{
+  font-family:"Texgyreheros Condensed Regular Italic";
+  src: url('/media/typographic-interventions/fonts/texgyreheroscn-italic.otf');
+}
+
 // Variables
-$background:#ccc;
+$bold:'Texgyreheros Bold', sans-serif;
+$bold-italic:'Texgyreheros Bold Italic', sans-serif;
+$regular:'Texgyreheros Regular', sans-serif;
+$italic:'Texgyreheros Italic', sans-serif;
+$bold-condensed:'Texgyreheros Condensed Bold', sans-serif;
+$bold-italic-condensed:'Texgyreheros Condensed Bold Italic', sans-serif;
+$regular-condensed:'Texgyreheros Condensed Regular', sans-serif;
+$regular-italic-condensed:'Texgyreheros Condensed Regular Italic', sans-serif;
 
 // Code
-#bawlamers-feuilleton{
-  background:$background;
+#typographic-interventions{
+  font-family:$regular;
 
-  .left-column{
-    padding-top:5.5rem;
-    height:100%;
+  .one{
+  font-family:$bold;
   }
 
-  .hands{
-    margin-bottom:7rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-right: 4rem;
-
-
-    img{
-      mix-blend-mode:color-burn;
-      filter:grayscale(1);
-      width: 100%;
-      cursor: zoom-in;
-
-      &:hover,
-      &:active {
-          mix-blend-mode:normal;
-          filter:none;
-      }
-    }
-
+  .two{
+  font-family:$bold-italic;
   }
 
-  .number{
-    @include regular();
-    margin-top:.8rem;
-    font-size:13px;
+  .three{
+  font-family:$regular;
   }
 
-  .hands:last-child{
-    margin-bottom:0rem;
+  .four{
+  font-family:$italic;
   }
 
-  .right-column{
-    padding:10rem 0 15rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-
-    img{
-      width: 100%;
-      box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, .3);
-      cursor: zoom-in;
-    }
-
+  .five{
+  font-family:$bold-condensed;
   }
 
-  @media (max-width:1199px) {
-
-    .left-column{
-      padding-top:6.5rem;
-    }
-
-    .hands{
-      margin-bottom:6rem;
-      margin-right: 3rem;
-
-      img{
-        width:100%;
-      }
-
-    }
-
+  .six{
+  font-family:$bold-italic-condensed;
   }
 
-  @media (max-width:991px) {
+  .seven{
+  font-family:$regular-condensed;
+  }
 
-    .left-column{
-      padding-top:7.5rem;
-    }
-
-    .hands{
-      margin-bottom:5rem;
-      margin-right: .5rem;
-
-
-      img{
-        width: 100%;
-      }
-
-    }
-
+  .eight{
+  font-family:$regular-italic-condensed;
   }
 
   @media (max-width:767px) {
-
-    .right-column{
-      padding:10rem 0 0rem 0;
-    }
-
-    .left-column{
-      padding-top:3rem;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    .hands{
-      margin-bottom:6rem;
-      max-width: 250px;
-
-      img{
-        width: 100%;
-      }
-
-    }
-
-    .hands:last-child{
-      margin-bottom:6rem;
-    }
 
   }
 
