@@ -12,7 +12,6 @@ tags:
     <h1 class="hidden-section-name">Typographic Interventions on Architecture</h1>
 
       <div class="container">
-
         <h1 class="one">test1</h1>
         <h1 class="two">test2</h1>
         <h1 class="three">test3</h1>
@@ -21,12 +20,17 @@ tags:
         <h1 class="six">test6</h1>
         <h1 class="seven">test7</h1>
         <h1 class="eight">test8</h1>
+      </div>
 
+      <div class="owl-carousel">
+        <div><img src="/media/typographic-interventions/nga1.jpg"></div>
+        <div><img src="/media/typographic-interventions/nga2.jpg"></div>
+        <div><img src="/media/typographic-interventions/nga3.jpg"></div>
       </div>
 
 </section>
 
-<script>
+<script src="/js/lightbox.js">
 
 $(document).ready(function() {
 
@@ -35,5 +39,14 @@ $(document).ready(function() {
   })
 
 });
+
+</script>
+
+<script src="owlcarousel/owl.carousel.min.js">
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+
 
 </script>
