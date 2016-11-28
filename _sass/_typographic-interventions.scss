@@ -52,8 +52,43 @@ $regular-italic-condensed:'Texgyreheros Condensed Regular Italic', sans-serif;
 // Code
 #typographic-interventions{
   font-family:$regular;
+  margin-top:300px;
 
+  .container-fluid{
+    margin:0 50px 30px 50px;
+  }
 
+  .building{
+
+    h5{
+      font-family:$bold;
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 4.2px;
+    }
+
+    .text-info{
+      color:#000;
+      font-family:$italic;
+      font-size: 16px;
+      line-height:1.7;
+      max-width:250px;
+      float:right;
+    }
+
+    .align-right{
+      text-align: right;
+    }
+
+    .text-description{
+      color:#000;
+      font-family:$regular;
+      font-size:17.5px;
+      line-height:1.5;
+      letter-spacing: .15px;
+    }
+
+  }
 
   .one{
   font-family:$bold;
