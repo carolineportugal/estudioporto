@@ -22,10 +22,15 @@ tags:
         <h1 class="eight">test8</h1>
       </div>
 
-      <div class="owl-carousel owl-theme">
-        <img src="/media/typographic-interventions/nga1.jpg">
-        <img src="/media/typographic-interventions/nga2.jpg">
-        <img src="/media/typographic-interventions/nga3.jpg">
+      <div class="building">
+        <h4>National Gallery of Art</h4>
+        <div class="owl-carousel owl-theme">
+          <img src="/media/typographic-interventions/nga1.jpg">
+          <img src="/media/typographic-interventions/nga2.jpg">
+          <img src="/media/typographic-interventions/nga3.jpg">
+        </div>
+        <div class="container">
+        </div>
       </div>
 
 </section>
@@ -46,7 +51,13 @@ $(document).ready(function() {
 <script>
 
   $(document).ready(function(){
-    $(".owl-carousel").owlCarousel();
+
+    $(".owl-carousel").owlCarousel({
+      items: 1,
+      animateOut: 'fadeOut',
+      loop: true,
+    });
+
   });
 
 </script>
