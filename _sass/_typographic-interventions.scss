@@ -52,28 +52,33 @@ $regular-italic-condensed:'Texgyreheros Condensed Regular Italic', sans-serif;
 // Code
 #typographic-interventions{
   font-family:$regular;
-  margin-top:300px;
+  margin:300px 0;
 
   .container-fluid{
     margin:0 50px 30px 50px;
+    position:relative;
   }
 
   .building{
+    margin-bottom:8rem;
 
     h5{
       font-family:$bold;
       text-transform: uppercase;
-      font-size: 14px;
-      letter-spacing: 4.2px;
+      font-size: 1em;
+      letter-spacing: 0.25em;
+      margin-bottom:2.5rem;
+      padding-top:5rem;
     }
 
     .text-info{
       color:#000;
       font-family:$italic;
       font-size: 16px;
-      line-height:1.7;
+      line-height:1.75em;
       max-width:250px;
       float:right;
+      letter-spacing: 0.01em;
     }
 
     .align-right{
@@ -84,10 +89,19 @@ $regular-italic-condensed:'Texgyreheros Condensed Regular Italic', sans-serif;
       color:#000;
       font-family:$regular;
       font-size:17.5px;
-      line-height:1.5;
-      letter-spacing: .15px;
+      line-height:1.5em;
+      letter-spacing: 0.01em;
     }
 
+  }
+
+  .container-fluid:before{
+    content:"";
+    position:absolute;
+    left:15px;
+    width:calc(100% - 30px);
+    height:1px;
+    background:lighten(#000, 92%);
   }
 
   .one{
