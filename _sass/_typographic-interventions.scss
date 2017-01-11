@@ -99,8 +99,19 @@ $regular-italic-condensed:'Texgyreheros Condensed Regular Italic', sans-serif;
 
   }
 
-  .container-fluid{
-    background:lighten(#000, 10%)
+  .container-fluid-sc{
+    position:relative;
+  }
+
+  .container-fluid-sc:after{
+    background: #57585D;
+    content:"";
+    width:100%;
+    height:calc(100% - 34px);
+    top:0;
+    left:0;
+    position:absolute;
+    display:block;
   }
 
   @media (max-width:767px) {
