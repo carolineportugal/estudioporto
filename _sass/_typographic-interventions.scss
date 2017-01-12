@@ -104,7 +104,7 @@ $regular-italic-condensed:'Texgyreheros Condensed Regular Italic', sans-serif;
   }
 
   .container-fluid-sc:after{
-    background: #57585D;
+    background:#57585D;
     content:"";
     width:100%;
     height:calc(100% - 34px);
@@ -113,6 +113,8 @@ $regular-italic-condensed:'Texgyreheros Condensed Regular Italic', sans-serif;
     position:absolute;
     display:block;
   }
+
+
 
   @media (max-width:767px) {
 
