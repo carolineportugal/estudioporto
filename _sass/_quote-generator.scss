@@ -225,7 +225,7 @@ $transition-time:.2s;
     height:1.9rem;
     display: flex;
     fill:$beige;
-    transition:$transition-time;
+    transition: $transition-time;
 
     &:hover{
       fill:$red;

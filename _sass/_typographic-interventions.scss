@@ -48,11 +48,12 @@ $bold-condensed:'Texgyreheros Condensed Bold', sans-serif;
 $bold-italic-condensed:'Texgyreheros Condensed Bold Italic', sans-serif;
 $regular-condensed:'Texgyreheros Condensed Regular', sans-serif;
 $regular-italic-condensed:'Texgyreheros Condensed Regular Italic', sans-serif;
+$transition-time:.2s;
 
 // Code
 #typographic-interventions{
   font-family:$regular;
-  margin:300px 0;
+  margin-top:300px;
 
   .building-intro{
     margin-bottom:30px;
@@ -114,7 +115,32 @@ $regular-italic-condensed:'Texgyreheros Condensed Regular Italic', sans-serif;
     display:block;
   }
 
+  .bottom-signage{
+    padding:30px 0 80px 0;
+    text-align: center;
 
+    a{
+      transition:$transition-time;
+      color:lighten(#000, 20%);
+      cursor: pointer;
+      text-decoration: none;
+
+      &:hover{
+        color:lighten(#000, 30%);
+      }
+    }
+
+    i {
+      font-size: 30px;
+    }
+
+    p{
+      margin-top:7px;
+      font-family:$regular;
+      font-size: 16px;
+    }
+
+  }
 
   @media (max-width:767px) {
 
