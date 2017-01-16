@@ -98,6 +98,16 @@ $transition-time:.2s;
       letter-spacing: 0.01em;
     }
 
+    a{
+      transition:$transition-time;
+      color:#000;
+      text-decoration: underline;
+
+      &:hover{
+        color:lighten(#000, 20%);
+      }
+    }
+
   }
 
   .container-fluid-sc{
