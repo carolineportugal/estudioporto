@@ -152,7 +152,38 @@ $transition-time:.2s;
 
   }
 
+  @media (max-width:991px) {
+
+    .building{
+      margin-bottom:8rem;
+
+      .text-info{
+        max-width:100%;
+        margin-top:4rem;
+      }
+
+      .align-right{
+        text-align: left;
+        float:none;
+      }
+
+    }
+
+  }
+
   @media (max-width:767px) {
+
+    .building{
+      margin-bottom:6rem;
+
+      h5{
+        margin-top:6px;
+        margin-bottom:6px;
+        line-height: 1.6;
+        font-size:12.5px;
+      }
+
+    }
 
   }
 
