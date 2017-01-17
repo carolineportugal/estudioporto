@@ -53,7 +53,15 @@ $transition-time:.2s;
 // Code
 #typographic-interventions{
   font-family:$regular;
-  margin-top:300px;
+
+  .intro{
+    margin-bottom:10rem;
+
+    img{
+      max-width:100%;
+    }
+
+  }
 
   .building-intro{
     margin-bottom:30px;
