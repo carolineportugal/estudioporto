@@ -67,23 +67,23 @@ $transition-time:.2s;
       background: #000;
       color:#fff;
       text-align: center;
-      padding:40px;
+      padding:80px 0 100px 0;
       text-transform: uppercase;
     }
 
     .title{
       @include remove-font-smoothing();
       font-family:$bold;
-      font-size: 19px;
-      letter-spacing: .4em;
-      // font-weight: bolder!important;
-      font-weight: 900!important;
+      font-size: 1.4em;
+      letter-spacing: .27em;
     }
 
     .subtitle{
-      font-family:$bold;
+      @include remove-font-smoothing();
+      font-family:$regular;
       font-size: .9em;
-      letter-spacing: .5em;
+      letter-spacing: .27em;
+      margin-top:0;
     }
 
     img{
@@ -116,11 +116,11 @@ $transition-time:.2s;
       @include remove-font-smoothing();
       font-family:$bold;
       text-transform: uppercase;
-      font-size: 12px;
-      letter-spacing: 0.29em;
+      font-size: 11.5px;
+      letter-spacing: 0.27em;
       color:#fff;
-      margin-top:5px;
-      margin-bottom:5px;
+      margin-top:4px;
+      margin-bottom:4px;
       line-height: 1.6;
     }
 
@@ -204,11 +204,6 @@ $transition-time:.2s;
 
     .building{
       margin-bottom:8rem;
-
-      h5{
-        font-size:11.5px;
-        letter-spacing: 0.28em;
-      }
 
       .text-info{
         max-width:100%;
