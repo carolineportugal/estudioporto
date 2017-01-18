@@ -58,7 +58,6 @@ $transition-time:.2s;
 
 // Code
 #typographic-interventions{
-  @include remove-font-smoothing();
   font-family:$regular;
 
   .intro{
@@ -73,6 +72,7 @@ $transition-time:.2s;
     }
 
     .title{
+      @include remove-font-smoothing();
       font-family:$bold;
       font-size: 19px;
       letter-spacing: .4em;
@@ -113,13 +113,15 @@ $transition-time:.2s;
     }
 
     h5{
+      @include remove-font-smoothing();
       font-family:$bold;
       text-transform: uppercase;
-      font-size: 13px;
-      letter-spacing: 0.2em;
+      font-size: 12px;
+      letter-spacing: 0.29em;
       color:#fff;
       margin-top:5px;
       margin-bottom:5px;
+      line-height: 1.6;
     }
 
     .text-info{
@@ -203,6 +205,11 @@ $transition-time:.2s;
     .building{
       margin-bottom:8rem;
 
+      h5{
+        font-size:11.5px;
+        letter-spacing: 0.28em;
+      }
+
       .text-info{
         max-width:100%;
         margin-top:4rem;
@@ -221,14 +228,6 @@ $transition-time:.2s;
 
     .building{
       margin-bottom:6rem;
-
-      h5{
-        margin-top:6px;
-        margin-bottom:6px;
-        line-height: 1.6;
-        font-size:12.5px;
-      }
-
     }
 
   }
