@@ -50,8 +50,15 @@ $regular-condensed:'Texgyreheros Condensed Regular', sans-serif;
 $regular-italic-condensed:'Texgyreheros Condensed Regular Italic', sans-serif;
 $transition-time:.2s;
 
+// Mixins
+@mixin remove-font-smoothing {
+  -webkit-font-smoothing:subpixel-antialiased;;
+  // -moz-osx-font-smoothing: grayscale;
+}
+
 // Code
 #typographic-interventions{
+  @include remove-font-smoothing();
   font-family:$regular;
 
   .intro{
