@@ -88,7 +88,7 @@ $transition-time:.2s;
 
     img{
       max-width:100%;
-      margin-bottom:45px;
+      margin-bottom:35px;
     }
 
     .text-description{
@@ -104,7 +104,11 @@ $transition-time:.2s;
       padding:0;
       margin:0;
       line-height: 30px;
-      margin-left:-29.5px;
+
+      li{
+        text-indent: -29.5px;
+      }
+
     }
 
     a{
@@ -239,14 +243,23 @@ $transition-time:.2s;
         font-size: .85em;
       }
 
+      .text-description{
+        padding:0 3rem;
+      }
+
     }
 
     .building{
       margin-bottom:8rem;
 
+      .text-description{
+        padding:0 3rem;
+      }
+
       .text-info{
+        padding:0 3rem;
         max-width:100%;
-        margin-top:4rem;
+        margin-top:3rem;
       }
 
       .align-right{
