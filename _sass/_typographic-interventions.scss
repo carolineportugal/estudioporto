@@ -79,7 +79,7 @@ $transition-time:.2s;
     }
 
     .subtitle{
-      @include remove-font-smoothing();
+      // @include remove-font-smoothing();
       font-family:$regular;
       font-size: .9em;
       letter-spacing: .27em;
@@ -148,6 +148,7 @@ $transition-time:.2s;
       margin-top:4px;
       margin-bottom:4px;
       line-height: 1.6;
+      text-align: center;
     }
 
     .text-info{
