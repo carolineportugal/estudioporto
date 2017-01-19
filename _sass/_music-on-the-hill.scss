@@ -69,10 +69,11 @@
   @media (max-width:1023px) {
 
     .poster-wrapper{
-      height:76vh;
+      height:74.5vh;
+      margin-bottom:8vh;
 
       img{
-        height:76vh;
+        height:74.5vh;
       }
       svg{
         bottom:0;
@@ -82,9 +83,10 @@
     }
 
     .postcard-wrapper{
+      margin-bottom:8vh;
 
       object{
-        height:17.5vh;
+        height:16vh;
       }
 
     }
