@@ -23,17 +23,14 @@ tags:
       <div class="row">
         <div class="col-md-6 col-md-push-3">
           <div class="text-description">
-            <p>Given its complex dual nature as both art and science, architecture is often marginalized from other art forms. But even where architecture is art, and perhaps because of its undeniable materiality and scale,  its interaction with the other arts is scarce and difficult. Music, painting, cinema, dance: these can frequently walk hand-in-hand. But not architecture. With that in mind, the first goal was to create artistic interventions that would interact with architecture and use it as an essential part of the compositions. The straightforward nature of typography, its malleability, low impact, temporary possibilities, variety in aesthetics and, above all, its powerful way of delivering a message were therefore a great tool for the realization of the studies below.</p>
-
+            <p>Given its complex dual nature as both art and science, architecture is often marginalized from other art forms. But even where architecture is art, and perhaps because of its undeniable materiality and scale,  its interaction with the other arts is scarce and difficult. Music, painting, cinema, dance: these can frequently walk hand-in-hand. But not architecture. With that in mind, the first goal was to create artistic interventions that would interact with architecture and use it as an essential part of the compositions. The straightforward nature of typography, its malleability, low impact, temporary possibilities, variety in aesthetics and, above all, its powerful way of delivering a message were therefore a great tool.</p>
             <p>The second goal was to do an uncommitted exercise in argumentation and critical thinking—uncommitted because the studies were not based on confirmed documented data, as that was not the goal. The main focus was to fly free during the (creative) process: reflect upon a certain circulating story regarding the chosen architecture and create a provocative message on it with the use of type. The case studies selected were buildings that could be easily photographed (easily accessed) and had enough information online regarding its physicality so that 3d models could be produced for final images. The four case studies are:</p>
-
             <ul>
-              <li>&#10141;<a href="" class="symbol-space">The National Gallery of Art</a></li>
-              <li>&#10141;<a href="" class="symbol-space">The National Air and Space Museum</a></li>
-              <li>&#10141;<a href="" class="symbol-space">The John F. Kennedy Center for the Performing Arts</a></li>
-              <li>&#10141;<a href="" class="symbol-space">The Smithsonian Institution Building</a></li>
+              <li>&#10141;<a href="" id="nga-anchor" class="symbol-space">The National Gallery of Art</a></li>
+              <li>&#10141;<a href="" id="as-anchor" class="symbol-space">The National Air and Space Museum</a></li>
+              <li>&#10141;<a href="" id="kc-anchor" class="symbol-space">The John F. Kennedy Center for the Performing Arts</a></li>
+              <li>&#10141;<a href="" id="sc-anchor" class="symbol-space">The Smithsonian Institution Building</a></li>
             </ul>
-
           </div>
         </div>
       </div>
@@ -125,9 +122,9 @@ tags:
       <div class="row">
         <div class="col-md-6 col-md-push-3">
           <div class="text-description">
-            <p>The John F. Kennedy Center for the Performing Arts, known simply as the Kennedy Center, is the busiest performing arts facility in the US: it produces and presents, as stated online, “the greatest examples” of theater, dance, ballet, orchestral, chamber, jazz, popular, and folk music, in addition to multi-media performances for all ages. The Center contains three main venues—concert hall, opera house and theater—which host important performances, both national and international. These expensive performances attract a very selective audience. However, there are also five smaller venues in the Center, with vast program offerings, for more popular attractions—and even free ones.</p>
-            <p>Despite its effort to expand its reach beyond the stereotypical arts-center member you might imagine (white, wealthy, and over 40), there’s still a lack of audience diversity—especially since significant artistic movements are left out or underrepresented in the Center’s seasonal programs. Hip hop, rap, street dance, latin music—to name a few—are strongly present in today’s American urban culture, but not in the Center’s calendar.</p>
-            <p>The piece above features the chorus of <i>Anaconda</i> by Nicki Minaj (inspired on <i>Baby Got Back</i> by Sir Mix-a-Lot) displayed on the Center’s facade—its imposing and luxurious architecture and interior in contrast with raw, urban slang words. Formally, the words are placed as to interact and add to the already existing visual rhythm of the building’s facade.</p>
+            <p>The John F. Kennedy Memorial Center for the Performing Arts, known simply as the Kennedy Center, is the busiest performing arts facility in the US: it produces and presents, as stated online, “the greatest examples” of theater, dance, ballet, orchestral, chamber, jazz, popular, and folk music, in addition to multi-media performances for all ages. The Center contains three main venues—concert hall, opera house and theater—which host important performances, both national and international. These expensive performances attract a very selective audience. However, there are also five smaller venues in the Center, with vast program offerings, for more popular attractions—and even free ones.</p>
+            <p>Despite its effort to expand its reach beyond the stereotypical arts-center member you might imagine (white, wealthy, and over 40), there’s still a lack of audience diversity— especially since significant artistic movements are left out or underrepresented in the Center’s seasonal programs. Hip hop, rap, street dance, latin music—to name a few—are strongly present in today’s American urban culture, but not in the Center’s calendar.</p>
+            <p>The piece above features the chorus of Anaconda by Nicki Minaj (inspired on Baby Got Back by Sir Mix-a-Lot) displayed on the Center’s facade—its imposing and luxurious architecture and interior in contrast with raw, urban slang words. Formally, the words are placed as to interact and add to the already existing visual rhythm of the building’s facade.</p>
           </div>
         </div>
         <div class="col-md-3 col-md-pull-6">
@@ -206,13 +203,39 @@ tags:
       loop: true,
     });
 
-    /*scroll to top on click*/
+    /*scroll to top of html on click*/
     $(".bottom-link").click(function(event) {
       event.preventDefault();
-
       /*scrolls to top*/
       $("html, body").animate({scrollTop:0}, "slow");
+    });
 
+    /*scroll to top of div on click*/
+    $("#nga-anchor").click(function(event) {
+      event.preventDefault();
+      /*scrolls to top*/
+      $("html, body").animate({scrollTop:$("#nga").offset().top}, "slow");
+    });
+
+    /*scroll to top of div on click*/
+    $("#as-anchor").click(function(event) {
+      event.preventDefault();
+      /*scrolls to top*/
+      $("html, body").animate({scrollTop:$("#as").offset().top}, "slow");
+    });
+
+    /*scroll to top of div on click*/
+    $("#kc-anchor").click(function(event) {
+      event.preventDefault();
+      /*scrolls to top*/
+      $("html, body").animate({scrollTop:$("#kc").offset().top}, "slow");
+    });
+
+    /*scroll to top of div on click*/
+    $("#sc-anchor").click(function(event) {
+      event.preventDefault();
+      /*scrolls to top*/
+      $("html, body").animate({scrollTop:$("#sc").offset().top}, "slow");
     });
 
   });
