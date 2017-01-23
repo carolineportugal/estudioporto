@@ -1,9 +1,9 @@
 // Variables
-$background:#ccc;
+// $background:#ccc;
 
 // Code
 #bike-in-park-out{
-  background:$background;
+  // background:$background;
 
   .left-column{
     padding-top:5.5rem;
@@ -16,11 +16,13 @@ $background:#ccc;
     flex-direction: column;
     align-items: flex-end;
     margin-right: 4rem;
+    width: 100%;
+
 
 
     img{
-      mix-blend-mode:color-burn;
-      filter:grayscale(1);
+      // mix-blend-mode:color-burn;
+      // filter:grayscale(1);
       width: 100%;
       cursor: zoom-in;
 
@@ -51,76 +53,76 @@ $background:#ccc;
 
     img{
       width: 100%;
-      box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, .3);
+      // box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, .3);
       cursor: zoom-in;
     }
 
   }
 
-  @media (max-width:1199px) {
-
-    .left-column{
-      padding-top:6.5rem;
-    }
-
-    .hands{
-      margin-bottom:6rem;
-      margin-right: 3rem;
-
-      img{
-        width:100%;
-      }
-
-    }
-
-  }
-
-  @media (max-width:991px) {
-
-    .left-column{
-      padding-top:7.5rem;
-    }
-
-    .hands{
-      margin-bottom:5rem;
-      margin-right: .5rem;
-
-
-      img{
-        width: 100%;
-      }
-
-    }
-
-  }
-
-  @media (max-width:767px) {
-
-    .right-column{
-      padding:10rem 0 0rem 0;
-    }
-
-    .left-column{
-      padding-top:3rem;
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    .hands{
-      margin-bottom:6rem;
-      max-width: 250px;
-
-      img{
-        width: 100%;
-      }
-
-    }
-
-    .hands:last-child{
-      margin-bottom:6rem;
-    }
-
-  }
+  // @media (max-width:1199px) {
+  //
+  //   .left-column{
+  //     padding-top:6.5rem;
+  //   }
+  //
+  //   .hands{
+  //     margin-bottom:6rem;
+  //     margin-right: 3rem;
+  //
+  //     img{
+  //       width:100%;
+  //     }
+  //
+  //   }
+  //
+  // }
+  //
+  // @media (max-width:991px) {
+  //
+  //   .left-column{
+  //     padding-top:7.5rem;
+  //   }
+  //
+  //   .hands{
+  //     margin-bottom:5rem;
+  //     margin-right: .5rem;
+  //
+  //
+  //     img{
+  //       width: 100%;
+  //     }
+  //
+  //   }
+  //
+  // }
+  //
+  // @media (max-width:767px) {
+  //
+  //   .right-column{
+  //     padding:10rem 0 0rem 0;
+  //   }
+  //
+  //   .left-column{
+  //     padding-top:3rem;
+  //     display: flex;
+  //     align-items: center;
+  //     flex-direction: column;
+  //   }
+  //
+  //   .hands{
+  //     margin-bottom:6rem;
+  //     max-width: 250px;
+  //
+  //     img{
+  //       width: 100%;
+  //     }
+  //
+  //   }
+  //
+  //   .hands:last-child{
+  //     margin-bottom:6rem;
+  //   }
+  //
+  // }
 
 }
