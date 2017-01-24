@@ -1,59 +1,50 @@
 // Variables
-$background:#fff;
+$background:#ccc;
 
 // Code
 #bike-in-park-out{
   background:$background;
   min-height: 100vh;
-  padding-top:10rem;
+  padding:8rem 0;
 
   .bottom-row{
-    padding:0rem 0 7rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content:flex-end;
   }
 
   .frames{
-    margin:0 0 2rem 3rem;
+    margin:0 0 2rem 1rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    width: 180px;
+    width: 165px;
 
     img{
-      // mix-blend-mode:multiply;
-      filter:grayscale(1);
+      mix-blend-mode:multiply;
       width: 100%;
       cursor: zoom-in;
 
       &:hover,
       &:active {
-          // mix-blend-mode:normal;
-          // filter:none;
+          mix-blend-mode:normal;
       }
     }
 
   }
 
-  .text{
-    @include regular();
-    margin-top:.8rem;
-    font-size:13px;
-  }
-
   .number{
     @include regular();
     margin-top:.8rem;
-    font-size:11px;
+    font-size:13px;
+    text-align: right;
   }
 
-  .frames:last-child{
-    margin-bottom:0rem;
+  .text{
+    font-size:14px;
   }
 
   .top-row{
-    margin-bottom:6rem;
+    margin-bottom:4rem;
 
     .video-wrapper{
       position: relative;
