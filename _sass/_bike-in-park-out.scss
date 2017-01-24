@@ -1,60 +1,74 @@
 // Variables
-// $background:#ccc;
+$background:#fff;
 
 // Code
 #bike-in-park-out{
-  // background:$background;
+  background:$background;
+  min-height: 100vh;
+  padding-top:10rem;
 
-  .left-column{
-    padding-top:5.5rem;
-    height:100%;
+  .bottom-row{
+    padding:0rem 0 7rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-end;
   }
 
-  .hands{
-    margin-bottom:7rem;
+  .frames{
+    margin:0 0 2rem 3rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-right: 4rem;
-    width: 100%;
-
-
+    width: 180px;
 
     img{
-      // mix-blend-mode:color-burn;
-      // filter:grayscale(1);
+      // mix-blend-mode:multiply;
+      filter:grayscale(1);
       width: 100%;
       cursor: zoom-in;
 
       &:hover,
       &:active {
-          mix-blend-mode:normal;
-          filter:none;
+          // mix-blend-mode:normal;
+          // filter:none;
       }
     }
 
   }
 
-  .number{
+  .text{
     @include regular();
     margin-top:.8rem;
     font-size:13px;
   }
 
-  .hands:last-child{
+  .number{
+    @include regular();
+    margin-top:.8rem;
+    font-size:11px;
+  }
+
+  .frames:last-child{
     margin-bottom:0rem;
   }
 
-  .right-column{
-    padding:10rem 0 15rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  .top-row{
+    margin-bottom:6rem;
 
-    img{
+    .video-wrapper{
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
       width: 100%;
-      // box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, .3);
+    }
+
+    iframe{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
       cursor: zoom-in;
+      box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, .3);
     }
 
   }
