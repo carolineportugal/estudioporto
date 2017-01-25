@@ -20,13 +20,15 @@ $background:#ccc;
     width: 170px;
 
     img{
-      mix-blend-mode:multiply;
+      mix-blend-mode:color-burn;
+      // filter:grayscale(1);
       width: 100%;
       cursor: zoom-in;
 
       &:hover,
       &:active {
           mix-blend-mode:normal;
+          // filter:none;
       }
     }
 
@@ -70,9 +72,20 @@ $background:#ccc;
 
   #bike-in-park-out{
     padding:5rem 0;
+  }
+
+}
+
+@media (max-width:390px) {
+
+  #bike-in-park-out{
 
     .bottom-row{
       justify-content:center;
+    }
+
+    .frames{
+      margin:0 .5rem 1rem .5rem;
     }
 
   }
