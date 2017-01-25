@@ -1,0 +1,93 @@
+// Variables
+$background:#ccc;
+
+// Code
+#what-you-say{
+  background:$background;
+  min-height: 100vh;
+  padding:7rem 0;
+
+  .bottom-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-end;
+  }
+
+  .frames{
+    margin:0 0 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+
+    img{
+      mix-blend-mode:color-burn;
+      // filter:grayscale(1);
+      width: 100%;
+      cursor: zoom-in;
+
+      &:hover,
+      &:active {
+          mix-blend-mode:normal;
+          // filter:none;
+      }
+    }
+
+  }
+
+  .number{
+    @include regular();
+    margin-top:.8rem;
+    font-size:13px;
+    text-align: right;
+  }
+
+  .text{
+    font-size:14px;
+  }
+
+  .top-row{
+    margin-bottom:4rem;
+
+    .video-wrapper{
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      width: 100%;
+    }
+
+    iframe{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      cursor: zoom-in;
+      box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, .4);
+    }
+
+  }
+
+}
+
+@media (max-width:767px) {
+
+  #bike-in-park-out{
+    padding:5rem 0;
+  }
+
+}
+
+@media (max-width:390px) {
+
+  #bike-in-park-out{
+
+    .bottom-row{
+      justify-content:center;
+    }
+
+    .frames{
+      margin:0 .5rem 1rem .5rem;
+    }
+
+  }
+
+}
