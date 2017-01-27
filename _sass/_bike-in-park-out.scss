@@ -1,26 +1,26 @@
 // Variables
-$background:#ccc;
 
 // Code
 #bike-in-park-out{
-  background:$background;
+  background: #eee;
   min-height: 100vh;
-  padding:7rem 0;
 
   .bottom-row{
     display: flex;
     flex-wrap: wrap;
     justify-content:flex-end;
+    padding:4rem 0;
   }
 
   .frames{
     margin:0 0 1rem 1rem;
     display: flex;
     flex-direction: column;
-    width: 120px;
+    width: 130px;
 
     img{
-      mix-blend-mode:color-burn;
+      mix-blend-mode:multiply;
+      opacity: .8;
       // filter:grayscale(1);
       width: 100%;
       cursor: zoom-in;
@@ -28,6 +28,7 @@ $background:#ccc;
       &:hover,
       &:active {
           mix-blend-mode:normal;
+          opacity:1;
           // filter:none;
       }
     }
@@ -36,22 +37,27 @@ $background:#ccc;
 
   .number{
     @include regular();
-    margin-top:.8rem;
-    font-size:13px;
+    margin-top:1rem;
+    font-size:12px;
     text-align: right;
+    z-index:20;
+    position:relative;
+    color:lighten(#000, 30%);
   }
 
   .text{
     font-size:14px;
+    color:#000;
   }
 
   .top-row{
-    margin-bottom:4rem;
+    padding:6rem 0 3rem 0;
 
     .video-wrapper{
       position: relative;
       padding-bottom: 56.25%; /* 16:9 */
       width: 100%;
+      z-index:10;
     }
 
     iframe{
@@ -66,26 +72,20 @@ $background:#ccc;
 
   }
 
-}
-
-@media (max-width:767px) {
-
-  #bike-in-park-out{
-    padding:5rem 0;
+  .top-row:after{
+    content:"";
+    position:absolute;
+    left: -999px;
+    right:-999px;
+    top:0;
+    bottom:0;
+    background: #ccc;
   }
 
-}
+  @media (max-width:767px) {
 
-@media (max-width:390px) {
-
-  #bike-in-park-out{
-
-    .bottom-row{
-      justify-content:center;
-    }
-
-    .frames{
-      margin:0 .5rem 1rem .5rem;
+    .top-row{
+      padding:5rem 0 3rem 0;
     }
 
   }
