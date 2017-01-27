@@ -7,6 +7,12 @@ $background:#ccc;
   min-height: 100vh;
   padding:7rem 0;
 
+  .bottom-background{
+    background: #fff;
+    min-height:50vh;
+    padding:3rem;
+  }
+
   .bottom-row{
     display: flex;
     flex-wrap: wrap;
@@ -17,13 +23,14 @@ $background:#ccc;
     margin:0 0 1rem 1rem;
     display: flex;
     flex-direction: column;
-    width: 170px;
+    width: 100px;
 
     img{
-      mix-blend-mode:color-burn;
+      // mix-blend-mode:color-burn;
       // filter:grayscale(1);
       width: 100%;
       cursor: zoom-in;
+      border:1px solid #ccc;
 
       &:hover,
       &:active {
@@ -46,7 +53,7 @@ $background:#ccc;
   }
 
   .top-row{
-    margin-bottom:4rem;
+    margin-bottom:7rem;
 
     .video-wrapper{
       position: relative;
