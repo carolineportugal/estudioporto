@@ -19,17 +19,19 @@
     width: 130px;
 
     img{
-      mix-blend-mode:multiply;
-      opacity: .8;
+      // mix-blend-mode:multiply;
+      opacity: .85;
       // filter:grayscale(1);
       width: 100%;
       cursor: zoom-in;
+      border:1px solid lighten(#ddd, 4%);
 
       &:hover,
       &:active {
-          mix-blend-mode:normal;
+          // mix-blend-mode:normal;
           opacity:1;
-          // filter:none;
+          filter:none;
+          border:1px solid #eee;
       }
     }
 
