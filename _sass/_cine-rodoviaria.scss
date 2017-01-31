@@ -6,9 +6,19 @@
 #cine-rodoviaria{
   padding:7rem 0;
 
+  .img-wrapper{
+    margin-bottom:3.5rem;
+  }
+
+  .number{
+    @include regular();
+    margin-top:.8rem;
+    font-size:13px;
+    text-align: right;
+  }
+
   img {
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .4);
-    margin-bottom:5rem;
   }
 
   // Media Queries
