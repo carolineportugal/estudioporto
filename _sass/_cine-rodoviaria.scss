@@ -1,95 +1,19 @@
 //Variables
 
 //Mixins
-@mixin background-music() {
-  background: #fbfbfb; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #fbfbfb, #ebebeb); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #fbfbfb, #ebebeb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
 
 // Code
 #cine-rodoviaria{
-  @include background-music();
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding:5rem 0;
 
-  .poster-wrapper {
-  // border: solid 5px blue;
-  position: relative;
-  height:88vh;
-  margin-bottom: 10vh;
-  overflow: visible;
-
-
-    img {
-    // border: solid 1px red;
-    position: relative;
-    height:88vh;
-    z-index:10;
-    }
-
-    svg {
-    // border: solid 1px green;
-    position: absolute;
-    bottom:0;
-    left:50%;
-    transform: translateX(-50%);
-    height:calc(100% - 4.2vh);
-    }
-
-    .shadow {
-      box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, .3);
-    }
-
-  }
-
-  .postcard-wrapper {
-    margin-bottom: 10vh;
-    display: flex;
-
-    object{
-      height:24vh;
-      margin-right:3rem;
-      overflow: hidden;
-    }
-
-    object:last-child{
-      margin-right:0rem;
-    }
-
-    .shadow {
-      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .4);
-    }
-
+  img {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .4);
+    margin-bottom:5rem;
   }
 
   // Media Queries
 
   @media (max-width:1023px) {
-
-    .poster-wrapper{
-      height:74.5vh;
-      margin-bottom:8vh;
-
-      img{
-        height:74.5vh;
-      }
-      svg{
-        bottom:0;
-        height:calc(100% - 3.5vh);
-      }
-
-    }
-
-    .postcard-wrapper{
-      margin-bottom:8vh;
-
-      object{
-        height:16vh;
-      }
-
-    }
 
   }
 
