@@ -1,13 +1,13 @@
-//Variables
-
-//Mixins
-
 // Code
 #cine-rodoviaria{
-  padding:7rem 0;
+  padding:6.5rem 0;
 
   .img-wrapper{
     margin-bottom:3.5rem;
+  }
+
+  .img-wrapper-last{
+    margin-bottom:0rem;
   }
 
   .number{
@@ -18,13 +18,13 @@
   }
 
   img {
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .4);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .3);
   }
 
-  // Media Queries
+}
 
-  @media (max-width:1023px) {
+// Media Queries
 
-  }
+@media (max-width:767px) {
 
 }
