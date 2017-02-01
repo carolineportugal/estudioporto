@@ -18,7 +18,8 @@
   }
 
   img {
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .3);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .3);
+    cursor: zoom-in;
   }
 
 }
@@ -26,5 +27,9 @@
 // Media Queries
 
 @media (max-width:767px) {
+
+  #cine-rodoviaria{
+    padding:5rem 0;
+  }
 
 }
