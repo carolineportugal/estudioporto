@@ -28,7 +28,14 @@ github_username:  jekyll
 markdown: kramdown
 theme: minima
 
-#Sass settings
+# Sass settings
 sass:
   sass_dir: _sass
   style: compressed
+
+include: ["_projects"]
+
+# Collections
+collections:
+  projects:
+    output: true
