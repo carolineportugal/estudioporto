@@ -6,97 +6,23 @@ layout: default
 
   <h1 class="page-heading">Posts</h1>
 
-  <ul class="post-list">
-    {% for project in site.projects %}
-      <li>
-        <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> -->
-
-        <h2>
-          <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">{{ project.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
   <div class="container">
     <div class="row">
+
+      {% for project in site.projects %}
 
       <div class="col-sm-2 col-sm-offset-2">
         <div class="project-wrapper">
           <div class="image quote-generator"></div>
           <p class="type">Web Typography</p>
-          <h4>Quote Generator</h4>
+          <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">
+            <h4>{{ project.title | escape }}</h4>
+          </a>
           <p class="date">Summer 2016</p>
         </div>
       </div>
 
-      <div class="col-sm-2">
-        <div class="project-wrapper">
-          <div class="image music-hill"></div>
-          <p class="type">Web Typography</p>
-          <h4>Music On The Hill</h4>
-          <p class="date">Fall 2013</p>
-        </div>
-      </div>
-
-      <div class="col-sm-2">
-        <div class="project-wrapper">
-          <div class="image"></div>
-          <p class="type">Web Typography</p>
-          <h4>Typographic Portrait</h4>
-          <p class="date">Fall 2014</p>
-        </div>
-      </div>
-
-      <div class="col-sm-2">
-        <div class="project-wrapper">
-          <div class="image"></div>
-          <p class="type">Web Typography</p>
-          <h4>The Therapy Session</h4>
-          <p class="date">Winter 2014</p>
-        </div>
-      </div>
+      {% endfor %}
 
   </div>
-
-  <div class="row">
-
-    <div class="col-sm-2 col-sm-offset-2">
-      <div class="project-wrapper">
-        <div class="image"></div>
-        <p class="type">Web Typography</p>
-        <h4>Random Quote Generator</h4>
-        <p class="date">Summer 2016</p>
-      </div>
-    </div>
-
-    <div class="col-sm-2">
-      <div class="project-wrapper">
-        <div class="image"></div>
-        <p class="type">Web Typography</p>
-        <h4>Random Quote Generator</h4>
-        <p class="date">Summer 2016</p>
-      </div>
-    </div>
-
-    <div class="col-sm-2">
-      <div class="project-wrapper">
-        <div class="image"></div>
-        <p class="type">Web Typography</p>
-        <h4>Random Quote Generator</h4>
-        <p class="date">Summer 2016</p>
-      </div>
-    </div>
-
-    <div class="col-sm-2">
-      <div class="project-wrapper">
-        <div class="image"></div>
-        <p class="type">Web Typography</p>
-        <h4>Random Quote Generator</h4>
-        <p class="date">Summer 2016</p>
-      </div>
-    </div>
-
-  </div>
-
 </div>
