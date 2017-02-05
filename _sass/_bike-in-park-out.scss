@@ -2,7 +2,7 @@
 
 // Code
 #bike-in-park-out{
-  background: #eee;
+  @include background-offwhite();
   min-height: 100vh;
 
   .bottom-row{

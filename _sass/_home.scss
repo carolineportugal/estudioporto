@@ -74,16 +74,15 @@
   font-style: italic;
 }
 
-@mixin background-home() {
+@mixin background-offwhite() {
   background: #fff; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #fff, #f5f5f5); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #fff, #f5f5f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-
 // Code
 #home{
-  @include background-home();
+  @include background-offwhite();
 
   .project-wrapper{
     margin-top:5rem;

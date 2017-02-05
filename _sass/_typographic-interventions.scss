@@ -58,6 +58,7 @@ $transition-time:.2s;
 
 // Code
 #typographic-interventions{
+  @include background-offwhite();
   font-family:$regular;
 
   .intro{

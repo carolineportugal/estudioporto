@@ -2,7 +2,7 @@
 
 // Code
 #what-you-say{
-  background: #eee;
+  @include background-offwhite();
   min-height: 100vh;
 
   .bottom-row{
@@ -24,7 +24,7 @@
       // filter:grayscale(1);
       width: 100%;
       cursor: zoom-in;
-      border:1px solid lighten(#ddd, 4%);
+      border:1px solid lighten(#eee, 1%);
 
       &:hover,
       &:active {
