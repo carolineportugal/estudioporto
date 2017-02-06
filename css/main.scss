@@ -5,9 +5,10 @@
 
 // Imports partials
 @import "normalize";
-@import "anti-bootstrap";
-@import "hue";
 @import "home";
+@import "anti-bootstrap";
+@import "info-modal";
+@import "hue";
 @import "quote-generator";
 @import "music-on-the-hill";
 @import "bawlamers-feuilleton";
@@ -40,29 +41,4 @@ html, body{
   position:absolute;
   top:0;
   left:-9999px;
-}
-
-// Project Information
-.information{
-  position:fixed;
-  bottom:2rem;
-  right:2rem;
-  @include bold();
-  background: lighten(#000, 25%);
-  color:#fff;
-  height:26px;
-  width:26px;
-  border-radius: 50%;
-  font-size:14px;
-  line-height:2;
-  border:1px solid #fff;
-
-  &:hover,
-  &:focus,
-  &:active:focus,
-  &.active:focus{
-    color:#fff;
-    background: lighten(#000, 25%);
-  }
-
 }
