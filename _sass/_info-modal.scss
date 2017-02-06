@@ -4,7 +4,7 @@
   bottom:2rem;
   right:2rem;
   @include bold();
-  background: lighten(#000, 25%);
+  background: lighten(#000, 20%);
   color:#fff;
   height:23px;
   width:23px;
@@ -18,15 +18,19 @@
   &:active:focus,
   &.active:focus{
     color:#fff;
-    background: lighten(#000, 25%);
+    background: lighten(#000, 20%);
   }
 
 }
 
 // Modal
+.modal{
+
+}
+
 .modal-dialog{
+  width: 350px;
   max-width: 350px;
-  // margin:0 auto;
 }
 
 .modal-content{
