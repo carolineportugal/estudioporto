@@ -37,10 +37,12 @@ $background:#ccc;
     @include regular();
     margin-top:.8rem;
     font-size:13px;
+    color:lighten(#000, 30%);
   }
 
   .text{
     font-size:14px;
+    color:lighten(#000, 30%);
   }
 
   .hands:last-child{

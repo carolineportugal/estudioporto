@@ -1,4 +1,4 @@
-// Project Information & Modal
+// Project Information Button
 .information{
   position:fixed;
   bottom:2rem;
@@ -6,8 +6,8 @@
   @include bold();
   background: lighten(#000, 25%);
   color:#fff;
-  height:24px;
-  width:24px;
+  height:23px;
+  width:23px;
   border-radius: 50%;
   font-size:14px;
   line-height:1.8;
@@ -21,4 +21,14 @@
     background: lighten(#000, 25%);
   }
 
+}
+
+// Modal
+.modal-dialog{
+  max-width: 350px;
+  // margin:0 auto;
+}
+
+.modal-content{
+  border:0px;
 }
