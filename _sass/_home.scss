@@ -1,7 +1,7 @@
 // Variables
 // $transition-time:.2s;
 
-// Mixins
+// Font Mixins
 @mixin thin() {
   font-family:"sommet";
   font-weight:100;
@@ -74,6 +74,7 @@
   font-style: italic;
 }
 
+// Color Mixins
 @mixin background-offwhite() {
   background: #fff; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #fff, #f5f5f5); /* Chrome 10-25, Safari 5.1-6 */
