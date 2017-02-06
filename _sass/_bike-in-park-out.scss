@@ -4,6 +4,7 @@
 #bike-in-park-out{
   @include background-offwhite();
   min-height: 100vh;
+  overflow-x: hidden;
 
   .bottom-row{
     display: flex;

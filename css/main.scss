@@ -46,9 +46,18 @@ html, body{
   position:fixed;
   bottom:0;
   right:0;
+  z-index:100;
 
-  span{
-    @include heavy();
+  .wrapper{
+    @include black();
+    background: #000;
+    color:#fff;
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
   }
 
 }
