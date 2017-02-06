@@ -5,6 +5,7 @@
 
 // Imports partials
 @import "normalize";
+@import "anti-bootstrap";
 @import "hue";
 @import "home";
 @import "quote-generator";
@@ -44,20 +45,24 @@ html, body{
 // Project Information
 .information{
   position:fixed;
-  bottom:0;
-  right:0;
-  z-index:100;
+  bottom:2rem;
+  right:2rem;
+  @include bold();
+  background: lighten(#000, 25%);
+  color:#fff;
+  height:26px;
+  width:26px;
+  border-radius: 50%;
+  font-size:14px;
+  line-height:2;
+  border:1px solid #fff;
 
-  .wrapper{
-    @include black();
-    background: #000;
+  &:hover,
+  &:focus,
+  &:active:focus,
+  &.active:focus{
     color:#fff;
-    height:30px;
-    width:30px;
-    border-radius: 50%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    background: lighten(#000, 25%);
   }
 
 }
