@@ -19,3 +19,16 @@ $transition-time:.2s;
   }
 
 }
+
+.modal{
+
+  button{
+    &:hover,
+    &:focus,
+    &:active:focus,
+    &.active:focus {
+      outline: 0 none;
+    }
+  }
+
+}
