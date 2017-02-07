@@ -6,11 +6,11 @@
   @include bold();
   background: lighten(#000, 15%);
   color:#fff;
-  height:26px;
-  width:26px;
+  height:27px;
+  width:27px;
   border-radius: 50%;
   font-size:14px;
-  line-height:1.8;
+  line-height:2;
   border:2px solid #fff;
 
   &:hover,
@@ -24,13 +24,20 @@
 }
 
 // Modal
-.modal{
+.modal-open {
+  padding-right: 0 !important;
+}
+html {
+  overflow-y: scroll !important;
+}
 
+.modal{
+  padding:0 2rem !important;
 }
 
 .modal-dialog{
-  width: 350px;
   max-width: 350px;
+  margin: 30px auto;
 }
 
 .modal-content{
