@@ -9,7 +9,7 @@ layout: default
   <div class="container">
     <div class="row">
 
-      {% assign sorted_projects = (site.projects | sort: 'order') %}
+      {% assign sorted_projects = (site.projects | sort: 'order' | reverse ) %}
       {% for project in sorted_projects %}
 
       <div class="col-sm-2 col-sm-offset-2">
