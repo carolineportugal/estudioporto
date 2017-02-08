@@ -55,11 +55,14 @@
       @include black();
       letter-spacing: 0.03rem;
       line-height:1.4;
+      margin-bottom:4px;
     }
+
     .subtitle{
       @include regular();
       font-size:16px;
       line-height:1.4;
+      margin-top:0;
     }
 
   }
