@@ -6,11 +6,11 @@
   @include bold();
   background: lighten(#000, 15%);
   color:#fff;
-  height:27px;
-  width:27px;
+  height:28px;
+  width:28px;
   border-radius: 50%;
   font-size:14px;
-  line-height:1.9 !important;
+  line-height:2;
   border:2px solid #fff;
 
   &:hover,
@@ -54,10 +54,12 @@
     .title{
       @include black();
       letter-spacing: 0.03rem;
+      line-height:1.4;
     }
     .subtitle{
       @include regular();
       font-size:16px;
+      line-height:1.4;
     }
 
   }
