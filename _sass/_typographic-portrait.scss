@@ -1,0 +1,17 @@
+// Code
+#typographic-portrait{
+  @include background-offwhite();
+  padding:6rem 0;
+  min-height: 100vh;
+
+}
+
+// Media Queries
+
+@media (max-width:767px) {
+
+  #typographic-portrait{
+    padding:5rem 0;
+  }
+
+}
