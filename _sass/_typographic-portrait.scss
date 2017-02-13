@@ -1,17 +1,78 @@
 // Code
-#typographic-portrait{
-  @include background-offwhite();
-  padding:6rem 0;
-  min-height: 100vh;
+
+/* Typographic Portrait
+=============================================================================*/
+
+.wrapper-portrait {
+height: 100%;
+background-color: #DCE0E5;
+/*border:5px red solid;*/
+display:-webkit-flex;
+display:flex;
+-webkit-align-items: flex-end;
+align-items: flex-end;
+-webkit-justify-content: center;
+justify-content: center;
+}
+
+.svg-portrait{
+text-rendering:optimizeSpeed;
+height: 100%;
+/*border:5px green solid;*/
+}
+
+/* Typography
+=============================================================================*/
+
+.svg-portrait .st1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.svg-portrait .st5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+
+.svg-portrait .st11 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.svg-portrait .st16 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.svg-portrait .st41 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+
+/* Media Queries
+==============================================================================*/
+
+@media (max-width: 57em) {
+
+  .svg-portrait{
+  height: auto;
+  width: 100%;
+  }
 
 }
 
-// Media Queries
+@media (max-width: 48em) {
 
-@media (max-width:767px) {
+  .svg-portrait{
+  width: 95%;
+  }
 
-  #typographic-portrait{
-    padding:5rem 0;
+}
+
+@media screen and (max-width: 27em) {
+
+  .svg-portrait{
+  width: 85%;
   }
 
 }
