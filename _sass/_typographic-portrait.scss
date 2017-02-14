@@ -1,7 +1,15 @@
 // Code
 
+
+
 /* Typographic Portrait
 =============================================================================*/
+
+html, body, section {
+height: 100%;
+width: 100%;
+}
+
 
 .wrapper-portrait {
 height: 100%;
@@ -15,7 +23,7 @@ align-items: flex-end;
 justify-content: center;
 }
 
-.svg-portrait{
+svg{
 text-rendering:optimizeSpeed;
 height: 100%;
 /*border:5px green solid;*/
