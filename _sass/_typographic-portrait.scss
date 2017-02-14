@@ -1,86 +1,79 @@
-// Code
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
+// Typography
 
-
-/* Typographic Portrait
-=============================================================================*/
-
-html, body, section {
-height: 100%;
-width: 100%;
-}
-
-
-.wrapper-portrait {
-height: 100%;
-background-color: #DCE0E5;
-/*border:5px red solid;*/
-display:-webkit-flex;
-display:flex;
--webkit-align-items: flex-end;
-align-items: flex-end;
--webkit-justify-content: center;
-justify-content: center;
-}
-
-svg{
-text-rendering:optimizeSpeed;
-height: 100%;
-/*border:5px green solid;*/
-}
-
-/* Typography
-=============================================================================*/
-
-.svg-portrait .st1 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-}
-
-.svg-portrait .st5 {
+svg .st {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 
-.svg-portrait .st11 {
+svg .st {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 
-.svg-portrait .st16 {
+svg .st {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
 
-.svg-portrait .st41 {
+svg .st {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+svg .st {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
+}
+
+//Variables
+$background:lighten(#DCE0E5, 5%);
+
+// Code
+#typographic-portrait{
+  height: 100%;
+
+  .portrait-wrapper {
+  height: 100%;
+  background: $background;
+  display:flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-rendering: optimizeSpeed;
+  user-select: none;
+  }
+
+  svg{
+    height: 100%;
+  }
+
 }
 
 /* Media Queries
 ==============================================================================*/
 
-@media (max-width: 57em) {
-
-  .svg-portrait{
-  height: auto;
-  width: 100%;
-  }
-
-}
-
-@media (max-width: 48em) {
-
-  .svg-portrait{
-  width: 95%;
-  }
-
-}
-
-@media screen and (max-width: 27em) {
-
-  .svg-portrait{
-  width: 85%;
-  }
-
-}
+// @media (max-width: 57em) {
+//
+//   .svg-portrait{
+//   height: auto;
+//   width: 100%;
+//   }
+//
+// }
+//
+// @media (max-width: 48em) {
+//
+//   .svg-portrait{
+//   width: 95%;
+//   }
+//
+// }
+//
+// @media screen and (max-width: 27em) {
+//
+//   .svg-portrait{
+//   width: 85%;
+//   }
+//
+// }
