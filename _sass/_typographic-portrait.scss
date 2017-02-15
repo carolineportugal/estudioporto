@@ -1,33 +1,28 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800');
 
 // Typography
-svg .st {
+svg .st1 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 
-svg .st {
+svg .st8 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
 
-svg .st {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-}
-
-svg .st {
+svg .st17 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
 }
 
-svg .st {
+svg .st14 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
 }
 
 //Variables
-$background:lighten(#DCE0E5, 5%);
+$background:#DCE0E5;
 
 // Code
 #typographic-portrait{
