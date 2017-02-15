@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 
 // Typography
-
 svg .st {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -41,7 +40,8 @@ $background:lighten(#DCE0E5, 5%);
   align-items: flex-end;
   justify-content: center;
   text-rendering: optimizeSpeed;
-  user-select: none;
+  -webkit-user-select: none;
+          user-select: none;
   }
 
   svg{
