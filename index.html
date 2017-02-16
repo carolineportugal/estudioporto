@@ -4,7 +4,7 @@ layout: default
 
 <div id="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1 class="hidden-page-name">Projects</h1>
 
   <div class="container">
     <div class="row">
@@ -12,9 +12,9 @@ layout: default
       {% assign sorted_projects = (site.projects | sort: 'order' | reverse ) %}
       {% for project in sorted_projects %}
 
-      <div class="col-sm-2 col-sm-offset-2">
+      <div class="col-sm-3">
         <div class="project-wrapper">
-          <div class="image quote-generator"></div>
+          <div class="image"></div>
           <p class="type">Web Typography</p>
           <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">
             <h4>{{project.title}}</h4>
@@ -25,5 +25,5 @@ layout: default
 
       {% endfor %}
 
+    </div>
   </div>
-</div>

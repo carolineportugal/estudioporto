@@ -84,6 +84,7 @@
 // Code
 #home{
   @include background-offwhite();
+  min-height:100vh;
 
   .project-wrapper{
     margin-top:5rem;
