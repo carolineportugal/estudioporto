@@ -21,73 +21,38 @@
 
 
 //Typography
-svg .st1 {
-  font-family: 'Open Sans Light', sans-serif;
-  font-weight: 300;
-}
+svg{
 
-svg .st8 {
-  font-family: 'Open Sans Regular', sans-serif;
-  // font-weight: 400;
-}
+  .st1 {
+    font-family: 'Open Sans Light', sans-serif;
+  }
 
-svg .st17 {
-  font-family: 'Open Sans Bold', sans-serif;
-  // font-weight: 700;
-}
+  .st8 {
+    font-family: 'Open Sans Regular', sans-serif;
+  }
 
-svg .st14 {
-  font-family: 'Open Sans Extra-Bold', sans-serif;
-  // font-weight: 800;
-}
+  .st17 {
+    font-family: 'Open Sans Bold', sans-serif;
+  }
 
-.st13,
-.st18,
-.st22,
-.st23,
-.st29,
-.st30,
-.st36,
-.st37,
-.st42 {
-  letter-spacing: -0.073em;
-}
+  .st14 {
+    font-family: 'Open Sans Extra-Bold', sans-serif;
+  }
 
-.st16,
-.st41 {
-  letter-spacing: -0.11em;
-}
-
-.st32,
-.st46 {
-  letter-spacing: 0.01em;
-}
-
-.st0,
-.st11,
-.st44 {
-  letter-spacing: 0.03em;
-}
-
-.st19,
-.st31,
-.st33 {
-  letter-spacing: 0.04em;
-}
-
-.st24 {
-  letter-spacing: 0.2em;
-}
-
-.st3 {
-  letter-spacing: 0.29em;
 }
 
 //Variables
 $background:#DCE0E5;
 
+// Mixins
+// @mixin remove-font-smoothing {
+//   -webkit-font-smoothing:subpixel-antialiased;;
+  // -moz-osx-font-smoothing: grayscale;
+// }
+
 // Code
 #typographic-portrait{
+  // @include remove-font-smoothing();
   height: 100%;
 
   .portrait-wrapper {
@@ -110,7 +75,7 @@ $background:#DCE0E5;
   }
 
   //Media Queries
-  @media (max-width: 1232px) {
+  @media screen and (orientation:portrait) {
 
     svg{
       height: auto;
