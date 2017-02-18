@@ -13,7 +13,8 @@ layout: default
 
       <div class="col-sm-4 col-md-3">
         <div class="project-wrapper">
-          <div class="image"></div>
+          <div class="image" style="background: url('/media/thumbs/{{ project.image }}'); background-position:center;
+          background-size: cover;"></div>
           <p class="type">Web Typography</p>
           <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">
             <h4>{{project.title}}</h4>
