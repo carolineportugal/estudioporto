@@ -11,7 +11,7 @@ layout: default
 
       {% for project in site.projects %}
 
-      <div class="col-sm-4 col-md-3">
+      <div class="col-sm-3">
         <div class="project-wrapper">
           <div class="image" style="background: url('/media/thumbs/{{ project.image }}'); background-position:center;
           background-size: cover;"></div>
@@ -19,7 +19,7 @@ layout: default
           <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">
             <h4>{{project.title}}</h4>
           </a>
-          <p class="date">Summer 2016</p>
+          <p class="date">{{project.subtitle}}</p>
         </div>
       </div>
 

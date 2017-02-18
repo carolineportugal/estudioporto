@@ -85,9 +85,10 @@
 #home{
   @include background-offwhite();
   min-height:100vh;
+  padding-top:30rem;
 
   .project-wrapper{
-    margin-top:5rem;
+    margin-top:4rem;
     text-align: center;
     border-top:1px solid rgba(black, .1);
     padding-top:2rem;
