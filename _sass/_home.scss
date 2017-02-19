@@ -107,7 +107,9 @@
     }
 
     .type{
-      color:rgba(black, .3);
+      color:lighten(#000, 60%);
+      text-transform: uppercase;
+      font-size: 11px;
     }
 
     h4{
@@ -115,10 +117,10 @@
       color:lighten(#000, 15%);
     }
 
-    .date{
-      text-transform: uppercase;
-      font-size:11px;
+    .subtitle{
+      font-size:14.5px;
       @include regular();
+      color:lighten(#000, 15%);
     }
 
   }

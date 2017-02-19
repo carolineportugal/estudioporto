@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div id="home">
+<section id="home">
 
   <h1 class="hidden-page-name">Projects</h1>
   
@@ -18,11 +18,11 @@ layout: default
         <div class="project-wrapper">
           <div class="image" style="background: url('/media/thumbs/{{ project.image }}'); background-position:center;
           background-size: cover;"></div>
-          <p class="type">Web Typography</p>
+          <p class="type">{{project.category}}</p>
           <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">
             <h4>{{project.title}}</h4>
           </a>
-          <p class="date">{{project.subtitle}}</p>
+          <p class="subtitle">{{project.subtitle}}</p>
         </div>
       </div>
 
@@ -30,3 +30,5 @@ layout: default
 
     </div>
   </div>
+  
+</section>
