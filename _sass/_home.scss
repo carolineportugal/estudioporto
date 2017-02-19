@@ -85,7 +85,12 @@
 #home{
   @include background-offwhite();
   min-height:100vh;
-  padding-top:30rem;
+  
+  .header{
+    height:30rem;
+    width:100%;
+    background: lighten(#000, 15%);
+  }
 
   .project-wrapper{
     margin-top:4rem;
