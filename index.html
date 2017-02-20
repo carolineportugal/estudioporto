@@ -15,16 +15,16 @@ layout: default
       {% assign sorted_projects = (site.projects | sort: 'order' | reverse ) %}
       {% for project in sorted_projects %}
 
-        <div class="project">
-          <div class="image" style="background: url('/media/thumbs/{{ project.image }}'); background-position:center;
-          background-size: cover;"></div>
-          <hr>
-          <p class="type">{{project.category}}</p>
-          <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">
+        <a class="project-link" href="{{ project.url | prepend: site.baseurl }}">
+          <div class="project">
+            <div class="image" style="background: url('/media/thumbs/{{ project.image }}'); background-position:center;
+            background-size: cover;"></div>
+            <hr>
+            <p class="type">{{project.category}}</p>
             <h4>{{project.title}}</h4>
-          </a>
-          <p class="subtitle">{{project.subtitle}}</p>
-        </div>
+            <p class="subtitle">{{project.subtitle}}</p>
+          </div>
+        </a>
 
       {% endfor %}
 
