@@ -8,6 +8,10 @@
     <h1 class="hidden-body-name">Estúdio Porto</h1>
 
     {{ content }}
+    
+    {% if page.layout == "default" %}
+      {% include footer.html %}
+    {% endif %}
 
   </body>
 
