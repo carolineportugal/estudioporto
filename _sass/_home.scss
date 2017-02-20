@@ -114,15 +114,15 @@ $transition-time:.2s;
   }
 
   .project{
-    margin:3rem 2.1rem 0 2.1rem;
+    margin:2.7rem 2.1rem 0 2.1rem;
     text-align: center;
     padding-top:2rem;
     width:210px;
 
     .image{
       position:relative;
-      height:80px;
-      width:80px;
+      height:70px;
+      width:70px;
       border-radius: 50%;
       margin:0 auto;
       margin-bottom:2rem;
@@ -131,13 +131,13 @@ $transition-time:.2s;
     }
     
     hr{
-      // border-top:1px solid rgba(black, .08);
+      width:70px;
     }
 
     .type{
       color:lighten(#000, 65%);
       text-transform: uppercase;
-      font-size: 12px;
+      font-size: 11.5px;
       letter-spacing: .03rem;
     }
 
