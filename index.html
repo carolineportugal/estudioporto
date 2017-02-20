@@ -10,21 +10,21 @@ layout: default
   </div>
 
   <div class="container">
-    <div class="row">
+    <div class="projects-wrapper">
 
-      {% for project in site.projects %}
+      {% assign sorted_projects = (site.projects | sort: 'order' | reverse ) %}
+      {% for project in sorted_projects %}
 
-      <div class="col-sm-3">
-        <div class="project-wrapper">
+        <div class="project">
           <div class="image" style="background: url('/media/thumbs/{{ project.image }}'); background-position:center;
           background-size: cover;"></div>
+          <hr>
           <p class="type">{{project.category}}</p>
           <a class="post-link" href="{{ project.url | prepend: site.baseurl }}">
             <h4>{{project.title}}</h4>
           </a>
           <p class="subtitle">{{project.subtitle}}</p>
         </div>
-      </div>
 
       {% endfor %}
 
