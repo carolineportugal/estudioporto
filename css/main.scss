@@ -50,11 +50,10 @@ footer{
   
   p{
     margin:0;
-    text-transform: uppercase;
-    @include bold();
+    @include regular();
     color:#fff;
-    font-size: 10.5px;
-    letter-spacing: 0.08rem;
+    font-size: 14.5px;
+    font-feature-settings: "onum" on;
   }
   
 }
