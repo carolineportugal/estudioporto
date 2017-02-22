@@ -59,8 +59,30 @@ footer{
 }
 
 nav{
-  display: flex;
-  justify-content: space-between;
-  color:#fff;
+  position:relative;
   background: lighten(#000, 15%);
+  color:#fff;
+  border-bottom: 1px solid rgba(255,255,255, .1);
+    
+  .nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding:0 15rem;
+  }
+  
+  .menu{
+    display: flex;
+    align-items:center;
+    font-size: 16px;
+  }
+  
+}
+
+nav:after{
+  content: "";
+  position:absolute;
+  left:0;
+  bottom:0;
+  border-bottom: 1px solid rgba(0,0,0, .3);
+  width:100%;
 }
