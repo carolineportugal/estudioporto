@@ -57,3 +57,10 @@ footer{
   }
   
 }
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  color:#fff;
+  background: lighten(#000, 15%);
+}
