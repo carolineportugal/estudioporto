@@ -93,9 +93,40 @@ $transition-time:.2s;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  
+  .title-logo-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:120px;
+    
+    .title-wrapper{
+      width:100%;
+      color:#fff;
+      @include bold();
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-transform:uppercase;
+    }
+    
+    .title1{
+      width:100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .title2{
+      width:100%;
+      display: flex;
+      justify-content: space-between;
+      @include heavy();
+      font-size:20px;
+    }
     
     svg{
-        height:120px;
+        width:100%;
     }
     
   }
@@ -113,7 +144,7 @@ $transition-time:.2s;
     
     &:hover{
         .image{
-          filter: grayscale(0);
+          filter: contrast(1) grayscale(0);
         }
         h4,
         .subtitle,
@@ -137,7 +168,7 @@ $transition-time:.2s;
       width:70px;
       border-radius: 50%;
       margin:0 auto;
-      filter: grayscale(1);
+      filter: contrast(1.5) grayscale(1);
       transition: $transition-time;
     }
     
