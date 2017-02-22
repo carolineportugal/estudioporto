@@ -87,7 +87,7 @@ $transition-time:.2s;
   min-height:100vh;
 
   .hero{
-    height:32rem;
+    height:31rem;
     width:100%;
     background: lighten(#000, 15%);
     display: flex;
@@ -95,39 +95,48 @@ $transition-time:.2s;
     align-items: center;
     
     .title-logo-wrapper{
-      width:140px;
+      width:130px;
     }
     
     .title-wrapper{
       color:#fff;
+      opacity:.8;
       display:flex;
       flex-direction: column;
       align-items: flex-end;
-      text-transform: uppercase;
       width:100%;
-      padding-left:16%;
-      padding-right:6%;
-      margin-bottom:0.5rem;
+      padding-left:19%;
+      padding-right:8%;
+      margin-bottom:.5rem;
+      line-height:1.2;
       
       .title-one{
-        @include regular;
+        @include light;
         width:100%;
         display:flex;
         justify-content: space-between;
+        font-size:17px;
       }
       
       .title-two{
-        @include heavy();
+        text-transform: uppercase;
+        @include black();
         width:100%;
         display:flex;
         justify-content: space-between;
-        font-size:28px;
+        font-size:26px;
       }
       
     }
     
     svg{
       width:100%;
+      overflow: visible !important;
+      
+      .custom-black{
+        fill: lighten(#000, 10%);
+      }
+      
     }
     
   }
