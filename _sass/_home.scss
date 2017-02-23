@@ -89,7 +89,8 @@ $transition-time:.2s;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 4rem 0 14rem 0;
+    padding-top: calc(4rem + 55px);
+    padding-bottom:14rem;
   }
   
   .project-link{
