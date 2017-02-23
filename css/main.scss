@@ -62,15 +62,19 @@ footer{
 nav{
   position:relative;
   background: lighten(#000, 15%);
-  color:rgba(255,255,255, .8);
-
     
   .nav-wrapper{
-    display: flex;
-    justify-content: space-between;
-    padding:.3rem 0;
-    align-items: baseline;
+    color:rgba(255,255,255, .8);
+    // align-items: baseline;
     border-bottom: 1px solid rgba(0,0,0, .2);
+  }
+  
+  .logo-title-wrapper{
+  }
+  
+  svg{
+    width:60px;
+    overflow: visible !important;
   }
   
   .title{
@@ -78,33 +82,14 @@ nav{
     font-size:17px;
     @include heavy();
     letter-spacing: .05rem;
-    margin-top:1.5rem;
-    margin-left: 23px;
     text-transform: uppercase;
-    margin-bottom:1rem;
   }
   
   .menu{
-    display: flex;
-    line-height: 1.0;
-
-    align-items:flex-end;
     font-size: 13px;
     @include bold();
     letter-spacing: .05rem;
-
-
     text-transform: uppercase;
-  }
-  
-  svg{
-    width:70px;
-    overflow: visible !important;
-    
-    .custom-black{
-      fill: lighten(#000, 10%);
-    }
-    
   }
   
 }
@@ -115,5 +100,5 @@ nav:after{
   left:0;
   bottom:0;
   width:100%;
-      border-bottom: 1px solid rgba(255,255,255, .1);
+  border-bottom: 1px solid rgba(255,255,255, .1);
 }
