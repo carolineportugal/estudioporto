@@ -35,6 +35,7 @@ html, body{
 }
 
 .hidden-body-name,
+.hidden-nav-name,
 .hidden-page-name,
 .hidden-section-name {
   position:absolute;
@@ -77,14 +78,16 @@ nav{
   }
     
   .title{
-    font-size:22px;
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+    font-size:23px;
     @include heavy();
-    letter-spacing: .03rem;
+    letter-spacing: .02rem;
   }
       
   .menu{
-    font-size: 13px;
-    // @include bold();
+    font-size: 12.5px;
     letter-spacing: .03rem;
     text-transform: uppercase;
   }
