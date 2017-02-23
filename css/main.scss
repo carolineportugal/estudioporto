@@ -62,46 +62,50 @@ nav{
   position:relative;
   background: lighten(#000, 15%);
   color:#fff;
-  border-bottom: 1px solid rgba(255,255,255, .1);
     
   .nav-wrapper{
     display: flex;
     justify-content: space-between;
     padding:0 15rem;
+    align-items: baseline;
+
   }
   
   .title-wrapper{
+    padding:1rem 0;
+    margin:0;
     color:#fff;
     opacity:.8;
     display:flex;
-    flex-direction: column;
-    width:130px;
-    margin-bottom:2.75rem;
-    line-height:1.15;
+    // text-transform: uppercase;
+    // height:5rem;
+    width:120px;
+    line-height: 1.2;
     
     .title-one{
-      @include light;
       width:100%;
+      @include light;
       display:flex;
-      justify-content: space-between;
-      font-size:17px;
+      justify-content:space-between;
+      font-size:26px;
     }
     
     .title-two{
-      text-transform: uppercase;
-      @include black();
       width:100%;
-      display:flex;
-      justify-content: space-between;
-      font-size:27px;
+      @include heavy();
+      text-transform: uppercase;
+      display: flex;
+      justify-content:space-between;
+      font-size:26px;
     }
     
   }
   
   .menu{
     display: flex;
-    align-items:center;
-    font-size: 16px;
+    align-items:flex-end;
+    font-size: 13px;
+    text-transform: uppercase;
   }
   
 }
@@ -111,6 +115,5 @@ nav:after{
   position:absolute;
   left:0;
   bottom:0;
-  border-bottom: 1px solid rgba(0,0,0, .3);
   width:100%;
 }
