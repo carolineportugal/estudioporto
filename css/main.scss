@@ -63,6 +63,7 @@ footer{
 nav{
   position:fixed;
   background: rgba(255,255,255, .8);
+  background: lighten(#000, 15%);
   width: 100%;
   height:55px;
   z-index:100;
@@ -71,24 +72,25 @@ nav{
   align-items: center;
     
   .nav-wrapper{
-    color:lighten(#000, 15%);
+    color:lighten(#000, 25%);
+    color:rgba(255,255,255, .8);
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    padding:0 15rem;
   }
     
   .title{
-    position:relative;
-    left:50%;
-    transform: translateX(-50%);
-    font-size:23px;
+    margin-top:0.5rem;
+    font-size:22px;
     @include heavy();
     letter-spacing: .02rem;
   }
       
-  .menu{
-    font-size: 12.5px;
-    letter-spacing: .03rem;
+  .menu-item{
+    font-size: 12px;
+    letter-spacing: .05rem;
+    // @include bold();
     text-transform: uppercase;
   }
   
