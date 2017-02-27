@@ -25,15 +25,16 @@
 
   .information{
     @include bold();
-    background: lighten(#000, 15%);
+    background: lighten(#000, 25%);
     color:#fff;
-    height:32px;
-    width:32px;
+    height:30px;
+    width:30px;
     border-radius: 50%;
-    font-size:14px;
-    line-height:2.3;
-    border:2px solid #fff;
+    font-size:16px;
+    line-height:2.1;
+    border:1px solid #fff;
     pointer-events:auto;
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.1);
 
     &:hover{
       color:#fff;
