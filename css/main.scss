@@ -29,7 +29,6 @@
 
 // General Code
 html, body{
-  background: lighten(#000, 85%);
   height:100%;
   @include font-smoothing();
   font-family: "sommet";

@@ -4,7 +4,9 @@ $background:#ccc;
 // Code
 #bawlamers-feuilleton{
   background:$background;
-  min-height:100vh;
+  min-height:calc(100vh - 55px);
+  position: relative;
+  top:55px;
 
   .left-column{
     padding-top:2.5rem;

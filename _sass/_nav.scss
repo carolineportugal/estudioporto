@@ -12,7 +12,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding:0 15rem;
+    padding:0 2rem;
   }
     
   a.title{
@@ -72,6 +72,52 @@ nav.light{
   
   a.menu-item:after{
     background: lighten(#000, 25%);
+  }
+  
+
+}
+
+//Media Queries
+@media (max-width:1199px) {
+  
+  nav{
+    
+    .nav-wrapper{
+      padding:0 3rem;
+    }
+    
+  }
+  
+}
+
+@media (max-width:991px) {
+  
+  nav{
+    
+    .nav-wrapper{
+      padding:0 3.5rem;
+    }
+    
+  }
+  
+}
+
+@media (max-width:768px) {
+  
+  nav{
+    
+    .container{
+      width:100%;
+    }
+    
+    .nav-wrapper{
+      padding:0 1rem;
+    }
+    
+    .gallery{
+      display: none;
+    }
+    
   }
   
 }
