@@ -9,7 +9,7 @@ $background:#ccc;
   top:55px;
 
   .left-column{
-    padding-top:2.5rem;
+    padding-top:0.5rem;
     height:100%;
   }
 
@@ -53,7 +53,7 @@ $background:#ccc;
   }
 
   .right-column{
-    padding:7rem 0 12rem 0;
+    padding:5rem 0 12rem 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -69,7 +69,7 @@ $background:#ccc;
   @media (max-width:1199px) {
 
     .left-column{
-      padding-top:3.5rem;
+      padding-top:1.5rem;
     }
 
     .hands{
@@ -87,7 +87,7 @@ $background:#ccc;
   @media (max-width:991px) {
 
     .left-column{
-      padding-top:4rem;
+      padding-top:2rem;
     }
 
     .hands{
@@ -106,7 +106,7 @@ $background:#ccc;
   @media (max-width:767px) {
 
     .right-column{
-      padding:5rem 0 0rem 0;
+      padding:4rem 0 0rem 0;
     }
 
     .left-column{

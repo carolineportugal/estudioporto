@@ -30,7 +30,7 @@
     height:30px;
     width:30px;
     border-radius: 50%;
-    font-size:16px;
+    font-size:15px;
     line-height:2.1;
     border:1px solid #fff;
     pointer-events:auto;
@@ -38,7 +38,7 @@
 
     &:hover{
       color:#fff;
-      background: lighten(#000, 15%);
+      background: lighten(#000, 25%);
     }
 
   }

@@ -58,6 +58,8 @@ $transition-time:.2s;
 
 // Code
 #typographic-interventions{
+  position:relative;
+  top:55px;
   @include background-offwhite();
   font-family:$regular;
 
@@ -202,7 +204,7 @@ $transition-time:.2s;
   }
 
   .bottom-signage{
-    padding:30px 0 80px 0;
+    padding:10px 0 80px 0;
     text-align: center;
 
     a{

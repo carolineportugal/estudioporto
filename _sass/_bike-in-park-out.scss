@@ -5,12 +5,14 @@
   @include background-offwhite();
   min-height: 100vh;
   overflow-x: hidden;
+  position: relative;
+  top:55px;
 
   .bottom-row{
     display: flex;
     flex-wrap: wrap;
     justify-content:flex-end;
-    padding:4rem 0;
+    padding:3rem 0;
   }
 
   .frames{
@@ -52,7 +54,7 @@
   }
 
   .top-row{
-    padding:6rem 0 3rem 0;
+    padding:4rem 0 2rem 0;
 
     .video-wrapper{
       position: relative;
@@ -86,7 +88,7 @@
   @media (max-width:767px) {
 
     .top-row{
-      padding:5rem 0 3rem 0;
+      padding:3rem 0 1rem 0;
     }
 
   }
