@@ -9,12 +9,14 @@ $transition-time:.2s;
   outline:0px;
   border:0px;
   transition:$transition-time;
+  
+  &:hover {
+    opacity:.8;
+  }
 
-  &:hover,
   &:focus,
   &:active:focus,
   &.active:focus {
-    opacity:.8;
     outline: 0 none;
   }
 

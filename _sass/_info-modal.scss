@@ -35,10 +35,7 @@
     border:2px solid #fff;
     pointer-events:auto;
 
-    &:hover,
-    &:focus,
-    &:active:focus,
-    &.active:focus{
+    &:hover{
       color:#fff;
       background: lighten(#000, 15%);
     }
