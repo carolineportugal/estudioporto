@@ -1,0 +1,36 @@
+// Code
+#cnm{
+  @include background-offwhite();
+  padding:4rem 0;
+  min-height: 100vh;
+  position:relative;
+  top:55px;
+
+  .img-wrapper{
+    margin-bottom:3.5rem;
+  }
+
+  .number{
+    @include regular();
+    margin-top:.8rem;
+    font-size:13px;
+    text-align: right;
+    color:lighten(#000, 30%);
+  }
+
+  img {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .3);
+    cursor: zoom-in;
+  }
+
+}
+
+// Media Queries
+
+@media (max-width:767px) {
+
+  #cnm{
+    padding:3rem 0;
+  }
+
+}
