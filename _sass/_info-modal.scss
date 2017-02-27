@@ -1,26 +1,79 @@
 // Project Information Button
-.information{
+.page-bottom-fixed-wrapper{
   position:fixed;
+  width:100%;
   bottom:2rem;
-  right:3rem;
-  @include bold();
-  background: lighten(#000, 15%);
-  color:#fff;
-  height:28px;
-  width:28px;
-  border-radius: 50%;
-  font-size:14px;
-  line-height:2;
-  border:2px solid #fff;
-
-  &:hover,
-  &:focus,
-  &:active:focus,
-  &.active:focus{
-    color:#fff;
-    background: lighten(#000, 15%);
+  // background:red;
+  z-index:300;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  
+  .container{
+    // background:yellow;
   }
 
+  .btn-wrapper{
+    padding:0 2rem;
+    height:100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    // background: green;
+  }
+
+  .information{
+    @include bold();
+    background: lighten(#000, 15%);
+    color:#fff;
+    height:32px;
+    width:32px;
+    border-radius: 50%;
+    font-size:14px;
+    line-height:2.3;
+    border:2px solid #fff;
+    pointer-events:auto;
+
+    &:hover,
+    &:focus,
+    &:active:focus,
+    &.active:focus{
+      color:#fff;
+      background: lighten(#000, 15%);
+    }
+
+  }
+
+  //Media Queries
+  @media (max-width:1199px) {
+    
+    .btn-wrapper{
+      padding:0 3rem;
+    }
+    
+  }
+
+  @media (max-width:991px) {
+    
+    .btn-wrapper{
+      padding:0 3.5rem;
+    }
+    
+  }
+
+  @media (max-width:768px) {
+    
+    .container{
+      width:100%;
+    }
+    
+    .btn-wrapper{
+      padding:0 1rem;
+    }
+
+  }
+  
 }
 
 // Modal
