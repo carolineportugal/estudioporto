@@ -3,73 +3,73 @@ $transition-time:.2s;
 
 // Font Mixins
 @mixin thin() {
-  font-family:"sommet";
+  font-family:"sommet", sans-serif;
   font-weight:100;
   font-style: normal;
 }
 
 @mixin thin-italic() {
-  font-family:"sommet";
+  font-family:"sommet", sans-serif;
   font-weight:100;
   font-style: italic;
 }
 
 @mixin light() {
-  font-family:"sommet";
+  font-family:"sommet", sans-serif;
   font-weight:300;
   font-style: normal;
 }
 
 @mixin light-italic() {
-  font-family:"sommet";
+  font-family:"sommet", sans-serif;
   font-weight:300;
   font-style: italic;
 }
 
 @mixin regular() {
-  font-family:"sommet";
+  font-family:"sommet", sans-serif;
   font-weight:400;
   font-style: normal;
 }
 
 @mixin regular-italic() {
-  font-family:"sommet";
+  font-family:"sommet", sans-serif;
   font-weight:400;
   font-style: italic;
 }
 
 @mixin bold() {
-  font-family:"sommet";
+  font-family:"sommet", sans-serif;
   font-weight:700;
   font-style: normal;
 }
 
 @mixin bold-italic() {
-  font-family:"sommet";
+  font-family:"sommet", sans-serif;
   font-weight:700;
   font-style: italic;
 }
 
 @mixin black() {
-  font-family:"sommet";
+  font-family:"sommet", sans-serif;
   font-weight:800;
   font-style: normal;
 }
 
 @mixin black-italic() {
-  font-family:"sommet";
+  font-family:"sommet", sans-serif;
   font-weight:800;
   font-style: italic;
 }
 
 @mixin heavy() {
-  font-family:"sommet";
+  font-family:"sommet", sans-serif;
   font-weight:900;
   font-style: normal;
 }
 
 @mixin heavy-italic() {
-  font-family:"sommet";
+  font-family:"sommet", sans-serif;
   font-weight:900;
   font-style: italic;
 }
