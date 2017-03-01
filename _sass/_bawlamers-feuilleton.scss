@@ -4,7 +4,7 @@ $background:#ccc;
 // Code
 #bawlamers-feuilleton{
   background:$background;
-  min-height:calc(100vh - 55px);
+  min-height:100%;
   position: relative;
   top:55px;
 
@@ -66,7 +66,11 @@ $background:#ccc;
 
   }
 
-  @media (max-width:1199px) {
+}
+
+@media (max-width:1199px) {
+  
+  #bawlamers-feuilleton{
 
     .left-column{
       padding-top:1.5rem;
@@ -81,10 +85,14 @@ $background:#ccc;
       }
 
     }
-
+    
   }
 
-  @media (max-width:991px) {
+}
+
+@media (max-width:991px) {
+  
+  #bawlamers-feuilleton{
 
     .left-column{
       padding-top:2rem;
@@ -100,10 +108,15 @@ $background:#ccc;
       }
 
     }
-
+  
   }
 
-  @media (max-width:767px) {
+}
+
+@media (max-width:767px) {
+  
+  #bawlamers-feuilleton{
+  top:50px;
 
     .right-column{
       padding:4rem 0 0rem 0;
@@ -129,7 +142,7 @@ $background:#ccc;
     .hands:last-child{
       margin-bottom:6rem;
     }
-
+    
   }
 
 }

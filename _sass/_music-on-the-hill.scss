@@ -59,9 +59,12 @@
 
   }
 
-  // Media Queries
+}
 
-  @media (max-width:1023px) {
+// Media Queries
+@media (max-width:1023px) {
+  
+  #music-hill{
 
     .poster-wrapper{
       height:calc(58.7vh - 55px);
@@ -86,7 +89,15 @@
       }
 
     }
+  
+  }
 
+}
+
+@media (max-width:767px) {
+  
+  #music-hill{
+    top:50px;
   }
 
 }

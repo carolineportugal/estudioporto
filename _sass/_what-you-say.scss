@@ -87,12 +87,17 @@
     background: #ccc;
   }
 
-  @media (max-width:767px) {
+}
+
+@media (max-width:767px) {
+  
+  #what-you-say{
+    top:50px;
 
     .top-row{
       padding:3rem 0 1rem 0;
     }
-
+    
   }
 
 }

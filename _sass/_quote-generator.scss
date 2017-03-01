@@ -242,6 +242,15 @@ $transition-time:.2s;
 }
 
 // Media Queries
+@media (max-width:767px) {
+  
+  #quotes-generator{
+    top:50px;
+  }
+  
+}
+
+
 @media (max-width:639px) {
 
   #quotes-generator{

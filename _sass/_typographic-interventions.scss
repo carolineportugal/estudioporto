@@ -230,7 +230,11 @@ $transition-time:.2s;
 
   }
 
-  @media (max-width:991px) {
+}
+
+@media (max-width:991px) {
+  
+  #typographic-interventions{
 
     .intro{
       margin-bottom:8rem;
@@ -272,10 +276,15 @@ $transition-time:.2s;
       }
 
     }
-
+    
   }
 
-  @media (max-width:767px) {
+}
+
+@media (max-width:767px) {
+  
+  #typographic-interventions{
+    top:50px;
 
     .intro{
       margin-bottom:6rem;
@@ -307,7 +316,7 @@ $transition-time:.2s;
     .building{
       margin-bottom:6rem;
     }
-
+    
   }
 
 }

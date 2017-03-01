@@ -76,14 +76,27 @@ $background:#DCE0E5;
     border:3px solid blue;
   }
 
-  //Media Queries
-  @media screen and (orientation:portrait) {
+}
+
+//Media Queries
+@media screen and (orientation:portrait) {
+  
+  #typographic-portrait{
 
     svg{
       height: auto;
       width: 100%;
     }
-
+    
   }
 
+}
+
+@media (max-width:767px) {
+  
+  #typographic-portrait{
+    top:50px;
+    height: calc(100vh - 50px);
+  }
+  
 }

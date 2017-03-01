@@ -102,9 +102,10 @@ nav.light{
   
 }
 
-@media (max-width:768px) {
+@media (max-width:767px) {
   
   nav{
+    height:50px;
     
     .container{
       width:100%;
@@ -114,21 +115,12 @@ nav.light{
       padding:0 1rem;
     }
     
-    .gallery{
-      display: none;
-    }
-    
-  }
-  
-}
-
-@media (max-width:767px) {
-  
-  nav{
-    height:50px;
-    
     a.title{
       font-size:22px;
+    }
+    
+    .gallery{
+      display: none;
     }
     
   }
