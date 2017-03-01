@@ -135,5 +135,14 @@
     letter-spacing: 0.03rem;
     }
   }
+  
+  //Media Queries
+  @media (max-width:768px) {
+    
+    .modal-dialog{
+      margin: 60px auto;
+    }
+    
+  }
 
 }
