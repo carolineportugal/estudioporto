@@ -32,7 +32,7 @@
 html, body{
   height:100%;
   @include font-smoothing();
-  font-family: "sommet";
+  font-family: "sommet", sans-serif;
 }
 
 .hidden-body-name,
@@ -55,7 +55,7 @@ footer{
     margin:0;
     @include regular();
     color:#fff;
-    font-size: 14.5px;
+    font-size: 15px;
     font-feature-settings: "onum" on;
   }
   
