@@ -27,6 +27,18 @@
 
 // Media Queries
 
+@media (max-width:991px) {
+
+  #rio-olympics{
+    
+    img {
+      cursor: default;
+    }
+    
+  }
+
+}
+
 @media (max-width:767px) {
 
   #rio-olympics{

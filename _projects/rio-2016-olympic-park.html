@@ -24,7 +24,7 @@ description: "<i>As Architectural Designer at Davis Brody Bond. Full design team
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0">
         <div class="img-wrapper">
-          <a href="/media/rio-2016-olympics/1.jpg" data-lightbox="cnm">
+          <a href="/media/rio-2016-olympics/1.jpg" class="image-link" data-lightbox="cnm">
             <img class="img-responsive" src="/media/rio-2016-olympics/1-small.jpg"/>
           </a>
           <div class="number">.01</div>
@@ -32,7 +32,7 @@ description: "<i>As Architectural Designer at Davis Brody Bond. Full design team
       </div>
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0">
         <div class="img-wrapper">
-          <a href="/media/rio-2016-olympics/2.jpg" data-lightbox="cnm">
+          <a href="/media/rio-2016-olympics/2.jpg" class="image-link" data-lightbox="cnm">
             <img class="img-responsive" src="/media/rio-2016-olympics/2-small.jpg"/>
           </a>
           <div class="number">.02</div>
@@ -43,7 +43,7 @@ description: "<i>As Architectural Designer at Davis Brody Bond. Full design team
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0">
         <div class="img-wrapper">
-          <a href="/media/rio-2016-olympics/3.jpg" data-lightbox="cnm">
+          <a href="/media/rio-2016-olympics/3.jpg" class="image-link" data-lightbox="cnm">
             <img class="img-responsive" src="/media/rio-2016-olympics/3-small.jpg"/>
           </a>
           <div class="number">.03</div>
@@ -51,7 +51,7 @@ description: "<i>As Architectural Designer at Davis Brody Bond. Full design team
       </div>
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0">
         <div class="img-wrapper">
-          <a href="/media/rio-2016-olympics/4.jpg" data-lightbox="cnm">
+          <a href="/media/rio-2016-olympics/4.jpg" class="image-link" data-lightbox="cnm">
             <img class="img-responsive" src="/media/rio-2016-olympics/4-small.jpg"/>
           </a>
           <div class="number">.04</div>
@@ -62,7 +62,7 @@ description: "<i>As Architectural Designer at Davis Brody Bond. Full design team
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0">
         <div class="img-wrapper">
-          <a href="/media/rio-2016-olympics/5.jpg" data-lightbox="cnm">
+          <a href="/media/rio-2016-olympics/5.jpg" class="image-link" data-lightbox="cnm">
             <img class="img-responsive" src="/media/rio-2016-olympics/5-small.jpg"/>
           </a>
           <div class="number">.05</div>
@@ -70,7 +70,7 @@ description: "<i>As Architectural Designer at Davis Brody Bond. Full design team
       </div>
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0">
         <div class="img-wrapper">
-          <a href="/media/rio-2016-olympics/6.jpg" data-lightbox="cnm">
+          <a href="/media/rio-2016-olympics/6.jpg" class="image-link" data-lightbox="cnm">
             <img class="img-responsive" src="/media/rio-2016-olympics/6-small.jpg"/>
           </a>
           <div class="number">.06</div>
@@ -92,6 +92,21 @@ description: "<i>As Architectural Designer at Davis Brody Bond. Full design team
       'wrapAround': true,
       'maxWidth': 1100,
     })
+    
+    function disableImageLink(){
+      if ($(window).width() < 992) {
+          $("a.image-link").click(function(){
+            return false;
+          });
+      }else{
+          $("a.image-link").off();
+    
+      }
+    }
+    
+    disableImageLink();
+    
+    $(window).resize(disableImageLink);
 
   });
 

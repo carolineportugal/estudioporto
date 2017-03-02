@@ -22,7 +22,7 @@ description: "<i>Final Graduation Project in Architecture & Urban Planning Schoo
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-2">
         <div class="img-wrapper">
-          <a href="/media/cine-rodoviaria/1.5.jpg" data-lightbox="cr">
+          <a href="/media/cine-rodoviaria/1.5.jpg" class="image-link" data-lightbox="cr">
             <img class="img-responsive" src="/media/cine-rodoviaria/1.5-small.jpg"/>
           </a>
           <div class="number">.01</div>
@@ -30,7 +30,7 @@ description: "<i>Final Graduation Project in Architecture & Urban Planning Schoo
       </div>
       <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4">
         <div class="img-wrapper">
-          <a href="/media/cine-rodoviaria/2.5.jpg" data-lightbox="cr">
+          <a href="/media/cine-rodoviaria/2.5.jpg" class="image-link" data-lightbox="cr">
             <img class="img-responsive" src="/media/cine-rodoviaria/2.5-small.jpg"/>
           </a>
           <div class="number">.02</div>
@@ -41,7 +41,7 @@ description: "<i>Final Graduation Project in Architecture & Urban Planning Schoo
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-1">
         <div class="img-wrapper">
-          <a href="/media/cine-rodoviaria/1.0.jpg" data-lightbox="cr">
+          <a href="/media/cine-rodoviaria/1.0.jpg" class="image-link" data-lightbox="cr">
             <img class="img-responsive" src="/media/cine-rodoviaria/1.0-small.jpg"/>
           </a>
           <div class="number">.03</div>
@@ -49,7 +49,7 @@ description: "<i>Final Graduation Project in Architecture & Urban Planning Schoo
       </div>
       <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-5">
         <div class="img-wrapper">
-          <a href="/media/cine-rodoviaria/2.0.jpg" data-lightbox="cr">
+          <a href="/media/cine-rodoviaria/2.0.jpg" class="image-link" data-lightbox="cr">
             <img class="img-responsive" src="/media/cine-rodoviaria/2.0-small.jpg"/>
           </a>
           <div class="number">.04</div>
@@ -60,7 +60,7 @@ description: "<i>Final Graduation Project in Architecture & Urban Planning Schoo
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-2">
         <div class="img-wrapper">
-          <a href="/media/cine-rodoviaria/3.5.jpg" data-lightbox="cr">
+          <a href="/media/cine-rodoviaria/3.5.jpg" class="image-link" data-lightbox="cr">
             <img class="img-responsive" src="/media/cine-rodoviaria/3.5-small.jpg"/>
           </a>
           <div class="number">.05</div>
@@ -68,7 +68,7 @@ description: "<i>Final Graduation Project in Architecture & Urban Planning Schoo
       </div>
       <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4">
         <div class="img-wrapper">
-          <a href="/media/cine-rodoviaria/4.5.jpg" data-lightbox="cr">
+          <a href="/media/cine-rodoviaria/4.5.jpg" class="image-link" data-lightbox="cr">
             <img class="img-responsive" src="/media/cine-rodoviaria/4.5-small.jpg"/>
           </a>
           <div class="number">.06</div>
@@ -79,7 +79,7 @@ description: "<i>Final Graduation Project in Architecture & Urban Planning Schoo
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-1">
         <div class="img-wrapper">
-          <a href="/media/cine-rodoviaria/3.0.jpg" data-lightbox="cr">
+          <a href="/media/cine-rodoviaria/3.0.jpg" class="image-link" data-lightbox="cr">
             <img class="img-responsive" src="/media/cine-rodoviaria/3.0-small.jpg"/>
           </a>
           <div class="number">.07</div>
@@ -87,7 +87,7 @@ description: "<i>Final Graduation Project in Architecture & Urban Planning Schoo
       </div>
       <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-5">
         <div class="img-wrapper">
-          <a href="/media/cine-rodoviaria/4.0.jpg" data-lightbox="cr">
+          <a href="/media/cine-rodoviaria/4.0.jpg" class="image-link" data-lightbox="cr">
             <img class="img-responsive" src="/media/cine-rodoviaria/4.0-small.jpg"/>
           </a>
           <div class="number">.08</div>
@@ -98,7 +98,7 @@ description: "<i>Final Graduation Project in Architecture & Urban Planning Schoo
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-5 col-md-offset-1">
         <div class="img-wrapper img-wrapper-last">
-          <a href="/media/cine-rodoviaria/5.0.jpg" data-lightbox="cr">
+          <a href="/media/cine-rodoviaria/5.0.jpg" class="image-link" data-lightbox="cr">
             <img class="img-responsive" src="/media/cine-rodoviaria/5.0-small.jpg"/>
           </a>
           <div class="number">.09</div>
@@ -119,6 +119,21 @@ description: "<i>Final Graduation Project in Architecture & Urban Planning Schoo
       'disableScrolling':true,
       'wrapAround': true
     })
+    
+    function disableImageLink(){
+      if ($(window).width() < 768) {
+          $("a.image-link").click(function(){
+            return false;
+          });
+      }else{
+          $("a.image-link").off();
+    
+      }
+    }
+    
+    disableImageLink();
+    
+    $(window).resize(disableImageLink);
 
   });
 

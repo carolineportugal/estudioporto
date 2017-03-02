@@ -23,7 +23,7 @@ description: "<i>As Co-author & Architectural Designer at Andre Luque Arquitetur
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0">
         <div class="img-wrapper">
-          <a href="/media/cnm-headquarters/1.jpg" data-lightbox="cnm">
+          <a href="/media/cnm-headquarters/1.jpg" class="image-link" data-lightbox="cnm">
             <img class="img-responsive" src="/media/cnm-headquarters/1-small.jpg"/>
           </a>
           <div class="number">.01</div>
@@ -31,7 +31,7 @@ description: "<i>As Co-author & Architectural Designer at Andre Luque Arquitetur
       </div>
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0">
         <div class="img-wrapper">
-          <a href="/media/cnm-headquarters/2.jpg" data-lightbox="cnm">
+          <a href="/media/cnm-headquarters/2.jpg" class="image-link" data-lightbox="cnm">
             <img class="img-responsive" src="/media/cnm-headquarters/2-small.jpg"/>
           </a>
           <div class="number">.02</div>
@@ -42,7 +42,7 @@ description: "<i>As Co-author & Architectural Designer at Andre Luque Arquitetur
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0">
         <div class="img-wrapper">
-          <a href="/media/cnm-headquarters/3.jpg" data-lightbox="cnm">
+          <a href="/media/cnm-headquarters/3.jpg" class="image-link" data-lightbox="cnm">
             <img class="img-responsive" src="/media/cnm-headquarters/3-small.jpg"/>
           </a>
           <div class="number">.03</div>
@@ -50,7 +50,7 @@ description: "<i>As Co-author & Architectural Designer at Andre Luque Arquitetur
       </div>
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0">
         <div class="img-wrapper">
-          <a href="/media/cnm-headquarters/4.jpg" data-lightbox="cnm">
+          <a href="/media/cnm-headquarters/4.jpg" class="image-link" data-lightbox="cnm">
             <img class="img-responsive" src="/media/cnm-headquarters/4-small.jpg"/>
           </a>
           <div class="number">.04</div>
@@ -61,7 +61,7 @@ description: "<i>As Co-author & Architectural Designer at Andre Luque Arquitetur
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0">
         <div class="img-wrapper">
-          <a href="/media/cnm-headquarters/5.jpg" data-lightbox="cnm">
+          <a href="/media/cnm-headquarters/5.jpg" class="image-link" data-lightbox="cnm">
             <img class="img-responsive" src="/media/cnm-headquarters/5-small.jpg"/>
           </a>
           <div class="number">.05</div>
@@ -69,7 +69,7 @@ description: "<i>As Co-author & Architectural Designer at Andre Luque Arquitetur
       </div>
       <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-0">
         <div class="img-wrapper">
-          <a href="/media/cnm-headquarters/6.jpg" data-lightbox="cnm">
+          <a href="/media/cnm-headquarters/6.jpg" class="image-link" data-lightbox="cnm">
             <img class="img-responsive" src="/media/cnm-headquarters/6-small.jpg"/>
           </a>
           <div class="number">.06</div>
@@ -91,6 +91,21 @@ description: "<i>As Co-author & Architectural Designer at Andre Luque Arquitetur
       'wrapAround': true,
       'maxWidth': 1250,
     })
+    
+    function disableImageLink(){
+      if ($(window).width() < 992) {
+          $("a.image-link").click(function(){
+            return false;
+          });
+      }else{
+          $("a.image-link").off();
+    
+      }
+    }
+    
+    disableImageLink();
+    
+    $(window).resize(disableImageLink);
 
   });
 

@@ -135,12 +135,28 @@ $background:#ccc;
 
       img{
         width: 100%;
+        cursor: default;
+        
+        &:hover,
+        &:active {
+          mix-blend-mode:color-burn;
+          filter:grayscale(1);
+        }
+        
       }
 
     }
 
     .hands:last-child{
       margin-bottom:6rem;
+    }
+    
+    .right-column{
+
+      img{
+        cursor: default;
+      }
+
     }
     
   }

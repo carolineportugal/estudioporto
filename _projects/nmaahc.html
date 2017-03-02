@@ -23,7 +23,7 @@ description: "<i>As Co-author & Architectural Designer at Andre Luque Arquitetur
     <div class="row">
       <div class="col-md-4">
         <div class="img-wrapper">
-          <a href="/media/nmaahc/1.jpg" data-lightbox="cnm">
+          <a href="/media/nmaahc/1.jpg" class="image-link" data-lightbox="cnm">
             <img class="img-responsive" src="/media/nmaahc/1-small.jpg"/>
           </a>
           <div class="number">.01</div>
@@ -31,7 +31,7 @@ description: "<i>As Co-author & Architectural Designer at Andre Luque Arquitetur
       </div>
       <div class="col-md-4">
         <div class="img-wrapper">
-          <a href="/media/nmaahc/2.jpg" data-lightbox="cnm">
+          <a href="/media/nmaahc/2.jpg" class="image-link" data-lightbox="cnm">
             <img class="img-responsive" src="/media/nmaahc/2-small.jpg"/>
           </a>
           <div class="number">.02</div>
@@ -39,7 +39,7 @@ description: "<i>As Co-author & Architectural Designer at Andre Luque Arquitetur
       </div>
       <div class="col-md-4">
         <div class="img-wrapper">
-          <a href="/media/nmaahc/3.jpg" data-lightbox="cnm">
+          <a href="/media/nmaahc/3.jpg" class="image-link" data-lightbox="cnm">
             <img class="img-responsive" src="/media/nmaahc/3-small.jpg"/>
           </a>
           <div class="number">.03</div>
@@ -47,7 +47,7 @@ description: "<i>As Co-author & Architectural Designer at Andre Luque Arquitetur
       </div>
       <div class="col-md-4">
         <div class="img-wrapper">
-          <a href="/media/nmaahc/4.jpg" data-lightbox="cnm">
+          <a href="/media/nmaahc/4.jpg" class="image-link" data-lightbox="cnm">
             <img class="img-responsive" src="/media/nmaahc/4-small.jpg"/>
           </a>
           <div class="number">.04</div>
@@ -55,7 +55,7 @@ description: "<i>As Co-author & Architectural Designer at Andre Luque Arquitetur
       </div>
       <div class="col-md-4">
         <div class="img-wrapper">
-          <a href="/media/nmaahc/5.jpg" data-lightbox="cnm">
+          <a href="/media/nmaahc/5.jpg" class="image-link" data-lightbox="cnm">
             <img class="img-responsive" src="/media/nmaahc/5-small.jpg"/>
           </a>
           <div class="number">.05</div>
@@ -63,7 +63,7 @@ description: "<i>As Co-author & Architectural Designer at Andre Luque Arquitetur
       </div>
       <div class="col-md-4">
         <div class="img-wrapper">
-          <a href="/media/nmaahc/6.jpg" data-lightbox="cnm">
+          <a href="/media/nmaahc/6.jpg" class="image-link" data-lightbox="cnm">
             <img class="img-responsive" src="/media/nmaahc/6-small.jpg"/>
           </a>
           <div class="number">.06</div>
@@ -85,6 +85,21 @@ description: "<i>As Co-author & Architectural Designer at Andre Luque Arquitetur
       'wrapAround': true,
       'maxWidth': 1250,
     })
+    
+    function disableImageLink(){
+      if ($(window).width() < 992) {
+          $("a.image-link").click(function(){
+            return false;
+          });
+      }else{
+          $("a.image-link").off();
+    
+      }
+    }
+    
+    disableImageLink();
+    
+    $(window).resize(disableImageLink);
 
   });
 

@@ -27,6 +27,18 @@
 
 // Media Queries
 
+@media (max-width:991px) {
+
+  #cnm{
+    
+    img {
+      cursor: default;
+    }
+    
+  }
+
+}
+
 @media (max-width:767px) {
 
   #cnm{

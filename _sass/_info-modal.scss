@@ -80,7 +80,7 @@
 
   .modal-dialog{
     max-width: 350px;
-    margin: 65px auto;
+    margin: 60px auto;
   }
 
   .modal-content{
@@ -137,10 +137,10 @@
   }
   
   //Media Queries
-  @media (max-width:768px) {
+  @media (max-width:767px) {
     
     .modal-dialog{
-      margin: 60px auto;
+      margin: 55px auto;
     }
     
   }
