@@ -284,10 +284,6 @@ $transition-time:.2s;
         flex-direction: column;
         padding:0 2rem;
 
-        .column-title{
-          font-size: 14px;
-        }
-
         .text1,
         .text2{
           text-align: center;
@@ -314,10 +310,6 @@ $transition-time:.2s;
 
       .two-column-wrapper{
 
-        .column-title{
-          font-size: 13px;
-        }
-
         .text1,
         .text2{
           font-size:16.5px;
@@ -330,7 +322,7 @@ $transition-time:.2s;
     .link-wrapper{
 
       .link-text{
-        font-size: 17px;
+        font-size: 18px;
       }
 
     }
