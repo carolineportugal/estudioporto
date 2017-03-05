@@ -41,12 +41,11 @@ nav{
       
     }
     
-    &:active{
-      
-      color:red;
-      
-    }
+  }
   
+  a.active{
+    color:red !important;
+
   }
 
   a.menu-item:after{

@@ -4,9 +4,9 @@
   
   <div class="container">
     <div class="nav-wrapper">
-        <a class="menu-item gallery" href="{{ site.baseurl }}/">Gallery</a>
-        <a class="title" href="{{ site.baseurl }}/">Estúdio Porto</a>
-        <a class="menu-item" href="">About</a>
+        <a href="{{ site.baseurl }}/" class="menu-item gallery {% if page.url == '/' %}active{% endif %}">Gallery</a>
+        <a href="{{ site.baseurl }}/" class="title">Estúdio Porto</a>
+        <a href="" class="menu-item {% if page.url == '/about/' %}active{% endif %}">About</a>
     </div>
   </div>
 </nav>
