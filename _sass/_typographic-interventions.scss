@@ -67,7 +67,7 @@ $transition-time:.2s;
     margin-bottom:10rem;
 
     .intro-headline{
-      background: #000;
+      background: #060708;
       color:#fff;
       text-align: center;
       padding:75px 0 75px 0;
@@ -77,15 +77,15 @@ $transition-time:.2s;
     .title{
       @include remove-font-smoothing();
       font-family:$bold;
-      font-size: 1.5em;
-      letter-spacing: .27em;
+      font-size: 1.4em;
+      letter-spacing: .25em;
     }
 
     .subtitle{
       // @include remove-font-smoothing();
       font-family:$regular;
-      font-size: 1em;
-      letter-spacing: .27em;
+      font-size: .95em;
+      letter-spacing: .25em;
       margin-top:15px;
     }
 
@@ -138,7 +138,7 @@ $transition-time:.2s;
     margin-bottom:10rem;
 
     .title-container{
-      background:#000;
+      background:#060708;
     }
 
     h5{
@@ -146,7 +146,7 @@ $transition-time:.2s;
       font-family:$bold;
       text-transform: uppercase;
       font-size: 11.5px;
-      letter-spacing: 0.27em;
+      letter-spacing: 0.25em;
       color:#fff;
       margin-top:4px;
       margin-bottom:4px;
@@ -244,11 +244,11 @@ $transition-time:.2s;
       }
 
       .title{
-        font-size: 1.4em;
+        font-size: 1.3em;
       }
 
       .subtitle{
-        font-size: .9em;
+        font-size: .85em;
       }
 
       .text-description{
@@ -300,7 +300,7 @@ $transition-time:.2s;
       }
 
       .title{
-        font-size: 1.3em;
+        font-size: 1.25em;
         line-height: 1.3;
       }
 
