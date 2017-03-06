@@ -33,6 +33,7 @@ html, body{
   height:100%;
   @include font-smoothing();
   font-family: "sommet", sans-serif;
+  position:relative;
 }
 
 .hidden-body-name,
@@ -50,6 +51,8 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+  // position: relative;
+  // bottom:0;
   
   p{
     margin:0;
