@@ -4,28 +4,10 @@ layout: default
 
 <section id="home">
 
-  <h2 class="hidden-page-name">Projects</h2>
+  <h2 class="hidden-page-name">Home</h2>
 
-  <div class="container">
-    <div class="projects-wrapper">
-
-      {% assign sorted_projects = (site.projects | sort: 'order' | reverse ) %}
-      {% for project in sorted_projects %}
-
-        <a class="project-link" href="{{ project.url | prepend: site.baseurl }}">
-          <div class="project">
-            <div class="image" style="background: url('/media/thumbs/{{ project.image }}'); background-position:center;
-            background-size: cover;"><div class="image-shadow"></div></div>
-            <hr>
-            <p class="type">{{project.category}}</p>
-            <h4>{{project.title}}</h4>
-            <p class="subtitle">{{project.subtitle}}</p>
-          </div>
-        </a>
-
-      {% endfor %}
-
-    </div>
+  <div class="video-wrapper">
+    <iframe src="https://player.vimeo.com/video/207486601?background=1" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div>
   
 </section>

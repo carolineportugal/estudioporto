@@ -9,10 +9,6 @@ $transition-time:.2s;
 }
 
 // Code
-body{
-  // background: lighten(#000, 85%);
-}
-
 #gallery{
   @include background-offwhite();
   min-height: calc(100% - 3.5rem);
