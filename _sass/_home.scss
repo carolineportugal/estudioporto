@@ -16,8 +16,18 @@
       top: 0;
       left: 0;
       opacity:.9;
+      z-index:10;
       // border:5px solid red;
     }
+    
+    // .fallback-color{
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   top: 0;
+    //   left: 0;
+    //   background: lighten(#000, 15%);
+    // }
 
   }
   
