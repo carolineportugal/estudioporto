@@ -12,6 +12,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    padding:0 1rem;
   }
     
   a.title{
@@ -91,6 +92,10 @@ nav.light{
   
   nav{
     height:50px;
+    
+    .nav-wrapper{
+      padding:0;
+    }
     
     .container{
       width:100%;
