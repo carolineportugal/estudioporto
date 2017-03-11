@@ -70,10 +70,11 @@ $background:#DCE0E5;
   }
 
   svg{
-    height:90%;
+    height:100%;
     width:auto;
     max-height: 100%;
     border:3px solid blue;
+    transform: translate3d(0, 0, 0);
   }
 
 }
