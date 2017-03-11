@@ -45,14 +45,14 @@ svg{
 $background:#DCE0E5;
 
 // Mixins
-// @mixin remove-font-smoothing {
-//   -webkit-font-smoothing:subpixel-antialiased;;
-  // -moz-osx-font-smoothing: grayscale;
-// }
+@mixin remove-font-smoothing {
+  -webkit-font-smoothing:subpixel-antialiased;;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 // Code
 #typographic-portrait{
-  // @include remove-font-smoothing();
+  @include remove-font-smoothing();
   position: relative;
   top:55px;
   height: calc(100vh - 55px);
@@ -70,7 +70,7 @@ $background:#DCE0E5;
   }
 
   svg{
-    height:80%;
+    height:90%;
     width:auto;
     max-height: 100%;
     border:3px solid blue;
