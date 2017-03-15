@@ -9,7 +9,7 @@ layout: default
   <div class="container">
     <div class="projects-wrapper">
 
-      {% assign sorted_projects = (site.projects | sort: 'order' | reverse ) %}
+      {% assign sorted_projects = (site.b-side | sort: 'order' | reverse ) %}
       {% for project in sorted_projects %}
 
         <a class="project-link" href="{{ project.url | prepend: site.baseurl }}">
