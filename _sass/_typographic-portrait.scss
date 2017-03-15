@@ -66,14 +66,14 @@ $background:#DCE0E5;
   text-rendering: optimizeSpeed;
   -webkit-user-select: none;
           user-select: none;
-  border:3px solid red;
+  // border:3px solid red;
   }
 
   svg{
     height:100%;
     width:auto;
     max-height: 100%;
-    border:3px solid blue;
+    // border:3px solid blue;
     transform: translate3d(0, 0, 0) !important;
   }
 
