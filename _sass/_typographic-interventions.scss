@@ -97,7 +97,7 @@ $transition-time:.2s;
     .text-description{
       color:#000;
       font-family:$regular;
-      font-size:16.5px;
+      font-size:17px;
       line-height:1.5em;
       letter-spacing: 0.01em;
     }
@@ -157,7 +157,7 @@ $transition-time:.2s;
     .text-info{
       color:lighten(#000, 20%);
       font-family:$italic;
-      font-size: 15px;
+      font-size: 15.5px;
       line-height:1.55em;
       max-width:200px;
       letter-spacing: 0.01em;
@@ -171,7 +171,7 @@ $transition-time:.2s;
     .text-description{
       color:#000;
       font-family:$regular;
-      font-size:16.5px;
+      font-size:17px;
       line-height:1.5em;
       letter-spacing: 0.01em;
     }
@@ -243,14 +243,6 @@ $transition-time:.2s;
         padding:65px 0 65px 0;
       }
 
-      .title{
-        font-size: 1.3em;
-      }
-
-      .subtitle{
-        font-size: .85em;
-      }
-
       .text-description{
         padding:0 3rem;
       }
@@ -300,18 +292,19 @@ $transition-time:.2s;
       }
 
       .title{
-        font-size: 1.25em;
+        font-size: 1.3em;
         line-height: 1.3;
       }
 
       .subtitle{
-        font-size: .85em;
-        line-height: 1.7;
+        font-size: .9em;
+        line-height: 1.6;
         margin-top:0;
       }
       
       .text-description{
         padding:0;
+        font-size: 16px;
       }
 
     }
@@ -319,9 +312,14 @@ $transition-time:.2s;
     .building{
       margin-bottom:6rem;
       
-      .text-description,
+      .text-description{
+        padding:0;
+        font-size:16px;
+      }
+      
       .text-info {
         padding:0;
+        font-size:15px;
       }
       
     }

@@ -1,5 +1,6 @@
 ---
 layout: default
+image: portrait-placeholder.jpg
 ---
 
 <section id="about">
@@ -11,13 +12,15 @@ layout: default
       <div class="col-md-6 col-md-offset-3">
         
         <div class="about-wrapper">
-          About
-
-  My name is Caroline Portugal and I’m a Design Technologist: I design & build digital products.
-  I enjoy working at the intersection of design and engineering—acting as interaction designer, coder and visual designer all rolled together—because this is where I think fresh ideas and innovative solutions come from. I’m also interested in everything typography.
-  A-side: I’m currently working on redesigning and building the new site for EurasiaNet. Some other past works include redesign and build for: Democracy International, Golden and Golden Dashboard. I was also part of the team designing and building Astro Digital while working for Development Seed.
-  Past life: I’m a trained Architect & Urban Planner and in my past life worked for Davis Brody Bond as an Architectural Designer on the project for the National Museum of African American History & Culture—by far the largest, most complex and more meaningful project I’ve worked on in my life.
-  Wishes for my jinni: (1) a pool game with Jacques Derrida, (2) an afternoon climb with Lynn Hill, (3) to watch Elis Regina perform.
+          <div class="picture-wrapper" style="background: url('/media/about/{{ page.image }}'); background-position:center; background-size: cover;"></div>
+          <div class="text-wrapper">
+            <p class="first-text">I’m a Design Technologist: I design & build digital products.</p>
+            <div class="second-text">
+              <p>Hi there! My name is Caroline Portugal and I enjoy working at the intersection of design and engineering—acting as interaction designer, coder and visual designer all rolled together—because this is where I think fresh ideas and innovative solutions come from. I’m also interested in everything typography.</p>
+              <p><span class="uppercase">A-side:</span> I’m currently working on redesigning and building the new site for EurasiaNet. Some other past works include redesign and build for: Democracy International, Golden and Golden Dashboard. I was also part of the team designing and building Astro Digital while working for Development Seed.</p>
+              <p><span class="uppercase">Past life:</span> I’m a trained Architect & Urban Planner and in my past life worked for Davis Brody Bond as an Architectural Designer on the project for the National Museum of African American History & Culture—by far the largest, most complex and more meaningful project I’ve worked on in my life.</p>
+              <p><span class="uppercase">Wishes for my jinni:</span> (1) a pool game with Jacques Derrida, (2) an afternoon climb with Lynn Hill, (3) to watch Elis Regina perform.</p>
+          </div>
         </div>
       
       </div>
