@@ -1,3 +1,64 @@
+// /Embed Fonts
+// @font-face{
+//   font-family:"Sommet Black Italic";
+//   src: url('/fonts/sommet-black-italic.otf');
+// }
+//
+// @font-face{
+//   font-family:"Sommet Black";
+//   src: url('/fonts/sommet-black.otf');
+// }
+//
+// @font-face{
+//   font-family:"Sommet Bold Italic";
+//   src: url('/fonts/sommet-bold-italic.otf');
+// }
+//
+// @font-face{
+//   font-family:"Sommet Bold";
+//   src: url('/fonts/sommet-bold.otf');
+// }
+//
+// @font-face{
+//   font-family:"Sommet Heavy Italic";
+//   src: url('/fonts/sommet-heavy-italic.otf');
+// }
+//
+// @font-face{
+//   font-family:"Sommet Heavy";
+//   src: url('/fonts/sommet-heavy.otf');
+// }
+//
+// @font-face{
+//   font-family:"Sommet Regular Italic";
+//   src: url('/fonts/sommet-regular-italic.otf');
+// }
+//
+// @font-face{
+//   font-family:"Sommet Regular";
+//   src: url('/fonts/sommet-regular.otf');
+// }
+//
+// @font-face{
+//   font-family:"Sommet Light Italic";
+//   src: url('/fonts/sommet-light-italic.otf');
+// }
+//
+// @font-face{
+//   font-family:"Sommet Light";
+//   src: url('/fonts/sommet-light.otf');
+// }
+//
+// @font-face{
+//   font-family:"Sommet Thin Italic";
+//   src: url('/fonts/sommet-thin-italic.otf');
+// }
+//
+// @font-face{
+//   font-family:"Sommet Thin";
+//   src: url('/fonts/sommet-thin.otf');
+// }
+
 // Main Font Mixins
 @mixin thin() {
   font-family:"sommet", sans-serif;
@@ -47,18 +108,6 @@
   font-style: italic;
 }
 
-@mixin black() {
-  font-family:"sommet", sans-serif;
-  font-weight:800;
-  font-style: normal;
-}
-
-@mixin black-italic() {
-  font-family:"sommet", sans-serif;
-  font-weight:800;
-  font-style: italic;
-}
-
 @mixin heavy() {
   font-family:"sommet", sans-serif;
   font-weight:900;
@@ -68,5 +117,17 @@
 @mixin heavy-italic() {
   font-family:"sommet", sans-serif;
   font-weight:900;
+  font-style: italic;
+}
+
+@mixin black() {
+  font-family:"sommet", sans-serif;
+  font-weight:800;
+  font-style: normal;
+}
+
+@mixin black-italic() {
+  font-family:"sommet", sans-serif;
+  font-weight:800;
   font-style: italic;
 }
