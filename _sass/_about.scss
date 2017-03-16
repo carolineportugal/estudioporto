@@ -9,14 +9,11 @@ $transition-time:.2s;
 }
 
 // Code
-#b-side{
+#about{
   @include background-offwhite();
   min-height: calc(100% - 3.5rem);
 
-  .projects-wrapper{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .about-wrapper{
     padding-top:calc(3rem + 55px);
     padding-bottom:14rem;
   }
@@ -43,7 +40,6 @@ $transition-time:.2s;
     text-align: center;
     padding-top:2rem;
     width:210px;
-    font-feature-settings: "onum" on;
 
     .image{
       position:relative;
