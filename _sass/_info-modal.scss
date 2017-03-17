@@ -131,6 +131,30 @@
       margin: 55px auto;
     }
     
+    .modal-header{
+
+      .title{
+        font-size: 19px;
+      }
+
+      .subtitle{
+        font-size:17px;
+      }
+
+    }
+
+    .modal-body{
+      font-size:16px;
+    }
+
+    .season,
+    .category,
+    .description{
+      span{
+      font-size:16px;
+      }
+    }
+    
   }
 
 }
