@@ -10,16 +10,6 @@
 // }
 //
 // @font-face{
-//   font-family:"Sommet Bold Italic";
-//   src: url('/fonts/sommet-bold-italic.otf');
-// }
-//
-// @font-face{
-//   font-family:"Sommet Bold";
-//   src: url('/fonts/sommet-bold.otf');
-// }
-//
-// @font-face{
 //   font-family:"Sommet Heavy Italic";
 //   src: url('/fonts/sommet-heavy-italic.otf');
 // }
@@ -27,6 +17,16 @@
 // @font-face{
 //   font-family:"Sommet Heavy";
 //   src: url('/fonts/sommet-heavy.otf');
+// }
+//
+// @font-face{
+//   font-family:"Sommet Bold Italic";
+//   src: url('/fonts/sommet-bold-italic.otf');
+// }
+//
+// @font-face{
+//   font-family:"Sommet Bold";
+//   src: url('/fonts/sommet-bold.otf');
 // }
 //
 // @font-face{
@@ -108,18 +108,6 @@
   font-style: italic;
 }
 
-@mixin heavy() {
-  font-family:"sommet", sans-serif;
-  font-weight:900;
-  font-style: normal;
-}
-
-@mixin heavy-italic() {
-  font-family:"sommet", sans-serif;
-  font-weight:900;
-  font-style: italic;
-}
-
 @mixin black() {
   font-family:"sommet", sans-serif;
   font-weight:800;
@@ -129,5 +117,17 @@
 @mixin black-italic() {
   font-family:"sommet", sans-serif;
   font-weight:800;
+  font-style: italic;
+}
+
+@mixin heavy() {
+  font-family:"sommet", sans-serif;
+  font-weight:900;
+  font-style: normal;
+}
+
+@mixin heavy-italic() {
+  font-family:"sommet", sans-serif;
+  font-weight:900;
   font-style: italic;
 }

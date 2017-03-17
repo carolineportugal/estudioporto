@@ -804,29 +804,27 @@ $(document).ready(function() {
            .to("#box2",1,{rotation:2,transformOrigin:"50% 100%", ease:Power1.easeInOut, repeat:-1, yoyo:true}, 0)
            .to(".jazz-blink",0.3,{opacity:0, ease:Power1.easeInOut, repeat:-1, yoyo:true}, 0);
 
-
   var posterTwo = new TimelineMax()
-  posterTwo.to(".band1",2,{rotationX:360, transformOrigin:"50% 50%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
-           .to(".band2",2,{rotationX:360, transformOrigin:"50% 50%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
-           .to(".spine",2,{rotationY:360, transformOrigin:"50% 50%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
-           .fromTo(".rectangle",3,{x:-805},{x:0,transformOrigin:"0% 0%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
-           .to(".line",2,{x:-140.4,transformOrigin:"0% 100%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0);
+  posterTwo.fromTo(".band1",1,{y:-45},{y:65, transformOrigin:"50% 50%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
+           .fromTo(".band2",1,{y:65}, {y:-45, transformOrigin:"50% 50%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
+           .fromTo(".spine",1,{x:-30},{x:30, transformOrigin:"50% 50%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
+           .fromTo(".rectangle",2,{x:0},{x:-805,transformOrigin:"0% 0%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
+           .to(".line",1,{x:-140.4,transformOrigin:"0% 100%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0);
 
 
-  function animations(){
+  function animationsMusicOnTheHill(){
     if ($(window).width() > 768) {
       posterOne.play(0);
       posterTwo.play(0);
     }else{
       posterOne.pause(0);
-      TweenMax.set(".rectangle", {x:0});
       posterTwo.pause(0);
     }
   }
-
-  animations();
-
-  $(window).resize(animations);
+  
+  animationsMusicOnTheHill();
+  
+  $(window).resize(animationsMusicOnTheHill);
 
 });
 
