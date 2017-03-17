@@ -22,7 +22,7 @@ $transition-time:.2s;
   }
   
   .left-column{
-    margin-right:2rem;
+    margin-right:3rem;
     width:115px;
     
     .intro{
@@ -32,13 +32,12 @@ $transition-time:.2s;
       font-size: 18px;
       border-top:1px solid #eee;
       border-bottom:1px solid #eee;
-      line-height: 1.5;
+      line-height: 1.45;
     }
     
   }
   
   .center-column{
-    margin-right:2rem;
     width:420px;
     display: flex;
     flex-direction: column;
@@ -62,7 +61,7 @@ $transition-time:.2s;
       .uppercase{
         @include heavy();
         text-transform: uppercase;
-        font-size: 14.5px;
+        font-size: 14px;
         letter-spacing: 0.07rem;
       }
       
@@ -79,37 +78,28 @@ $transition-time:.2s;
       
     }
     
-  }
-  
-  .right-column{
-    
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  .project-link{
-    text-decoration: none;
-    transition: $transition-time;
-    
-    &:hover{
-        .image{
-          filter: contrast(1) grayscale(0);
-        }
-        h4,
-        .subtitle,
-        .type {
-          opacity: .8;
-        }
+    .contact{
+      font-size: 22px;
+      color:#aaa;
+      
+      i{
+        margin-right:1rem;
+      }
+      
     }
     
   }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
 
   .project{
     margin:2rem .9rem 0 .9rem;
@@ -136,27 +126,6 @@ $transition-time:.2s;
       border-radius: 50%;
       box-shadow: inset 0 0 15px lighten(#000, 30%);
       z-index: 10;
-    }
-
-    .type{
-      color:lighten(#000, 60%);
-      text-transform: uppercase;
-      font-size: 12px;
-      letter-spacing: .04rem;
-    }
-
-    h4{
-      @include bold();
-      color:lighten(#000, 15%);
-      margin:7px 0 3px 0;
-      line-height: 1.2;
-      font-size:19px;
-    }
-
-    .subtitle{
-      font-size:16px;
-      @include regular();
-      color:lighten(#000, 25%);
     }
 
   }
