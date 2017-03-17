@@ -18,87 +18,72 @@ $transition-time:.2s;
     display:flex;
     padding-top:calc(5rem + 55px);
     padding-bottom:14rem;
+    justify-content: center;
   }
   
-  
-  .picture{
-    height:150px;
-    // width:100%;
-    min-width: 150px;
-    width: 150px;
-    border-radius:50%;
+  .left-column{
     margin-right:2rem;
-    margin:0 auto;
-    margin-bottom:3rem;
-
-
-  }
-  
-  .general-wrapper{
-    width:440px;
-    margin:0 auto;
-    margin-top:30rem;
-  }
-
-  .about-wrapper{
-display: flex;
-  }
-  
-  .contact{
-    background: #eee;
-    height:500px;
-    width: 20rem;
-    margin-right:3rem;
-    margin-top:35rem;
-  }
-  
-  .intro{
-    padding:1rem 0;
-    @include black();
-    font-size: 18px;
-    border-top:1px solid #eee;
-    border-bottom:1px solid #eee;
-    margin-right:2rem;
-    margin-top:200px;
-  }
-  
-  .description{
-    margin-top:2rem;
-    @include regular();
-    font-size:17.5px;
-    line-height: 1.55;
+    width:115px;
     
-    .uppercase{
+    .intro{
+      margin-top:calc(150px + 3rem);
+      padding:1rem 0;
       @include black();
-      text-transform: uppercase;
-      font-size: 14.5px;
-      letter-spacing: 0.03rem;
+      font-size: 18px;
+      border-top:1px solid #eee;
+      border-bottom:1px solid #eee;
+      line-height: 1.5;
     }
     
   }
   
-  a{
-    // @include bold();
-    color:lighten(#000, 15%);
-    transition:$transition-time;
-    text-decoration: underline;
-    cursor: pointer;
-    line-height: 1;
+  .center-column{
+    margin-right:2rem;
+    width:420px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+    .picture{
+      height:150px;
+      width: 150px;
+      border-radius:50%;
+      margin-bottom:3rem;
+    }
+    
+    .description{
+      border-top:1px solid #eee;
+      border-bottom:1px solid #eee;
+      padding:1rem 0;
+      @include regular();
+      font-size:17.5px;
+      line-height: 1.55;
+      
+      .uppercase{
+        @include heavy();
+        text-transform: uppercase;
+        font-size: 14.5px;
+        letter-spacing: 0.07rem;
+      }
+      
+      a{
+        color:lighten(#000, 15%);
+        transition:$transition-time;
+        text-decoration: underline;
 
-    &:hover{
-      opacity:.8;
+        &:hover{
+          opacity:.8;
+        }
+        
+      }
+      
     }
     
   }
   
-  .contact-wrapper{
-    background:lighten(#000, 85%);
-    width:100%;
-    height:400px;
+  .right-column{
+    
   }
-  
-  
-  
   
   
   

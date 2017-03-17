@@ -106,7 +106,6 @@
       color:lighten(#000, 15%);
       transition:$transition-time;
       text-decoration: underline;
-      cursor: pointer;
 
       &:hover{
         opacity:.8;
