@@ -22,8 +22,8 @@ $transition-time:.2s;
   }
   
   .left-column{
-    margin-right:3rem;
-    width:140px;
+    margin-right:3.5rem;
+    width:130px;
     
     .intro{
       margin-top:calc(150px + 3rem);
@@ -48,6 +48,16 @@ $transition-time:.2s;
       width: 150px;
       border-radius:50%;
       margin-bottom:3rem;
+    }
+    
+    .intro{
+      margin-top:calc(150px + 3rem);
+      padding:1rem 0;
+      @include black();
+      font-size: 18px;
+      border-top:1px solid #eee;
+      border-bottom:1px solid #eee;
+      line-height: 1.45;
     }
     
     .description{
@@ -79,13 +89,17 @@ $transition-time:.2s;
     }
     
     .contact{
-      font-size: 22px;
-      color:#aaa;
-      
+      width:100%;
+      font-size: 19px;
+      color:lighten(#000, 75%);
+      margin-top:2rem;
+      display: flex;
+      justify-content: flex-end;
+    
       i{
-        margin-right:1rem;
+        margin-left:2rem;
       }
-      
+    
     }
     
   }
