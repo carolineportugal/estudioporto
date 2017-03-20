@@ -1,133 +1,109 @@
-// /Embed Fonts
-// @font-face{
-//   font-family:"Sommet Black Italic";
-//   src: url('/fonts/sommet-black-italic.otf');
-// }
-//
-// @font-face{
-//   font-family:"Sommet Black";
-//   src: url('/fonts/sommet-black.otf');
-// }
-//
-// @font-face{
-//   font-family:"Sommet Heavy Italic";
-//   src: url('/fonts/sommet-heavy-italic.otf');
-// }
-//
-// @font-face{
-//   font-family:"Sommet Heavy";
-//   src: url('/fonts/sommet-heavy.otf');
-// }
-//
-// @font-face{
-//   font-family:"Sommet Bold Italic";
-//   src: url('/fonts/sommet-bold-italic.otf');
-// }
-//
-// @font-face{
-//   font-family:"Sommet Bold";
-//   src: url('/fonts/sommet-bold.otf');
-// }
-//
-// @font-face{
-//   font-family:"Sommet Regular Italic";
-//   src: url('/fonts/sommet-regular-italic.otf');
-// }
-//
-// @font-face{
-//   font-family:"Sommet Regular";
-//   src: url('/fonts/sommet-regular.otf');
-// }
-//
-// @font-face{
-//   font-family:"Sommet Light Italic";
-//   src: url('/fonts/sommet-light-italic.otf');
-// }
-//
-// @font-face{
-//   font-family:"Sommet Light";
-//   src: url('/fonts/sommet-light.otf');
-// }
-//
-// @font-face{
-//   font-family:"Sommet Thin Italic";
-//   src: url('/fonts/sommet-thin-italic.otf');
-// }
-//
-// @font-face{
-//   font-family:"Sommet Thin";
-//   src: url('/fonts/sommet-thin.otf');
-// }
+//Embed Fonts
+@font-face{
+  font-family:"Sommet Heavy Italic";
+  src: url('../fonts/sommet-heavy-italic.otf');
+}
+
+@font-face{
+  font-family:"Sommet Heavy";
+  src: url('../fonts/sommet-heavy.otf');
+}
+
+@font-face{
+  font-family:"Sommet Black Italic";
+  src: url('../fonts/sommet-black-italic.otf');
+}
+
+@font-face{
+  font-family:"Sommet Black";
+  src: url('../fonts/sommet-black.otf');
+}
+
+@font-face{
+  font-family:"Sommet Bold Italic";
+  src: url('../fonts/sommet-bold-italic.otf');
+}
+
+@font-face{
+  font-family:"Sommet Bold";
+  src: url('../fonts/sommet-bold.otf');
+}
+
+@font-face{
+  font-family:"Sommet Regular Italic";
+  src: url('../fonts/sommet-regular-italic.otf');
+}
+
+@font-face{
+  font-family:"Sommet Regular";
+  src: url('../fonts/sommet-regular.otf');
+}
+
+@font-face{
+  font-family:"Sommet Light Italic";
+  src: url('../fonts/sommet-light-italic.otf');
+}
+
+@font-face{
+  font-family:"Sommet Light";
+  src: url('../fonts/sommet-light.otf');
+}
+
+@font-face{
+  font-family:"Sommet Thin Italic";
+  src: url('../fonts/sommet-thin-italic.otf');
+}
+
+@font-face{
+  font-family:"Sommet Thin";
+  src: url('../fonts/sommet-thin.otf');
+}
 
 // Main Font Mixins
 @mixin thin() {
-  font-family:"sommet", sans-serif;
-  font-weight:100;
-  font-style: normal;
+  font-family:"Sommet Thin";
 }
 
 @mixin thin-italic() {
-  font-family:"sommet", sans-serif;
-  font-weight:100;
-  font-style: italic;
+  font-family:"Sommet Thin Italic";
 }
 
 @mixin light() {
-  font-family:"sommet", sans-serif;
-  font-weight:300;
-  font-style: normal;
+  font-family:"Sommet Light";
 }
 
 @mixin light-italic() {
-  font-family:"sommet", sans-serif;
-  font-weight:300;
-  font-style: italic;
+  font-family:"Sommet Light Italic";
 }
 
 @mixin regular() {
-  font-family:"sommet", sans-serif;
-  font-weight:400;
-  font-style: normal;
+  font-family:"Sommet Regular";
 }
 
 @mixin regular-italic() {
-  font-family:"sommet", sans-serif;
-  font-weight:400;
-  font-style: italic;
+  font-family:"Sommet Regular Italic";
 }
 
 @mixin bold() {
-  font-family:"sommet", sans-serif;
-  font-weight:700;
-  font-style: normal;
+  font-family:"Sommet Bold";
 }
 
 @mixin bold-italic() {
-  font-family:"sommet", sans-serif;
-  font-weight:700;
-  font-style: italic;
+  font-family:"Sommet Bold Italic";
 }
 
 @mixin black() {
-  font-family:"sommet", sans-serif;
-  font-weight:800;
-  font-style: normal;
+  font-family:"Sommet Black";
 }
 
 @mixin black-italic() {
-  font-family:"sommet", sans-serif;
-  font-weight:800;
-  font-style: italic;
+  font-family:"Sommet Black Italic";
 }
 
 @mixin heavy() {
-  font-family:"sommet", sans-serif;
-  font-weight:900;
-  font-style: normal;
+  font-family:"Sommet Heavy";
 }
 
 @mixin heavy-italic() {
-  font-family:"sommet", sans-serif;
-  font-weight:900;
-  font-style: italic;
+  font-family:"Sommet Heavy Italic";
 }

@@ -1,42 +1,42 @@
 //Fonts
 @font-face{
   font-family:"Texgyreheros Bold";
-  src: url('/media/typographic-interventions/fonts/texgyreheros-bold.otf');
+  src: url('../media/typographic-interventions/fonts/texgyreheros-bold.otf');
 }
 
 @font-face{
   font-family:"Texgyreheros Bold Italic";
-  src: url('/media/typographic-interventions/fonts/texgyreheros-bolditalic.otf');
+  src: url('../media/typographic-interventions/fonts/texgyreheros-bolditalic.otf');
 }
 
 @font-face{
   font-family:"Texgyreheros Regular";
-  src: url('/media/typographic-interventions/fonts/texgyreheros-regular.otf');
+  src: url('../media/typographic-interventions/fonts/texgyreheros-regular.otf');
 }
 
 @font-face{
   font-family:"Texgyreheros Italic";
-  src: url('/media/typographic-interventions/fonts/texgyreheros-italic.otf');
+  src: url('../media/typographic-interventions/fonts/texgyreheros-italic.otf');
 }
 
 @font-face{
   font-family:"Texgyreheros Condensed Bold";
-  src: url('/media/typographic-interventions/fonts/texgyreheroscn-bold.otf');
+  src: url('../media/typographic-interventions/fonts/texgyreheroscn-bold.otf');
 }
 
 @font-face{
   font-family:"Texgyreheros Condensed Bold Italic";
-  src: url('/media/typographic-interventions/fonts/texgyreheroscn-bolditalic.otf');
+  src: url('../media/typographic-interventions/fonts/texgyreheroscn-bolditalic.otf');
 }
 
 @font-face{
   font-family:"Texgyreheros Condensed Regular";
-  src: url('/media/typographic-interventions/fonts/texgyreheroscn-regular.otf');
+  src: url('../media/typographic-interventions/fonts/texgyreheroscn-regular.otf');
 }
 
 @font-face{
   font-family:"Texgyreheros Condensed Regular Italic";
-  src: url('/media/typographic-interventions/fonts/texgyreheroscn-italic.otf');
+  src: url('../media/typographic-interventions/fonts/texgyreheroscn-italic.otf');
 }
 
 // Variables
@@ -75,7 +75,7 @@ $transition-time:.2s;
     }
 
     .title{
-      // @include remove-font-smoothing();
+      @include remove-font-smoothing();
       font-family:$bold;
       font-size: 1.4em;
       letter-spacing: .25em;
@@ -156,7 +156,7 @@ $transition-time:.2s;
 
     .text-info{
       color:lighten(#000, 20%);
-      font-family:$italic;
+      font-family:$italic !important;
       font-size: 15.5px;
       line-height:1.55em;
       max-width:200px;
