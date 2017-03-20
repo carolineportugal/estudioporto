@@ -1,10 +1,35 @@
-// Imports fonts
-@import "https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,900";
-@import "https://fonts.googleapis.com/css?family=Fira+Sans:300,400i,700";
+//Fonts
+@font-face{
+  font-family:"Playfair Black";
+  src: url('../media/random-quote-generator/fonts/PlayfairDisplay-Black.ttf');
+}
+
+@font-face{
+  font-family:"Playfair Bold";
+  src: url('../media/random-quote-generator/fonts/PlayfairDisplay-Bold.ttf');
+}
+
+@font-face{
+  font-family:"Playfair Italic";
+  src: url('../media/random-quote-generator/fonts/PlayfairDisplay-Italic.ttf');
+}
+
+@font-face{
+  font-family:"Fira Sans Bold";
+  src: url('../media/random-quote-generator/fonts/FiraSans-Bold.ttf');
+}
+
+@font-face{
+  font-family:"Fira Sans Italic";
+  src: url('../media/random-quote-generator/fonts/FiraSans-Italic.ttf');
+}
+
+@font-face{
+  font-family:"Fira Sans Light";
+  src: url('../media/random-quote-generator/fonts/FiraSans-Light.ttf');
+}
 
 // Variables
-$serif-text:'Playfair Display', serif;
-$sans-serif-text:'Fira Sans', sans-serif;
 $charcoal: #3F3F3A;
 $red: #F84339;
 $beige:#F9F7ED;
@@ -61,8 +86,7 @@ $transition-time:.2s;
     }
 
     .line1{
-      font-family: $serif-text;
-      font-weight: 900;
+      font-family: 'Playfair Black', serif;
       text-transform: uppercase;
       font-size: 3.94rem;
       line-height: 1;
@@ -70,8 +94,7 @@ $transition-time:.2s;
     }
 
     .line2{
-      font-family: $serif-text;
-      font-weight: 400;
+      font-family: 'Playfair Bold', serif;
       text-transform: uppercase;
       font-size: 3.0rem;
       line-height: 1;
@@ -79,9 +102,7 @@ $transition-time:.2s;
     }
 
     .line3{
-      font-family: $serif-text;
-      font-weight: 400;
-      font-style: italic;
+      font-family: 'Playfair Italic', serif;
       font-size: 3.75rem;
       line-height: 1;
       margin:8px 0;
@@ -108,16 +129,14 @@ $transition-time:.2s;
       }
 
       .column-title{
-        font-family: $sans-serif-text;
+        font-family: 'Fira Sans Bold', sans-serif;
         text-transform: uppercase;
-        font-weight:700;
         letter-spacing: 4px;
         font-size: 15px;
       }
 
       .text1, .text2{
-        font-family: $sans-serif-text;
-        font-weight:300;
+        font-family: 'Fira Sans Light', sans-serif;
         font-size: 18px;
         margin-bottom:10px;
         line-height: 1.6;
@@ -145,8 +164,7 @@ $transition-time:.2s;
     text-decoration: none;
 
     .link-text{
-      font-family: $serif-text;
-      font-weight: 700;
+      font-family: 'Playfair Bold', serif;
       color:$red;
       font-size: 19px;
       letter-spacing: .5px;
@@ -181,9 +199,7 @@ $transition-time:.2s;
   }
 
   .quote-text{
-    font-family: $sans-serif-text;
-    font-weight:400;
-    font-style: italic;
+    font-family: 'Fira Sans Italic', sans-serif;
     font-size: 18.5px;
     line-height: 1.6;
     width: 505px;
@@ -192,9 +208,8 @@ $transition-time:.2s;
   }
 
   .quote-author{
-    font-family: $sans-serif-text;
+    font-family: 'Fira Sans Bold', sans-serif;
     text-transform: uppercase;
-    font-weight:700;
     font-size: 14.5px;
     text-align: center;
     letter-spacing: 1.5px;
