@@ -12,9 +12,9 @@ layout: default
       {% assign sorted_projects = (site.b-side | sort: 'order' | reverse ) %}
       {% for project in sorted_projects %}
 
-        <a class="project-link" href="{{ project.url | prepend: site.baseurl }}">
+        <a class="project-link" href="{{ site.baseurl}}{{ project.url }}">
           <div class="project">
-            <div class="image" style="background: url('/media/b-side/thumbs/{{ project.image }}'); background-position:center;
+            <div class="image" style="background: url('{{ site.baseurl}}/media/b-side/thumbs/{{ project.image }}'); background-position:center;
             background-size: cover;"><div class="image-shadow"></div></div>
             <hr>
             <p class="type">{{project.category}}</p>
