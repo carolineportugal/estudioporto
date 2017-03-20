@@ -75,7 +75,7 @@ $transition-time:.2s;
     }
 
     .title{
-      @include remove-font-smoothing();
+      // @include remove-font-smoothing();
       font-family:$bold;
       font-size: 1.4em;
       letter-spacing: .25em;
