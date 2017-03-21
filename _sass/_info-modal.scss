@@ -117,11 +117,25 @@
   .category,
   .description{
     @include regular();
+    
     span{
     @include black();
     font-size:17px;
     letter-spacing: 0.03rem;
     }
+    
+    .bold{
+      @include bold();
+    }
+    
+    .bold-italic{
+      @include bold-italic();
+    }
+    
+    .italic{
+      @include regular-italic();
+    }
+    
   }
   
   //Media Queries

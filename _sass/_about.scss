@@ -13,97 +13,79 @@ $transition-time:.2s;
   @include background-offwhite();
   min-height: calc(100% - 3.5rem);
   color:lighten(#000, 15%);
-    
+  
   .general-wrapper{
-    display:flex;
     padding-top:calc(5rem + 55px);
     padding-bottom:14rem;
+    width:100%;
+    display: flex;
     justify-content: center;
   }
-  
-  .left-column{
-    margin-right:3.5rem;
-    width:130px;
     
-    .intro{
-      margin-top:calc(150px + 3rem);
-      padding:1rem 0;
-      @include black();
-      font-size: 18px;
-      border-top:1px solid #eee;
-      border-bottom:1px solid #eee;
-      line-height: 1.45;
-    }
-    
-  }
-  
-  .center-column{
-    width:410px;
+  .column-wrapper{
+    max-width:400px;
     display: flex;
     flex-direction: column;
     align-items:center;
+  }
+      
+  .picture{
+    height:150px;
+    width: 150px;
+    border-radius:50%;
+    margin-bottom:3rem;
+    background: #eee;
+  }
     
-    .picture{
-      height:150px;
-      width: 150px;
-      border-radius:50%;
-      margin-bottom:3rem;
-      background: #eee;
+  .intro{
+    padding:1rem 0;
+    @include black();
+    font-size: 18px;
+    border-top:1px solid #eee;
+    border-bottom:1px solid #eee;
+    line-height: 1.45;
+  }
+    
+  .description{
+    padding:1rem 0;
+    @include regular();
+    font-size:17.5px;
+    line-height: 1.55;
+    
+    .uppercase{
+      @include heavy();
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 0.07rem;
     }
     
-    .intro{
-      margin-top:calc(150px + 3rem);
-      padding:1rem 0;
-      @include black();
-      font-size: 18px;
-      border-top:1px solid #eee;
-      border-bottom:1px solid #eee;
-      line-height: 1.45;
-    }
-    
-    .description{
-      border-top:1px solid #eee;
-      border-bottom:1px solid #eee;
-      padding:1rem 0;
-      @include regular();
-      font-size:17.5px;
-      line-height: 1.55;
-      
-      .uppercase{
-        @include heavy();
-        text-transform: uppercase;
-        font-size: 14px;
-        letter-spacing: 0.07rem;
-      }
-      
-      a{
-        color:lighten(#000, 15%);
-        transition:$transition-time;
-        text-decoration: underline;
+    a{
+      color:lighten(#000, 15%);
+      transition:$transition-time;
+      text-decoration: underline;
 
-        &:hover{
-          opacity:.8;
-        }
-        
+      &:hover{
+        opacity:.8;
       }
       
-    }
-    
-    .contact{
-      width:100%;
-      font-size: 19px;
-      color:lighten(#000, 75%);
-      margin-top:2rem;
-      display: flex;
-      justify-content: flex-end;
-    
-      i{
-        margin-left:2rem;
-      }
-    
     }
     
   }
+    
+  .contact{
+    width:100%;
+    font-size: 19px;
+    color:lighten(#000, 75%);
+    margin-top:2rem;
+    display: flex;
+    justify-content: flex-end;
+  
+    i{
+      margin-left:2rem;
+    }
+  
+  }
+    
   
   
   
