@@ -39,11 +39,10 @@ $transition-time:.2s;
   }
 
   .project{
-    margin:0rem .9rem;
+    margin:0rem 0.9rem;
     text-align: center;
     padding-top:2rem;
     width:210px;
-    font-feature-settings: "onum" on;
 
     .image{
       position:relative;
@@ -69,7 +68,7 @@ $transition-time:.2s;
     .type{
       color:lighten(#000, 50%);
       text-transform: uppercase;
-      font-size: 11.8px;
+      font-size: 12px;
     }
 
     h4{

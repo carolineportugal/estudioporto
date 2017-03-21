@@ -61,49 +61,49 @@
 
 // Main Font Mixins
 @mixin thin() {
-  font-family:"Sommet Thin";
+  font-family:"Sommet Thin", sans-serif;
 }
 
 @mixin thin-italic() {
-  font-family:"Sommet Thin Italic";
+  font-family:"Sommet Thin Italic", sans-serif;
 }
 
 @mixin light() {
-  font-family:"Sommet Light";
+  font-family:"Sommet Light", sans-serif;
 }
 
 @mixin light-italic() {
-  font-family:"Sommet Light Italic";
+  font-family:"Sommet Light Italic", sans-serif;
 }
 
 @mixin regular() {
-  font-family:"Sommet Regular";
+  font-family:"Sommet Regular", sans-serif;
 }
 
 @mixin regular-italic() {
-  font-family:"Sommet Regular Italic";
+  font-family:"Sommet Regular Italic", sans-serif;
 }
 
 @mixin bold() {
-  font-family:"Sommet Bold";
+  font-family:"Sommet Bold", sans-serif;
 }
 
 @mixin bold-italic() {
-  font-family:"Sommet Bold Italic";
+  font-family:"Sommet Bold Italic", sans-serif;
 }
 
 @mixin black() {
-  font-family:"Sommet Black";
+  font-family:"Sommet Black", sans-serif;
 }
 
 @mixin black-italic() {
-  font-family:"Sommet Black Italic";
+  font-family:"Sommet Black Italic", sans-serif;
 }
 
 @mixin heavy() {
-  font-family:"Sommet Heavy";
+  font-family:"Sommet Heavy", sans-serif;
 }
 
 @mixin heavy-italic() {
-  font-family:"Sommet Heavy Italic";
+  font-family:"Sommet Heavy Italic", sans-serif;
 }
