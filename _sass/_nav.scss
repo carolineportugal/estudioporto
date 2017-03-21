@@ -17,7 +17,7 @@ nav{
     
   a.title{
     color:rgba(255,255,255, .8);
-    font-size:27px;
+    font-size:26.5px;
     @include heavy();
     letter-spacing: .02rem;
     text-decoration: none;
@@ -27,7 +27,7 @@ nav{
     margin-left:3rem;
     position:relative;
     color:rgba(255,255,255, .8);
-    font-size: 13.5px;
+    font-size: 14px;
     letter-spacing: .07rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -106,6 +106,7 @@ nav.light{
     
     a.menu-item {
       margin-left:1.5rem;
+      font-size:13.5px;
     }
     
     .gallery{
