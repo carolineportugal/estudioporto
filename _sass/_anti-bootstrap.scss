@@ -9,6 +9,7 @@ $transition-time:.2s;
   outline:0px;
   border:0px;
   transition:$transition-time;
+  background: none;
   
   &:hover {
     opacity:.8;
