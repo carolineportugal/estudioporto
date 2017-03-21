@@ -159,7 +159,7 @@ $(document).ready(function() {
 //quote-rectangle functionalities====================================================================
 
 /*creating vars for getting the api*/
-var forismaticAPI ="http://api.forismatic.com/api/1.0/?method=getQuote&format=jsonp&lang=en&jsonp=parseQuote=?";
+var forismaticAPI ="http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?";
 var displayQuote = function (quote) {
   $(".quote-text").text('“'+quote.quoteText.trim()+'”'); //trim removes spaces before and after a string
   if (quote.quoteAuthor){
