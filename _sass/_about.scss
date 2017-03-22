@@ -61,7 +61,7 @@ $transition-time:.2s;
     font-size: 21px;
 
     a{
-      margin-left:1.3rem;
+      margin-left:1.4rem;
       color:lighten(#000, 75%);
       transition:$transition-time;
 
@@ -138,6 +138,12 @@ $transition-time:.2s;
     
     .picture{
       margin-bottom:3rem;
+    }
+    
+    .intro-wrapper{
+      display: flex;
+      justify-content: center;
+      text-align: center;
     }
     
   }
