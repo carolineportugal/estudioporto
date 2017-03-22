@@ -2,8 +2,17 @@
 layout: default
 image: portrait-placeholder.jpg
 intro: "I’m a Design Technologist:<br> I design & build digital products."
-description:
+description:  "<p>Hey there! My name is Caroline Portugal and I enjoy working at the intersection of design and engineering—acting as interaction designer, coder and visual designer all rolled together—because this is where I think fresh ideas and innovative solutions come from. I’m also interested in everything typography, SVGs and web animations.</p>
+
+<p><span class=\"uppercase\">A-side:</span> Works include redesign and build for: <a href=\"http://democracyinternational.com/\" target=\"_blank\">Democracy International</a>, <a href=\"https://www.goldenvolunteer.com/\" target=\"_blank\">Golden</a> and <a href=\"https://dashboard.goldenvolunteer.com\" target=\"_blank\">Golden Dashboard</a>. I was also part of the team designing and developing <a href=\"https://astrodigital.com/\"  target=\"_blank\">Astro Digital</a> while working for <a href=\"https://www.developmentseed.org/\" target=\"_blank\">Development Seed</a>.</p>
+
+<p><span class=\"uppercase\">Past life:</span> I’m a trained Architect & Urban Planner and in my past life worked for <a href=\"http://www.davisbrody.com\" target=\"_blank\">Davis Brody Bond</a> as an Architectural Designer on the project for the <a href=\"http://www.davisbrody.com/portfolio/national-museum-of-african-american-history-culture/\" target=\"_blank\">National Museum of African American History & Culture</a>—by far the largest, most complex and meaningful project I’ve worked on in my life.</p>
+
+<p><span class=\"uppercase\">Wishes for my jinni:</span> (1) a game of snooker with <a href=\"https://vimeo.com/187062022\" target=\"_blank\">Jacques Derrida</a>, (2) an afternoon climb with <a href=\"https://www.youtube.com/watch?v=2KlA77j6xAc\" target=\"_blank\">Lynn Hill</a>, (3) to watch <a href=\"https://www.youtube.com/watch?v=-XExdVd7Qpw\" target=\"_blank\">Elis Regina</a> perform.</p>"
+
 ---
+
+<!-- I’m currently working on redesigning and building the new site for <a href=\"http://www.eurasianet.org/\" target=\"_blank\">EurasiaNet</a>. Other past-->
 
 <section id="about">
 
@@ -13,23 +22,19 @@ description:
     
     <div class="general-wrapper">
       <div class="column-wrapper">
-        <div class="picture" style="background: url('{{ site.baseurl}}/media/about/{{ page.image }}'); background-position:center; background-size: cover;"></div>
-        <p class="intro">{{page.intro}}</p>
-        
-        <!-- </span> I’m currently working on redesigning and building the new site for <a href="http://www.eurasianet.org/" target="_blank">EurasiaNet</a>. -->
-
-        <div class="description">
-          <p>Hey there! My name is Caroline Portugal and I enjoy working at the intersection of design and engineering—acting as interaction designer, coder and visual designer all rolled together—because this is where I think fresh ideas and innovative solutions come from. I’m also interested in everything typography, SVGs and web animations.</p>
-          <p><span class="uppercase">A-side:</span> Other past works include redesign and build for: <a href="http://democracyinternational.com/" target="_blank">Democracy International</a>, <a href="https://www.goldenvolunteer.com/" target="_blank">Golden</a> and <a href="https://dashboard.goldenvolunteer.com" target="_blank">Golden Dashboard</a>. I was also part of the team designing and building <a href="https://astrodigital.com/"  target="_blank">Astro Digital</a> while working for <a href="https://www.developmentseed.org/" target="_blank">Development Seed</a>.</p>
-          <p><span class="uppercase">Past life:</span> I’m a trained Architect & Urban Planner and in my past life worked for <a href="http://www.davisbrody.com" target="_blank">Davis Brody Bond</a> as an Architectural Designer on the project for the <a href="http://www.davisbrody.com/portfolio/national-museum-of-african-american-history-culture/" target="_blank">National Museum of African American History & Culture</a>—by far the largest, most complex and meaningful project I’ve worked on in my life.</p>
-          <p><span class="uppercase">Wishes for my jinni:</span> (1) a game of snooker with <a href="https://vimeo.com/187062022" target="_blank">Jacques Derrida</a>, (2) an afternoon climb with <a href="https://www.youtube.com/watch?v=2KlA77j6xAc" target="_blank">Lynn Hill</a>, (3) to watch <a href="https://www.youtube.com/watch?v=-XExdVd7Qpw" target="_blank">Elis Regina</a> perform.</p>
+        <div class="picture-contact-wrapper">
+          <div class="picture" style="background: url('{{ site.baseurl}}/media/about/{{ page.image }}'); background-position:center; background-size: cover;"><div class="picture-shadow"></div></div>
+          <div class="contact">
+            <a href="mailto:estudioportodc@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://github.com/carolineportugal" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/portugal_moura?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/caroline-portugal-bb510815/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
         </div>
-        <div class="contact">
-          <i class="fa fa-envelope" aria-hidden="true"></i>
-          <i class="fa fa-github" aria-hidden="true"></i>
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <div class="intro-wrapper">
+          <p class="intro">{{page.intro}}</p>
         </div>
+        <div class="description">{{page.description}}</div>
       </div>
     </div>
         
