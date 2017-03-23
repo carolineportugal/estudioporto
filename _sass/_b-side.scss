@@ -43,6 +43,7 @@ $transition-time:.2s;
     text-align: center;
     padding-top:2rem;
     width:210px;
+    margin-bottom:2rem;
 
     .image{
       position:relative;
@@ -64,11 +65,17 @@ $transition-time:.2s;
       box-shadow: inset 0 0 15px lighten(#000, 30%);
       z-index: 10;
     }
+    
+    hr{
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
 
     .type{
       color:lighten(#000, 60%);
       text-transform: uppercase;
       font-size: 12px;
+      margin-bottom:7px;
     }
 
     h4{
