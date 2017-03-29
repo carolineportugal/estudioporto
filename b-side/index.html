@@ -7,13 +7,13 @@ layout: default
   <h2 class="hidden-page-name">B-side</h2>
 
   <div class="container">
-    <div class="projects-wrapper">
+    <div class="projects-wrapper grid">
 
       {% assign sorted_projects = (site.b-side | sort: 'order' | reverse ) %}
       {% for project in sorted_projects %}
 
         <a class="project-link" href="{{ site.baseurl}}{{ project.url }}">
-          <div class="project">
+          <div class="project grid-item">
             <div class="image" style="background: url('{{ site.baseurl}}/media/b-side/thumbs/{{ project.image }}'); background-position:center;
             background-size: cover;"><div class="image-shadow"></div></div>
             <hr>
@@ -29,3 +29,19 @@ layout: default
   </div>
   
 </section>
+
+<script src="{{ site.baseurl}}/js/masonry.pkgd.min.js"></script>
+<script>
+
+  $(document).ready(function() {
+
+    $('.grid').masonry({
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-item',
+    fitWidth: true
+    });
+
+  });
+
+</script>
