@@ -77,14 +77,14 @@ $transition-time:.2s;
     .title{
       @include remove-font-smoothing();
       font-family:$bold;
-      font-size: 1.4em;
+      font-size: 1.5em;
       letter-spacing: .25em;
     }
 
     .subtitle{
       // @include remove-font-smoothing();
       font-family:$regular;
-      font-size: .95em;
+      font-size: 1.05em;
       letter-spacing: .25em;
       margin-top:15px;
     }
@@ -241,6 +241,21 @@ $transition-time:.2s;
 
       .intro-headline{
         padding:65px 0 65px 0;
+      }
+      
+      .title{
+        @include remove-font-smoothing();
+        font-family:$bold;
+        font-size: 1.4em;
+        letter-spacing: .25em;
+      }
+
+      .subtitle{
+        // @include remove-font-smoothing();
+        font-family:$regular;
+        font-size: .95em;
+        letter-spacing: .25em;
+        margin-top:15px;
       }
 
       .text-description{
