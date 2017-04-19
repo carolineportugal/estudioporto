@@ -35,7 +35,7 @@
 html, body{
   height:100%;
   @include font-smoothing();
-  font-family: "sommet", sans-serif;
+  @include regular();
   font-feature-settings: "onum" on;
   position:relative;
 }
