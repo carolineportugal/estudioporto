@@ -35,3 +35,6 @@ collections:
   b-side:
     output: true
     permalink: /b-side/:title/
+  work:
+    output: true
+    permalink: /work/:title/
