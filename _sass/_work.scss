@@ -3,29 +3,15 @@
 
   .projects-wrapper{
     display:grid;
-    border: 10px solid red;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 400px 400px;
   }
   
-}
-
-// Variables
-$transition-time:.2s;
-
-
-
-// Code
-#b-side{
-  @include background-offwhite();
-  min-height: calc(100% - 3.5rem);
-
-  .projects-wrapper{
-    display:grid;
-    
-  }
-  
-  .project-link{
+  .project{
     text-decoration: none;
     transition: $transition-time;
+    border: 1px solid #ddd;
+    color:#000;
     
     &:hover{
       .image{
@@ -38,14 +24,47 @@ $transition-time:.2s;
       }
     }
     
+    .image{
+      background:#eee;
+      height:200px;
+    }
+    
+    .text{
+      padding:1rem;
+      display: flex;
+      flex-direction:column;
+      height:200px;
+    }
+    
+    h4{
+      @include gitan-bold();
+      font-size:16.5px;
+      margin-bottom:5px;
+    }
+    
+    .subtitle{
+      @include gitan-italic();
+      font-size:16.5px;
+    }
+    
+    .category{
+      @include gitan-regular();
+      margin-top:auto;
+    }
+    
   }
+  
+}
+
+
+
+
+// Code
+#b-side{
+  min-height: calc(100% - 3.5rem);
 
   .project{
-    margin:0rem 0.9rem;
-    text-align: center;
     padding-top:2rem;
-    width:210px;
-    margin-bottom:2rem;
 
     .image{
       position:relative;
@@ -68,19 +87,6 @@ $transition-time:.2s;
       z-index: 10;
     }
     
-    hr{
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-
-    .type{
-      color:lighten(#000, 60%);
-      text-transform: uppercase;
-      font-size: 12.5px;
-      letter-spacing: .03rem;
-      margin-bottom:3px;
-    }
-
     h4{
       @include bold();
       color:lighten(#000, 15%);
