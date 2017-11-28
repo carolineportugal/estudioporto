@@ -1,0 +1,109 @@
+#work{
+  @include background-offwhite();
+
+  .projects-wrapper{
+    display:grid;
+    border: 10px solid red;
+  }
+  
+}
+
+// Variables
+$transition-time:.2s;
+
+
+
+// Code
+#b-side{
+  @include background-offwhite();
+  min-height: calc(100% - 3.5rem);
+
+  .projects-wrapper{
+    display:grid;
+    
+  }
+  
+  .project-link{
+    text-decoration: none;
+    transition: $transition-time;
+    
+    &:hover{
+      .image{
+         filter: contrast(1) grayscale(0);
+       }
+       h4,
+       .subtitle,
+       .type {
+        opacity: .8;
+      }
+    }
+    
+  }
+
+  .project{
+    margin:0rem 0.9rem;
+    text-align: center;
+    padding-top:2rem;
+    width:210px;
+    margin-bottom:2rem;
+
+    .image{
+      position:relative;
+      height:70px;
+      width:70px;
+      border-radius: 50%;
+      transition: $transition-time;
+      margin:0 auto;
+      filter: contrast(1.5) grayscale(1);
+    }
+    
+    .image-shadow{
+      position: absolute;
+      left:0;
+      top:0;
+      width: 100%;
+      height:100%;
+      border-radius: 50%;
+      box-shadow: inset 0 0 15px lighten(#000, 35%);
+      z-index: 10;
+    }
+    
+    hr{
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .type{
+      color:lighten(#000, 60%);
+      text-transform: uppercase;
+      font-size: 12.5px;
+      letter-spacing: .03rem;
+      margin-bottom:3px;
+    }
+
+    h4{
+      @include bold();
+      color:lighten(#000, 15%);
+      margin:0px 0 3px 0;
+      line-height: 1.2;
+      font-size:19.5px;
+    }
+
+    .subtitle{
+      font-size:17px;
+      @include regular();
+      color:lighten(#000, 25%);
+    }
+
+  }
+  
+  //Media Queries
+  @media (max-width:767px) {
+    
+    .projects-wrapper{
+      padding-top:calc(3rem + 55px);
+    }
+    
+  }
+  
+}
