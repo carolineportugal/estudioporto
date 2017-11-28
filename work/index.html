@@ -12,13 +12,12 @@ title: Work
     {% assign sorted_projects = (site.b-side | sort: 'order' | reverse ) %}
     {% for project in sorted_projects %}
 
-      <a class="" href="{{ site.baseurl}}{{ project.url }}">
-        <div class="">
-          <div class="" style="background: url('{{ site.baseurl}}/media/b-side/thumbs/{{ project.image }}'); background-position:center;
-          background-size: cover;"><div class="image-shadow"></div></div>
-          <p class="">{{project.category}}</p>
+      <a class="project" href="{{ site.baseurl}}{{ project.url }}">
+        <div class="image"></div>
+        <div class="text">
           <h4>{{project.title}}</h4>
-          <p class="">{{project.subtitle}}</p>
+          <p class="subtitle">{{project.subtitle}}</p>
+          <p class="category">{{project.category}}</p>
         </div>
       </a>
 
