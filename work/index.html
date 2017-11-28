@@ -7,26 +7,23 @@ title: Work
 
   <h2 class="hidden-page-name">Work</h2>
 
-  <div class="container">
-    <div class="projects-wrapper">
+  <div class="">
 
-      {% assign sorted_projects = (site.b-side | sort: 'order' | reverse ) %}
-      {% for project in sorted_projects %}
+    {% assign sorted_projects = (site.b-side | sort: 'order' | reverse ) %}
+    {% for project in sorted_projects %}
 
-        <a class="" href="{{ site.baseurl}}{{ project.url }}">
-          <div class="">
-            <div class="" style="background: url('{{ site.baseurl}}/media/b-side/thumbs/{{ project.image }}'); background-position:center;
-            background-size: cover;"><div class="image-shadow"></div></div>
-            <hr>
-            <p class="">{{project.category}}</p>
-            <h4>{{project.title}}</h4>
-            <p class="">{{project.subtitle}}</p>
-          </div>
-        </a>
+      <a class="" href="{{ site.baseurl}}{{ project.url }}">
+        <div class="">
+          <div class="" style="background: url('{{ site.baseurl}}/media/b-side/thumbs/{{ project.image }}'); background-position:center;
+          background-size: cover;"><div class="image-shadow"></div></div>
+          <p class="">{{project.category}}</p>
+          <h4>{{project.title}}</h4>
+          <p class="">{{project.subtitle}}</p>
+        </div>
+      </a>
 
-      {% endfor %}
+    {% endfor %}
 
-    </div>
   </div>
   
 </section>
