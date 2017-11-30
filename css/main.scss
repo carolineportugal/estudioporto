@@ -31,11 +31,11 @@
 html, body{
   height:100%;
   @include font-smoothing();
-  @include regular();
   font-feature-settings: "onum" on;
   font-feature-settings: "liga" 1;
   font-feature-settings: "liga1" on;
   position:relative;
+
 }
 
 .hidden-body-name,
@@ -58,7 +58,6 @@ footer{
   
   p{
     margin:0;
-    @include regular();
     color:#fff;
     font-size: 15.5px;
     font-feature-settings: "onum" on;

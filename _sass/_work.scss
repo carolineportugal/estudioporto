@@ -3,10 +3,10 @@
 
   .projects-wrapper{
     display:grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(500px);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(400px);
     grid-gap:10px;
-    padding:5rem;
+    padding:4rem 5rem;
   }
   
   .project{
@@ -99,7 +99,6 @@
     }
     
     h4{
-      @include bold();
       color:lighten(#000, 15%);
       margin:0px 0 3px 0;
       line-height: 1.2;
@@ -108,7 +107,6 @@
 
     .subtitle{
       font-size:17px;
-      @include regular();
       color:lighten(#000, 25%);
     }
 
