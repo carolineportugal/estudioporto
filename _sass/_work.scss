@@ -3,10 +3,10 @@
 
   .projects-wrapper{
     display:grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 400px 400px;
     grid-gap:10px;
-    padding:2rem;
+    padding:10rem 5rem;
   }
   
   .project{
@@ -14,6 +14,7 @@
     transition: $transition-time;
     color:#000;
     background: #fff;
+    position:relative;
     
     &:hover{
       .image{
@@ -28,7 +29,7 @@
     
     .image{
       background:#fff;
-      border:1px solid #eee;
+      // border:1px solid #eee;
       height:200px;
     }
     
@@ -42,13 +43,13 @@
     h4{
       @include gitan-bold();
       margin-bottom:5px;
-      font-size: 16px;
+      font-size: 15.5px;
       line-height: 1.2;
     }
     
     .subtitle{
       @include gitan-italic();
-      font-size: 16px;
+      font-size: 15.5px;
       line-height: 1.2;
     }
     
@@ -60,6 +61,26 @@
       font-size:8px;
     }
     
+  }
+  
+  .project:after{
+    position: absolute;
+    content:'';
+    background: #000;
+    top:0;
+    left:0;
+    height:5px;
+    width:1px;
+  }
+  
+  .project:after:after(2){
+    position: absolute;
+    content:'';
+    background: #000;
+    top:0;
+    left:0;
+    height:1px;
+    width:5px;
   }
   
 }
