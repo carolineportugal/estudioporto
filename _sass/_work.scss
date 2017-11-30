@@ -99,7 +99,6 @@
     }
     
     h4{
-      @include bold();
       color:lighten(#000, 15%);
       margin:0px 0 3px 0;
       line-height: 1.2;
@@ -108,7 +107,6 @@
 
     .subtitle{
       font-size:17px;
-      @include regular();
       color:lighten(#000, 25%);
     }
 

@@ -78,7 +78,6 @@ $transition-time:.2s;
   }
   
   .intro-wrapper{
-    @include black();
     font-size: 18.5px;
     border-bottom:1px solid #eee;
     line-height: 1.55;
@@ -92,14 +91,12 @@ $transition-time:.2s;
   }
     
   .description{
-    @include regular();
     font-size:17.5px;
     line-height: 1.55;
     padding:2rem 0;
 
     
     .uppercase{
-      @include heavy();
       text-transform: uppercase;
       font-size: 14px;
       letter-spacing: 0.07rem;

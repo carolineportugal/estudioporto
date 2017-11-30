@@ -37,7 +37,6 @@ $background:#ccc;
   }
 
   .number{
-    @include regular();
     margin-top:.8rem;
     font-size:14px;
     color:lighten(#000, 30%);
