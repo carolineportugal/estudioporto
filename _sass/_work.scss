@@ -3,10 +3,10 @@
 
   .projects-wrapper{
     display:grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(500px);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(400px);
     grid-gap:10px;
-    padding:5rem;
+    padding:4rem 5rem;
   }
   
   .project{

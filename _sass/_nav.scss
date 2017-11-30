@@ -1,7 +1,7 @@
 nav{
   position:fixed;
   background: lighten(#000, 15%);
-  background: #fff;
+  background: #000;
   width: 100%;
   height:55px;
   z-index:300;
@@ -21,6 +21,8 @@ nav{
   }
     
   a.title{
+    color:#fff;
+
     font-size:19px;
     @include gitan-bold();
     // text-transform: uppercase;
@@ -33,8 +35,10 @@ nav{
 
     
     span{
-      // color:red;
-      // transform: rotate(180deg);
+      font-size:9px;
+      @include gitan-regular();
+      text-transform: uppercase;
+      letter-spacing: 0.3rem;
     }
   }
       
@@ -85,7 +89,7 @@ nav{
 }
 
 nav.light{
-  background: #FFE600;
+  background: #FFf;
 
   
   a.title{
