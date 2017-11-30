@@ -13,15 +13,11 @@ title: Work
     {% for project in sorted_projects %}
 
       <a class="project" href="{{ site.baseurl}}{{ project.url }}">
-        <div class="border-top-left"></div>
-        <div class="border-top-right"></div>
-        <div class="border-bottom-left"></div>
-        <div class="border-bottom-right"></div>
         <div class="image"></div>
         <div class="text">
           <h4>{{project.title}}</h4>
           <p class="subtitle">{{project.subtitle}}</p>
-          <p class="category">{{project.category}}</p>
+          <!-- <p class="category">{{project.category}}</p> -->
         </div>
       </a>
 
