@@ -53,27 +53,26 @@ $background:#DCE0E5;
 #typographic-portrait{
   @include remove-font-smoothing();
   position: relative;
-  top:55px;
   height: calc(100vh - 55px);
 
   .portrait-wrapper {
-  height: 100%;
-  background: $background;
-  display:flex;
-  align-items: flex-end;
-  justify-content: center;
-  text-rendering: optimizeSpeed;
-  -webkit-user-select: none;
-          user-select: none;
-  // border:3px solid red;
+    height: 100%;
+    background: $background;
+    display:flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-rendering: optimizeSpeed;
+    -webkit-user-select: none;
+            user-select: none;
+    border:3px solid red;
   }
 
   svg{
-    height:100%;
-    width:auto;
-    max-height: 100%;
-    // border:3px solid blue;
-    transform: translate3d(0, 0, 0) !important;
+      height:100%;
+      width:auto;
+      max-height: 100%;
+      // border:3px solid blue;
+      transform: translate3d(0, 0, 0) !important;
   }
 
 }
@@ -92,10 +91,9 @@ $background:#DCE0E5;
 
 }
 
-@media (max-width:767px) {
+@media (max-width:768px) {
   
   #typographic-portrait{
-    top:50px;
     height: calc(100vh - 50px);
   }
   
