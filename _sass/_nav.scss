@@ -17,13 +17,18 @@ nav{
     width:100%;
   }
     
-  a.title{
+  a.title-wrapper{
     color:#fff;
     font-size:22px;
     @include gitan-bold();
     text-decoration: none;
+    display: flex;
     
-    span{
+    .title{
+      
+    }
+    
+    .subtitle{
       font-size:9px;
       @include gitan-regular();
       text-transform: uppercase;
