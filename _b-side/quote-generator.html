@@ -107,7 +107,7 @@ $(document).ready(function() {
   function translate(){
   objectsTranslation = new TimelineMax({repeat:-1});
   objectsTranslation.fromTo(utensilOne, 7, {x:0 - 10, y:0 - 10}, {x:window.innerWidth, y:window.innerHeight, ease:Linear.easeNone})
-  .fromTo(utensilTwo, 7, {x:0, y:window.innerHeight}, {x:window.innerWidth + 40, y:0 + 40, ease:Linear.easeNone})
+  .fromTo(utensilTwo, 7, {x:-70, y:window.innerHeight + 0}, {x:window.innerWidth + 40, y:0 + 40, ease:Linear.easeNone})
   .fromTo(utensilThree, 7, {x:window.innerWidth, y:window.innerHeight}, {x:0 - 75, y:0 - 75, ease:Linear.easeNone})
   .fromTo(cow, 7, {x:window.innerWidth + 10, y:0}, {x:0, y:window.innerHeight, ease:Linear.easeNone});
   }

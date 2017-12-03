@@ -29,13 +29,13 @@
   src: url('../media/random-quote-generator/fonts/FiraSans-Light.ttf');
 }
 
-// Variables
+//Variables
 $charcoal: #3F3F3A;
 $red: #F84339;
 $beige:#F9F7ED;
 $transition-time:.2s;
 
-// Code
+//Code
 #quotes-generator{
   background: $beige;
   min-height:100%;
@@ -43,7 +43,7 @@ $transition-time:.2s;
   flex-direction: column;
   align-items: center;
   position:relative;
-  border:5px solid blue;
+  // border:5px solid blue;
 
   .image-wrapper{
     width: 435px;
@@ -195,7 +195,7 @@ $transition-time:.2s;
     align-items: center;
     color:$beige;
     padding-top: 4rem;
-    padding-bottom:10rem;
+    padding-bottom:12rem;
     position: relative;
     display:none;
   }
@@ -258,16 +258,7 @@ $transition-time:.2s;
 
 }
 
-// Media Queries
-@media (max-width:767px) {
-  
-  #quotes-generator{
-    top:50px;
-  }
-  
-}
-
-
+//Media Queries
 @media (max-width:639px) {
 
   #quotes-generator{
