@@ -170,29 +170,16 @@ var displayQuote = function (quote) {
 }
 
 /*get quote on button click*/
-$(".link-wrapper").click(function(event) {
+$(".link-wrapper, .icon-link-reload").click(function(event) {
     event.preventDefault();
 
-    /*getting quotes api and putting on page*/
-    $.getJSON(forismaticAPI, displayQuote);
-
-    /*quote-rectangle animations*/
-    $(".quote-rectangle").slideDown();
-    $(".quote-rectangle").css("display","flex");
-    $("html, body").animate({scrollTop:$(document).height()});
-
-});
-
-/*get quote on another button click*/
-$(".icon-link-reload").click(function(event) {
-  event.preventDefault();
-
   /*getting quotes api and putting on page*/
-  $.getJSON(forismaticAPI, displayQuote);
-
-  /*quote-rectangle animations*/
-  $("html, body").animate({scrollTop:$(document).height()});
-
+  $.getJSON(forismaticAPI, displayQuote).then(function(){
+    $(".quote-rectangle").css("display","flex");
+    $(".quote-rectangle").slideDown();
+    $("html, body").animate({scrollTop:$(document).height()}, "slow");
+  });
+  
 });
 
 /*share on twitter on button click*/
