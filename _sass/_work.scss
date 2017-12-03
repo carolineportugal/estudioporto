@@ -16,8 +16,8 @@
     color:#000;
     background: #fff;
     position:relative;
-    padding:1rem;
     z-index:10;
+    // border:1px solid red;
     
     // &:hover{
     //   .image{
@@ -32,12 +32,24 @@
     //
     
     .image{
-      // width:100%;
-      height:200px;
+      height:250px;
+      // border:1px solid orange;
+      // filter: contrast(2) grayscale(1);
+    }
+    
+    .typographic-portrait{
+      height:400px;
+    }
+    
+    .quote-generator{
+    }
+    
+    .typographic-interventions{
     }
     
     .text{
-      border:1px solid green;
+      // border:1px solid green;
+      padding: 1rem;
     }
     
     h4{

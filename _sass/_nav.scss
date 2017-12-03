@@ -39,6 +39,23 @@ nav{
   
 }
 
+.light{
+  background: #fff;
+  
+  a.title{
+    color:#000;
+  }
+  
+  a.menu{
+    
+    div{
+      background: #000;
+    }
+    
+  }
+  
+}
+
 //Media Queries
 @media (max-width:768px) {
   
