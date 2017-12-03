@@ -176,7 +176,6 @@ $(".link-wrapper, .icon-link-reload").click(function(event) {
   /*getting quotes api and putting on page*/
   $.getJSON(forismaticAPI, displayQuote).then(function(){
     $(".quote-rectangle").css("display","flex");
-    $(".quote-rectangle").slideDown();
     $("html, body").animate({scrollTop:$(document).height()}, "slow");
   });
   
