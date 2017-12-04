@@ -3,11 +3,12 @@ nav{
   background: #000;
   width: 100%;
   height:55px;
-  z-index:300;
+  z-index:900;
   box-shadow: 0px 1px 30px 0px rgba(0,0,0,0.1);
   display: flex;
   align-items: center;
   bottom:0;
+  // opacity:.1;
       
   .nav-wrapper{
     display: flex;
@@ -32,6 +33,23 @@ nav{
       background: #fff;
       height:2px;
       margin:4px 0;
+    }
+    
+  }
+  
+}
+
+.light{
+  background: #fff;
+  
+  a.title{
+    color:#000;
+  }
+  
+  a.menu{
+    
+    div{
+      background: #000;
     }
     
   }
