@@ -124,25 +124,17 @@ $transition-time:.2s;
       padding:0;
       margin:0;
       line-height: 30px;
-
-      li{
-        text-indent: -29.5px;
-      }
-
     }
 
     a{
       transition:$transition-time;
       color:#000;
       text-decoration: underline;
+      // margin-left:10px;
 
       &:hover{
         color:lighten(#000, 30%);
       }
-    }
-
-    .symbol-space{
-      margin-left:12px;
     }
 
   }
@@ -210,12 +202,27 @@ $transition-time:.2s;
 
   }
 
-  .building-intro-sc{
-    background: red;
+  .background-sc{
+    position:relative;
+  }
+  
+  .background-sc:after{
+    position: absolute;
+    content: '';
+    top:0;
+    left:0;
+    width:100%;
+    height:calc(100% - 39px);
+    background:#59585E;
+    // background: #000;
+  }
+  
+  hr{
+    margin-top:0;
   }
 
   .bottom-signage{
-    padding:10px 0 80px 0;
+    padding:10px 0 17rem 0;
     text-align: center;
 
     a{
@@ -225,7 +232,7 @@ $transition-time:.2s;
       text-decoration: none;
 
       &:hover{
-        opacity:.8;
+        color:lighten(#000, 30%);
       }
     }
 
@@ -249,6 +256,12 @@ $transition-time:.2s;
 
     .intro{
       margin-bottom:8rem;
+      
+      .hero{
+        height:auto;
+        display: block;
+        flex-direction: none;
+      }
 
       .intro-headline{
         padding:65px 0 65px 0;
@@ -302,11 +315,10 @@ $transition-time:.2s;
 @media (max-width:767px) {
   
   #typographic-interventions{
-    top:50px;
 
     .intro{
       margin-bottom:6rem;
-
+      
       .intro-headline{
         padding:50px 0px 50px 0px;
 
@@ -330,7 +342,19 @@ $transition-time:.2s;
       
       .text-description{
         padding:0;
-        font-size: 16px;
+      }
+      
+      ul{list-style-position: outside;
+        
+        li{
+          text-indent: -23px;
+          list-style-position: outside;
+        }
+        
+        .symbol-space{
+          // display: none;
+        }
+        
       }
 
     }
@@ -340,12 +364,10 @@ $transition-time:.2s;
       
       .text-description{
         padding:0;
-        font-size:16px;
       }
       
       .text-info {
         padding:0;
-        font-size:15px;
       }
       
     }
