@@ -1,0 +1,96 @@
+---
+layout: project
+title: Democracy International
+subtitle: democracyinternational.com
+season:
+order: 9
+class: "democracy-international"
+category:
+image:
+description: "A zine with content and visual aesthetic inspired by Baltimore’s early industrial days, neon and strippers. And David Byrne."
+---
+
+<section id="bawlamers-feuilleton">
+
+    <h1 class="hidden-section-name">Bawlamer's Feuilleton</h1>
+
+      <div class="container">
+
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-9 col-sm-offset-0 col-sm-push-3 col-md-7 col-md-offset-0 col-md-push-4">
+            <div class="right-column">
+              <a href="{{ site.baseurl}}/media/bawlamers-feuilleton/zine_general_detail.jpg" class="image-link" data-lightbox="bf">
+                <img src="{{ site.baseurl}}/media/bawlamers-feuilleton/zine_general.jpg">
+              </a>
+              <div class="number text">Full spread</div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-3 col-sm-pull-9 col-md-3 col-md-pull-6">
+            <div class="left-column">
+                <div class="hands">
+                    <a href="{{ site.baseurl}}/media/bawlamers-feuilleton/zine_detail1.jpg" class="image-link" data-lightbox="bf">
+                      <img src="{{ site.baseurl}}/media/bawlamers-feuilleton/hand1.png">
+                    </a>
+                  <div class="number">.01</div>
+                </div>
+                <div class="hands">
+                  <a href="{{ site.baseurl}}/media/bawlamers-feuilleton/zine_detail2.jpg" class="image-link" data-lightbox="bf">
+                    <img src="{{ site.baseurl}}/media/bawlamers-feuilleton/hand2.png">
+                  </a>
+                  <div class="number">.02</div>
+                </div>
+                <div class="hands">
+                  <a href="{{ site.baseurl}}/media/bawlamers-feuilleton/zine_detail3.jpg" class="image-link" data-lightbox="bf">
+                    <img src="{{ site.baseurl}}/media/bawlamers-feuilleton/hand3.png">
+                  </a>
+                  <div class="number">.03</div>
+                </div>
+                <div class="hands">
+                  <a href="{{ site.baseurl}}/media/bawlamers-feuilleton/zine_detail4.jpg" class="image-link" data-lightbox="bf">
+                    <img src="{{ site.baseurl}}/media/bawlamers-feuilleton/hand4.png">
+                  </a>
+                  <div class="number">.04</div>
+                </div>
+                <div class="hands">
+                  <a href="{{ site.baseurl}}/media/bawlamers-feuilleton/zine_detail5.jpg" class="image-link" data-lightbox="bf">
+                    <img src="{{ site.baseurl}}/media/bawlamers-feuilleton/hand5.png">
+                  </a>
+                  <div class="number">.05</div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+</section>
+
+<script src="{{ site.baseurl}}/js/lightbox.js"></script>
+<script>
+
+  $(document).ready(function() {
+
+    lightbox.option({
+      'disableScrolling':true,
+      'wrapAround': true
+    })
+    
+    function disableImageLink(){
+      if ($(window).width() < 768) {
+          $("a.image-link").click(function(){
+            return false;
+          });
+      }else{
+          $("a.image-link").off();
+    
+      }
+    }
+    
+    disableImageLink();
+    
+    $(window).resize(disableImageLink);
+
+  });
+
+</script>
