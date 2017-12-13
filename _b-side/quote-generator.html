@@ -10,7 +10,11 @@ image: quote-generator.png
 ---
 
 <section id="quotes-generator">
-
+  
+    <div class="loader">
+      <div class="spiner"></div>
+    </div>
+    
     <h1 class="hidden-section-name">Quote Generator</h1>
 
       <div class="image-wrapper">
@@ -172,10 +176,12 @@ var displayQuote = function (quote) {
 /*get quote on button click*/
 $(".link-wrapper, .icon-link-reload").click(function(event) {
     event.preventDefault();
-    $(".quote-rectangle").css("display","flex");
+    $(".loader").css("display"," block");
 
   /*getting quotes api and putting on page*/
   $.getJSON(forismaticAPI, displayQuote).then(function(){
+    $(".loader"). hide();
+    $(".quote-rectangle").css("display","flex");
     $("html, body").animate({scrollTop:$(document).height()}, "slow");
   });
   
