@@ -1,0 +1,28 @@
+// Code
+#michael-mrizek{
+  @include background-offwhite();
+  padding:3rem 0 8rem 0;
+  min-height: 100vh;
+  
+  .link-wrapper{
+    display: flex;
+    
+    a{
+    }
+    
+  }
+
+  .img-wrapper{
+    margin-bottom:4rem;
+  }
+
+}
+
+// Media Queries
+@media (max-width:767px) {
+
+  #michael-mrizek{
+    // padding:3rem 0;
+  }
+
+}
