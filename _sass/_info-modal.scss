@@ -2,7 +2,7 @@
 .page-bottom-fixed-wrapper{
   position:fixed;
   width:100%;
-  bottom:3rem;
+  top:3rem;
   // background:red;
   z-index:300;
   display: flex;
@@ -23,16 +23,17 @@
   }
 
   .information{
-    background: lighten(#000, 20%);
-    color:#fff;
-    height:33px;
-    width:33px;
+    background: #fff;
+    color:#000;
+    height:15px;
+    width:15px;
     border-radius: 50%;
-    font-size:18px;
-    line-height:1.55;
-    border:1px solid #fff;
+    font-size:12px;
+    line-height:.9;
+    border:1px solid #000;
     pointer-events:auto;
-    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.1);
+    @include gitan-regular();
+    // box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.1);
 
     &:hover{
       opacity:.8;
