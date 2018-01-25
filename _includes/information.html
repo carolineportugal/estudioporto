@@ -1,9 +1,5 @@
-<div class="page-bottom-fixed-wrapper">
-  <div class="container">
-    <div class="btn-wrapper">
-      <button type="button" class="btn information" data-toggle="modal" data-target="#myModal">i</button>
-    </div>
-  </div>
+<div class="page-top-fixed-wrapper">
+  <button type="button" class="btn information" data-toggle="modal" data-target="#myModal">i</button>
 </div>
 
 <!-- Small modal -->
@@ -23,3 +19,15 @@
     </div>
   </div>
 </div>
+
+<script>
+
+  $(document).ready(function() {
+    
+    if (window.location.href === "{{ site.baseurl }}/b-side/typographic-interventions-on-architecture/"){
+      $(".information").addClass("information-dark");
+    }
+
+  });
+
+</script>
