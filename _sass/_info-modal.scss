@@ -1,52 +1,44 @@
 // Project Information Button
-.page-bottom-fixed-wrapper{
+.page-top-fixed-wrapper{
   position:fixed;
   width:100%;
   top:3rem;
+  padding-right:4rem;
   // background:red;
   z-index:300;
   display: flex;
-  align-items: center;
+  justify-content: flex-end;
   pointer-events: none;
   
-  .container{
-    // background:yellow;
-  }
+  @media (max-width:767px) {
+    
+    padding-right:2rem;
 
-  .btn-wrapper{
-    height:100%;
-    width:100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    // background: green;
   }
 
   .information{
-    background: #fff;
-    color:#000;
-    height:15px;
-    width:15px;
+    background: #000;
+    color:#fff;
+    height:19px;
+    width:19px;
     border-radius: 50%;
-    font-size:12px;
-    line-height:.9;
-    border:1px solid #000;
+    line-height:1;
+    padding-bottom:3px;
+    padding-right:1px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
     pointer-events:auto;
-    @include gitan-regular();
-    // box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.1);
+    @include gitan-italic();
 
     &:hover{
-      opacity:.8;
+      opacity:1;
     }
 
   }
-
-  @media (max-width:767px) {
-    
-    .container{
-      width:100%;
-    }
-
+  
+  .information-dark{
+    border:1px solid #fff;
   }
   
 }
