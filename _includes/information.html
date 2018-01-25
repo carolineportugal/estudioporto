@@ -21,13 +21,9 @@
 </div>
 
 <script>
-
-  $(document).ready(function() {
-    
-    if (window.location.href === "{{ site.baseurl }}/b-side/typographic-interventions-on-architecture/"){
-      $(".information").addClass("information-dark");
-    }
-
-  });
+  
+  if(window.location.href.indexOf("typographic-interventions-on-architecture") > -1) {
+     $(".information").addClass("information-dark");
+  }
 
 </script>
