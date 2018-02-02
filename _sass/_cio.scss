@@ -5,7 +5,11 @@
   min-height: 100vh;
   
   .first-img-wrapper{
-    margin-bottom:10rem;
+    margin-bottom:9rem;
+    padding:0 1rem;
+    @media (max-width:1199px) {
+      padding:0;
+    }
   }
 
   .img-wrapper{
@@ -18,7 +22,16 @@
 @media (max-width:767px) {
 
   #cio{
-    // padding:3rem 0;
+    padding:5rem 0 13rem 0;
+    
+    .first-img-wrapper{
+      margin-bottom:6rem;
+    }
+
+    .img-wrapper{
+      margin-bottom:5rem;
+    }
+  
   }
 
 }
