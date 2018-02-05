@@ -72,7 +72,8 @@ description: "A zine with content and visual aesthetic inspired by Baltimore’s
 
     lightbox.option({
       'disableScrolling':true,
-      'wrapAround': true
+      'wrapAround': true,
+      'maxHeight': 800
     })
     
     function disableImageLink(){
@@ -82,7 +83,6 @@ description: "A zine with content and visual aesthetic inspired by Baltimore’s
           });
       }else{
           $("a.image-link").off();
-    
       }
     }
     

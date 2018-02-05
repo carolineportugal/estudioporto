@@ -9,7 +9,6 @@ $background:#ccc;
 
   .left-column{
     padding-top:0.5rem;
-    height:100%;
   }
 
   .hands{
@@ -30,6 +29,7 @@ $background:#ccc;
           mix-blend-mode:normal;
           filter:none;
       }
+      
     }
 
   }
@@ -92,8 +92,6 @@ $background:#ccc;
 
 }
 
-////////////////////////////////////////////////////
-
 @media (max-width:767px) {
   
   #bawlamers-feuilleton{
@@ -102,10 +100,11 @@ $background:#ccc;
       display: flex;
       align-items: center;
       flex-direction: column;
+      padding-bottom:20rem;
     }
 
     .hands{
-      max-width: 230px;/////////////////////////
+      max-width: 320px;
 
       img{
         cursor: default;
@@ -121,7 +120,7 @@ $background:#ccc;
     }
     
     .right-column{
-      padding:4rem 0 0rem 0;/////////////////////////////
+      padding:5rem 0 0rem 0;
 
       img{
         cursor: default;
