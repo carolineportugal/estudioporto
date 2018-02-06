@@ -1,27 +1,27 @@
 ---
 layout: project
-title: Bawlamer's Feuilleton
-subtitle: A 12-Panel Fold Zine
-season: Autumn 2014
-order: 10
-category: Print Design & Typography
-image: bawlamers-feuilleton.png
+title: Golden
+subtitle: democracyinternational.com
+season:
+order: 9
+category:
+image:
 description: "A zine with content and visual aesthetic inspired by Baltimore’s early industrial days, neon and strippers. And David Byrne."
 ---
 
-<section id="bawlamers-feuilleton">
+<section id="democracy-international">
 
-    <h1 class="hidden-section-name">Bawlamer's Feuilleton</h1>
+    <h1 class="hidden-section-name">Golden</h1>
 
       <div class="container">
 
         <div class="row">
-          <div class="col-xs-12 col-sm-9 col-sm-push-3 col-md-7 col-md-push-4">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-9 col-sm-offset-0 col-sm-push-3 col-md-7 col-md-offset-0 col-md-push-4">
             <div class="right-column">
               <a href="{{ site.baseurl}}/media/bawlamers-feuilleton/zine_general_detail.jpg" class="image-link" data-lightbox="bf">
                 <img src="{{ site.baseurl}}/media/bawlamers-feuilleton/zine_general.jpg">
               </a>
-              <div class="text">Full spread</div>
+              <div class="number text">Full spread</div>
             </div>
           </div>
 
@@ -31,31 +31,31 @@ description: "A zine with content and visual aesthetic inspired by Baltimore’s
                     <a href="{{ site.baseurl}}/media/bawlamers-feuilleton/zine_detail1.jpg" class="image-link" data-lightbox="bf">
                       <img src="{{ site.baseurl}}/media/bawlamers-feuilleton/hand1.png">
                     </a>
-                  <div class="text">.01</div>
+                  <div class="number">.01</div>
                 </div>
                 <div class="hands">
                   <a href="{{ site.baseurl}}/media/bawlamers-feuilleton/zine_detail2.jpg" class="image-link" data-lightbox="bf">
                     <img src="{{ site.baseurl}}/media/bawlamers-feuilleton/hand2.png">
                   </a>
-                  <div class="text">.02</div>
+                  <div class="number">.02</div>
                 </div>
                 <div class="hands">
                   <a href="{{ site.baseurl}}/media/bawlamers-feuilleton/zine_detail3.jpg" class="image-link" data-lightbox="bf">
                     <img src="{{ site.baseurl}}/media/bawlamers-feuilleton/hand3.png">
                   </a>
-                  <div class="text">.03</div>
+                  <div class="number">.03</div>
                 </div>
                 <div class="hands">
                   <a href="{{ site.baseurl}}/media/bawlamers-feuilleton/zine_detail4.jpg" class="image-link" data-lightbox="bf">
                     <img src="{{ site.baseurl}}/media/bawlamers-feuilleton/hand4.png">
                   </a>
-                  <div class="text">.04</div>
+                  <div class="number">.04</div>
                 </div>
                 <div class="hands">
                   <a href="{{ site.baseurl}}/media/bawlamers-feuilleton/zine_detail5.jpg" class="image-link" data-lightbox="bf">
                     <img src="{{ site.baseurl}}/media/bawlamers-feuilleton/hand5.png">
                   </a>
-                  <div class="text">.05</div>
+                  <div class="number">.05</div>
                 </div>
             </div>
           </div>
@@ -72,8 +72,7 @@ description: "A zine with content and visual aesthetic inspired by Baltimore’s
 
     lightbox.option({
       'disableScrolling':true,
-      'wrapAround': true,
-      'maxHeight': 800
+      'wrapAround': true
     })
     
     function disableImageLink(){
@@ -83,6 +82,7 @@ description: "A zine with content and visual aesthetic inspired by Baltimore’s
           });
       }else{
           $("a.image-link").off();
+    
       }
     }
     
