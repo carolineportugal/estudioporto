@@ -1,20 +1,16 @@
 // Code
 #cnm{
   @include background-offwhite();
-  padding:4rem 0;
+  padding:5rem 0 15rem 0;
   min-height: 100vh;
-  position:relative;
-  top:55px;
 
   .img-wrapper{
-    margin-bottom:3.5rem;
+    margin-bottom:4rem;
   }
 
   .number{
     margin-top:.8rem;
-    font-size:14px;
     text-align: right;
-    color:lighten(#000, 30%);
   }
 
   img {
@@ -41,8 +37,7 @@
 @media (max-width:767px) {
 
   #cnm{
-    top:50px;
-    padding:3rem 0;
+    padding:4rem 0 14rem 0;
   }
 
 }
