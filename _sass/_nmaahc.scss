@@ -1,20 +1,19 @@
 // Code
 #nmaahc{
   @include background-offwhite();
-  padding:4rem 0 0 0;
-  min-height: calc(100vh - 55px);
-  position:relative;
-  top:55px;
+  padding:5rem 0 15rem 0;
+  min-height: 100vh;
+  overflow-y: hidden;
 
   .img-wrapper{
-    margin-bottom:3.5rem;
+    margin-bottom:4rem;
+    position:relative;
+    z-index:100;
   }
 
   .number{
     margin-top:.8rem;
-    font-size:14px;
     text-align: right;
-    color:lighten(#000, 30%);
   }
 
   img {
@@ -23,8 +22,19 @@
   }
   
   .technical-row{
+    position:relative;
+    padding:5rem 0;
+  }
+  
+  .technical-row:after{
+    position:absolute;
     background: #eee;
-    padding:4.5rem 0;
+    content:'';
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    height:9999px;
   }
 
 }
@@ -34,8 +44,7 @@
 @media (max-width:767px) {
 
   #nmaahc{
-    top:50px;
-    padding:3rem 0 0 0;
+    padding:4rem 0 14rem 0;
     
     img {
       cursor: default;
