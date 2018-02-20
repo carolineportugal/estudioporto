@@ -1,5 +1,5 @@
 #home{
-  height:100vh;
+  height:calc(100vh - 55px);
   width:100vw;
   position:relative;
   // border:5px solid orange;
@@ -17,4 +17,13 @@
   
   }
     
+}
+
+//Media Queries
+@media (max-width:768px) {
+  
+  #home{
+    height:calc(100vh - 50px);
+  }
+  
 }
