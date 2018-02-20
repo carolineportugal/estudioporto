@@ -1,19 +1,29 @@
 #home{
-  height:100vh;
+  height:calc(100vh - 55px);
   width:100vw;
   position:relative;
-  border:5px solid orange;
+  // border:5px solid orange;
   
   .video-wrapper{
     height:100%;
     width:100%;
-    border:5px solid green;
+    // border:5px solid green;
   
     video{
-      border:5px solid red;
+      // border:5px solid red;
       height:100%;
+      width:100%;
     }
   
   }
     
+}
+
+//Media Queries
+@media (max-width:768px) {
+  
+  #home{
+    height:calc(100vh - 50px);
+  }
+  
 }
