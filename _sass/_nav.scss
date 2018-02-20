@@ -1,8 +1,6 @@
 nav{
   position:fixed;
-  // background: rgba(244,241,228,0.9);
-  background: rgba(242, 231, 196, 0.7);
-  // background: rgb(255, 253, 242);
+  background: rgba(244,241,228,0.9);
   width: 100%;
   height:55px;
   z-index:999;
@@ -32,15 +30,8 @@ nav{
     a{
       color:#000;
       margin-left:3rem;
-      font-size:15px;
-      @include gitan-regular();
-      text-transform: lowercase;
-      // letter-spacing:.2rem;
-      
-      span{
-        @include gitan-regular();
-        display:none;
-      }
+      @include skolar-regular();
+      text-transform: uppercase;
     }
     
   }

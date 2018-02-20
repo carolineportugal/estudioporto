@@ -1,4 +1,4 @@
-//Gitan
+///////////////////////////////////////////////////Gitan
 @mixin gitan-regular{
   font-family: "gitan-latin",sans-serif;
   font-style: normal;
@@ -41,7 +41,84 @@
   font-weight: 800;
 }
 
-//Skolar Sans
+///////////////////////////////////////////////////Skolar Sans
+@mixin skolar-thin{
+  font-family: "skolar-sans-latin",sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+@mixin skolar-thin-italic{
+  font-family: "skolar-sans-latin",sans-serif;
+  font-style: italic;
+  font-weight: 100;
+}
+
+@mixin skolar-extralight{
+  font-family: "skolar-sans-latin",sans-serif;
+  font-style: normal;
+  font-weight: 200;
+}
+
+@mixin skolar-extralight-italic{
+  font-family: "skolar-sans-latin",sans-serif;
+  font-style: italic;
+  font-weight: 200;
+}
+
+@mixin skolar-light{
+  font-family: "skolar-sans-latin",sans-serif;
+  font-style: normal;
+  font-weight: 300;
+}
+
+@mixin skolar-light-italic{
+  font-family: "skolar-sans-latin",sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+
+@mixin skolar-regular{
+  font-family: "skolar-sans-latin",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin skolar-italic{
+  font-family: "skolar-sans-latin",sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@mixin skolar-medium{
+  font-family: "skolar-sans-latin",sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@mixin skolar-semibold{
+  font-family: "skolar-sans-latin",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@mixin skolar-bold{
+  font-family: "skolar-sans-latin",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin skolar-extrabold{
+  font-family: "skolar-sans-latin",sans-serif;
+  font-style: normal;
+  font-weight: 800;
+}
+
+@mixin skolar-black{
+  font-family: "skolar-sans-latin",sans-serif;
+  font-style: normal;
+  font-weight: 900;
+}
 
 //Embed Fonts
 // @font-face{
