@@ -30,7 +30,8 @@ nav{
     a{
       color:#000;
       margin-left:3rem;
-      @include skolar-regular();
+      font-size:13.5px;
+      @include skolar-medium();
       text-transform: uppercase;
     }
     
