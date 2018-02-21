@@ -31,8 +31,9 @@ nav{
       color:#000;
       margin-left:3rem;
       font-size:13.5px;
-      @include skolar-medium();
+      @include skolar-regular();
       text-transform: uppercase;
+      letter-spacing: 0.02rem;
     }
     
   }
