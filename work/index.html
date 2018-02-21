@@ -6,23 +6,21 @@ title: Work
 <section id="work">
 
   <h2 class="hidden-page-name">Work</h2>
-
+  
   <div class="projects-wrapper">
 
     {% assign sorted_projects = (site.work | sort: 'order' | reverse ) %}
     {% for project in sorted_projects %}
-
-    <div class="project-wrapper">
-      <a class="project" href="{{ site.baseurl}}{{ project.url }}">
-        <div class="image {{project.class}}" style="background: url('{{ site.baseurl}}/media/work/{{ project.image }}');  background-size:cover; background-repeat:no-repeat; background-position:center center"></div>
-        <div class="text">
-          <h4>{{project.title}}</h4>
-          <p class="subtitle">{{project.subtitle}}</p>
-          <p class="category">{{project.category}}</p>
-        </div>
-      </a>
-    </div>
-
+    
+    <a class="project" href="{{ site.baseurl}}{{ project.url }}">
+      <div class="image {{project.class}}" style="background: url('{{ site.baseurl}}/media/work/{{ project.image }}');  background-size:cover; background-repeat:no-repeat; background-position:center center"></div>
+      <div class="text">
+        <h4>{{project.title}}</h4>
+        <p class="subtitle">{{project.subtitle}}</p>
+        <p class="category">{{project.category}}</p>
+      </div>
+    </a>
+      
     {% endfor %}
 
   </div>
