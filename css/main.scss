@@ -37,7 +37,7 @@ html, body{
   font-feature-settings: "liga1" on;
   position:relative;
   color:#000;
-  @include gitan-regular();
+  @include skolar-regular();
 }
 
 .hidden-body-name,
