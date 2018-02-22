@@ -5,7 +5,7 @@
   .projects-wrapper{
     padding:4rem 0rem 15rem 0rem;
     display:grid;
-    grid-template-columns: repeat(4, 250px);
+    grid-template-columns: repeat(5, 250px);
     grid-template-row:auto;
     grid-column-gap:10px;
     grid-row-gap:15px;
@@ -61,6 +61,14 @@
   }
   
   //Media Queries
+  @media (max-width:1319px) {
+    
+    .projects-wrapper{
+      grid-template-columns: repeat(4, 250px);
+    }
+    
+  }
+  
   @media (max-width:1059px) {
     
     .projects-wrapper{
