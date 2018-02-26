@@ -1,18 +1,21 @@
 // Code
 #about{
-  min-height: calc(100% - 3.5rem);
-  color:lighten(#000, 15%);
+  min-height: 100%;
+  
+  p{
+    margin-bottom:15px;
+  }
   
   .general-wrapper{
-    padding-top:calc(5rem + 55px);
-    padding-bottom:14rem;
+    padding-top:5rem;
+    padding-bottom:20rem;
     width:100%;
     display: flex;
     justify-content: center;
   }
     
   .column-wrapper{
-    max-width:395px;
+    max-width:600px;
     display: flex;
     flex-direction: column;
   }
@@ -24,27 +27,19 @@
     align-items: flex-end;
     border-bottom:1px solid #eee;
     padding-bottom:2rem;
+    margin-bottom:3rem;
   }
       
   .picture{
-    position:relative;
-    height:180px;
-    min-width:180px;
-    width:180px;
+    background:url(/media/about/profile.png);
+    background-size: cover;
+    background-position: center center;
+    height:200px;
+    min-width:200px;
+    width:200px;
     border-radius:50%;
-    background: #eee;
+    padding-right:2rem;
   }
-  
-  // .picture-shadow{
-  //   position: absolute;
-  //   left:0;
-  //   top:0;
-  //   width: 100%;
-  //   height:100%;
-  //   border-radius: 50%;
-  //   box-shadow: inset 0 0 15px lighten(#000, 30%);
-  //   z-index: 10;
-  // }
   
   .contact{
     font-size: 20px;
@@ -61,38 +56,31 @@
     }
     
     .fa-envelope{
-      font-size: 18px;
+      font-size: 17px;
     }
 
   }
   
   .intro-wrapper{
-    font-size: 18.5px;
-    border-bottom:1px solid #eee;
-    line-height: 1.55;
-    width:100%;
-    padding:2.5rem 0;
-    // background: #eee;
-  }
-    
-  .intro{
-    margin:0;
+    @include gitan-bold();
+    font-size: 16.5px;
   }
     
   .description{
-    font-size:17.5px;
+    font-size:18.5px;
     line-height: 1.55;
-    padding:2rem 0;
-
     
     .uppercase{
-      text-transform: uppercase;
-      font-size: 14px;
-      letter-spacing: 0.07rem;
+      // @include skolar-bold();
+
+      // text-transform: uppercase;
+      // font-size: 14px;
+      // letter-spacing: 0.07rem;
     }
     
     a{
-      color:lighten(#000, 15%);
+      @include skolar-italic();
+      color:#000;
       transition:$transition-time;
       text-decoration: underline;
 
