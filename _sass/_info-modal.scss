@@ -21,16 +21,16 @@
     color:#fff;
     height:22px;
     width:22px;
-    font-size:18px;
+    font-size:15px;
     border-radius: 50%;
     line-height:0;
-    padding-bottom:5px;
+    padding-bottom:4px;
     padding-right:1px;
     display: flex;
     align-items:center;
     justify-content: center;
     pointer-events:auto;
-    @include skolar-italic();
+    @include gitan-italic();
     border:1px solid #fff;
 
     &:hover{

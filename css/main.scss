@@ -35,7 +35,7 @@ html, body{
   height:100%;
   color:#000;
   @include font-smoothing();
-  @include skolar-regular();
+  @include gitan-regular();
   font-feature-settings: "onum" 1 !important;
   font-feature-settings: "liga" 1 !important;
   font-feature-settings: "liga1" 1 !important;
