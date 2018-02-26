@@ -31,14 +31,14 @@
 
 // General Code
 html, body{
+  position:relative;
   height:100%;
+  color:#000;
   @include font-smoothing();
+  @include skolar-regular();
   font-feature-settings: "onum" on;
   font-feature-settings: "liga" 1;
   font-feature-settings: "liga1" on;
-  position:relative;
-  color:#000;
-  @include skolar-regular();
 }
 
 .hidden-body-name,
