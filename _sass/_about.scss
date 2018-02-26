@@ -2,10 +2,6 @@
 #about{
   min-height: 100%;
   
-  p{
-    margin-bottom:15px;
-  }
-  
   .general-wrapper{
     padding-top:5rem;
     padding-bottom:20rem;
@@ -15,14 +11,14 @@
   }
     
   .column-wrapper{
-    max-width:520px;
+    max-width:700px;
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
   }
   
   .picture-contact-wrapper{
     width:100%;
-    display: flex;
+    // display: flex;
     justify-content: space-between;
     align-items: flex-end;
     border-bottom:1px solid #eee;
@@ -31,9 +27,9 @@
   }
       
   .picture{
-    height:200px;
-    min-width:200px;
-    width:200px;
+    height:180px;
+    min-width:180px;
+    width:180px;
     border-radius:50%;
     padding-right:2rem;
   }
@@ -60,14 +56,14 @@
   
   .intro-wrapper{
     @include gitan-semibold();
-    font-size: 16px;
+    font-size: 16.5px;
     line-height:1.55;
   }
     
   .description{
     @include gitan-regular();
-    font-size:20px;
-    line-height:1.55;
+    font-size:16.5px;
+    line-height:1.7;
     
     .uppercase{
       text-transform: uppercase;
