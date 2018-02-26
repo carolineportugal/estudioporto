@@ -15,8 +15,10 @@ title: Work
     <a class="project" href="{{ site.baseurl}}{{ project.url }}">
       <div class="image {{project.class}}" style="background: url('{{ site.baseurl}}/media/work/{{ project.image }}');  background-size:cover; background-repeat:no-repeat; background-position:center center"></div>
       <div class="text">
-        <h4>{{project.title}}</h4>
-        <p class="subtitle">{{project.subtitle}}</p>
+        <div>
+          <h4>{{project.title}}</h4>
+          <p class="subtitle">{{project.subtitle}}</p>
+          </div>
         <p class="category">{{project.category}}</p>
       </div>
     </a>

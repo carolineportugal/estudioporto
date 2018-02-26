@@ -33,28 +33,31 @@
       height:calc(100% - 200px);
       background: #fff;
       flex-direction: column;
-      padding:1rem 1rem 1.5rem 1rem;
+      padding:1rem 1rem 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     
     h4{
       @include gitan-semibold();
-      margin-top:0;
-      margin-bottom:3px;
-      font-size: 16px;
+      margin-top:3px;
+      margin-bottom:0px;
+      font-size: 15.5px;
       line-height: 1.4;
     }
     
     .subtitle{
       @include gitan-italic();
-      font-size: 16px;
+      font-size: 15.5px;
       line-height: 1.4;
-      margin-bottom:7px;
+      margin-bottom:2rem;
     }
     
     .category{
       @include gitan-regular();
       text-transform: uppercase;
-      letter-spacing: 0.1rem;
+      letter-spacing: 0.15rem;
       font-size:9px;
     }
     
