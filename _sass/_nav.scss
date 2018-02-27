@@ -20,10 +20,10 @@ nav{
   a.title{
     color:#000;
     text-decoration: none;
-    font-size:22.5px;
+    font-size:22px;
     @include gitan-bold();
     margin-bottom:.5rem;
-    letter-spacing: -0.03rem;
+    letter-spacing: -0.04rem;
   }
       
   .menu{
@@ -34,7 +34,7 @@ nav{
       font-size:12px;
       @include gitan-regular();
       text-transform: uppercase;
-      letter-spacing: 0.03rem;
+      letter-spacing: 0.04rem;
     }
     
   }
