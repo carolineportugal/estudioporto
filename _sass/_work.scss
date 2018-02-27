@@ -15,18 +15,13 @@
     display: block;
     text-decoration: none;
     color:#000;
-    position: relative;
+    background: darken(#fafafa, 2%);
 
     &:hover{
       box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
       .image{
          filter: grayscale(0);
-         opacity:1;
        }
-       .image-bg{
-          filter: grayscale(0);
-          opacity:1;
-        }
     }
     
     .image{
