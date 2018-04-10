@@ -66,13 +66,11 @@
   }
 
   .modal-body{
-    color:lighten(#000, 15%);
-    font-size:17px;
+    font-size:16px;
     line-height: 1.5;
     padding: 0px 25px 20px 25px;
     
     a{
-      color:lighten(#000, 15%);
       transition:$transition-time;
       text-decoration: underline;
 
@@ -80,6 +78,12 @@
         opacity:.8;
       }
     }
+  }
+  
+  ul{
+    list-style: none;
+    -webkit-padding-start: 0px;
+    padding:0 !important;
   }
 
   .season,
