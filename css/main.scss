@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 // Imports partials
-@import "normalize";
+// @import "normalize";
 @import "base";
 @import "typography";
 @import "home";
@@ -38,8 +38,7 @@ html, body{
   @include gitan-regular();
   @include standard-ligatures();
   @include discretionary-ligatures();
-  @include oldstyle-figures
-
+  @include oldstyle-figures();
 }
 
 .hidden-body-name,
