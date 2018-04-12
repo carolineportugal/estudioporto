@@ -36,15 +36,10 @@ html, body{
   color:#000;
   @include font-smoothing();
   @include gitan-regular();
-  font-feature-settings: "onum" 1 !important;
-  font-feature-settings: "liga" 1 !important;
-  font-feature-settings: "liga1" 1 !important;
-  font-feature-settings: "dlig" 1 !important;
-  font-feature-settings: "liga1" 1 !important;
-  font-feature-settings: "lnum" 1 !important;
-  font-feature-settings: "tnum" 1 !important;
-  font-feature-settings: "hlig" 1 !important;
-  font-feature-settings: "rlig" 1 !important;
+  @include standard-ligatures();
+  @include discretionary-ligatures();
+  @include oldstyle-figures
+
 }
 
 .hidden-body-name,
