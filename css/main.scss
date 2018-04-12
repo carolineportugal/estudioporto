@@ -36,8 +36,6 @@ html, body{
   color:#000;
   @include font-smoothing();
   @include gitan-regular();
-  @include standard-ligatures();
-  @include discretionary-ligatures();
   @include oldstyle-figures();
 }
 
@@ -48,6 +46,10 @@ html, body{
   position:absolute;
   top:0;
   left:-9999px;
+}
+
+.italic{
+  @include gitan-italic();
 }
 
 .loader {
