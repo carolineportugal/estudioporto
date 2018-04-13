@@ -29,6 +29,12 @@
   font-weight: 600;
 }
 
+@mixin gitan-semibold-italic{
+  font-family: "gitan-latin",sans-serif;
+  font-style: italic;
+  font-weight: 600;
+}
+
 @mixin gitan-bold{
   font-family: "gitan-latin",sans-serif;
   font-style: normal;

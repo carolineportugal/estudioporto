@@ -52,6 +52,10 @@ html, body{
   @include gitan-italic();
 }
 
+.semibold-italic{
+  @include gitan-semibold-italic();
+}
+
 .loader {
     position: fixed;
     left: 0px;
