@@ -76,8 +76,9 @@ $transition-time:.2s;
     .intro-headline{
       color:#fff;
       text-align: center;
-      padding:75px 30px;
+      padding:75px 0px;
       text-transform: uppercase;
+      // background:red;
     }
 
     .title{
@@ -85,6 +86,7 @@ $transition-time:.2s;
       font-family:$bold;
       font-size: 1.5em;
       letter-spacing: .25em;
+      // background:blue;
     }
 
     .subtitle{
@@ -93,6 +95,7 @@ $transition-time:.2s;
       font-size: 1.05em;
       letter-spacing: .25em;
       margin-top:15px;
+      // background:blue;
     }
     
     .image-wrapper{
@@ -268,26 +271,18 @@ $transition-time:.2s;
       .hero{
         height:auto;
         display: block;
-        flex-direction: none;
       }
 
       .intro-headline{
-        padding:65px 30px;
+        padding:65px 0px;
       }
       
       .title{
-        @include remove-font-smoothing();
-        font-family:$bold;
         font-size: 1.4em;
-        letter-spacing: .25em;
       }
 
       .subtitle{
-        // @include remove-font-smoothing();
-        font-family:$regular;
         font-size: .95em;
-        letter-spacing: .25em;
-        margin-top:15px;
       }
 
       .text-description{
