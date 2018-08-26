@@ -120,6 +120,10 @@ $transition-time:.2s;
     .two-column-wrapper{
       width:505px;
       display: flex;
+      
+      .column-wrapper{
+        width:50%;
+      }
 
       .column-title-wrapper{
         text-align: center;
@@ -260,7 +264,7 @@ $transition-time:.2s;
 }
 
 //Media Queries
-@media (max-width:639px) {
+@media (max-width:550px) {
 
   #quotes-generator{
 
@@ -292,6 +296,10 @@ $transition-time:.2s;
         width:100%;
         flex-direction: column;
         padding:0 2rem;
+        
+        .column-wrapper{
+          width:100%;
+        }
 
         .text1,
         .text2{
