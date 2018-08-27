@@ -63,11 +63,11 @@ $transition-time:.2s;
   font-family:$regular;
 
   .intro{
-    margin-bottom:9.5rem;
+    margin-bottom:8.5rem;
     
     .hero{
       height:calc(100vh - 55px);
-      background: #060708;
+      background: #000;
       margin-bottom:35px;
       display: flex;
       flex-direction: column;
@@ -76,7 +76,7 @@ $transition-time:.2s;
     .intro-headline{
       color:#fff;
       text-align: center;
-      padding:75px 0px;
+      padding:70px 0 0 0;
       text-transform: uppercase;
       // background:red;
     }
@@ -155,10 +155,10 @@ $transition-time:.2s;
   }
 
   .building{
-    margin-bottom:7.5rem;
+    margin-bottom:6.5rem;
 
     .title-container{
-      background:#060708;
+      background:#000;
     }
 
     h5{
@@ -175,7 +175,7 @@ $transition-time:.2s;
     }
 
     .text-info{
-      color:lighten(#000, 20%);
+      color:#000;
       font-family:$italic !important;
       font-size: 15.5px;
       line-height:1.55;
@@ -211,21 +211,6 @@ $transition-time:.2s;
       }
     }
 
-  }
-
-  .background-sc{
-    position:relative;
-  }
-  
-  .background-sc:after{
-    position: absolute;
-    content: '';
-    top:0;
-    left:0;
-    width:100%;
-    height:calc(100% - 39px);
-    background:#59585E;
-    // background: #000;
   }
   
   hr{
@@ -274,7 +259,7 @@ $transition-time:.2s;
       }
 
       .intro-headline{
-        padding:65px 0px;
+        padding:65px 0 55px 0;
       }
       
       .title{
@@ -323,7 +308,7 @@ $transition-time:.2s;
       margin-bottom:6rem;
       
       .intro-headline{
-        padding:50px 10px;
+        padding:50px 10px 30px 10px;
 
         .container{
           display: flex;
