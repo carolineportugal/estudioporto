@@ -1,11 +1,11 @@
 // Code
 #michael-mrizek{
   @include background-offwhite();
-  padding:5.5rem 0 15rem 0;
+  padding:5.5rem 0 18rem 0;
   min-height: 100vh;
 
   .first-img-wrapper{
-    margin-bottom:13rem;
+    margin-bottom:11rem;
   }
 
 }
@@ -14,7 +14,7 @@
 @media (max-width:767px) {
 
   #michael-mrizek{
-    // padding:3rem 0;
+    padding:5.5rem 0 15rem 0;
     
     .first-img-wrapper{
       margin-bottom:8rem;
