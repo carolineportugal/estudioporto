@@ -7,19 +7,14 @@
     padding-bottom:20rem;
     width:100%;
   }
-    
-  .text-wrapper{
-  }
   
-  .picture-contact-wrapper{
+  .picture-wrapper{
     width:100%;
     display: flex;
-    // flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    border-bottom:1px solid #eee;
-    padding-bottom:2rem;
-    margin-bottom:3rem;
+    justify-content: flex-end;
+    margin-bottom:2rem;
+    padding-bottom:2.5rem;
+    border-bottom:1px solid rgba(0,0,0,0.08);
   }
       
   .picture{
@@ -27,19 +22,32 @@
     min-width:180px;
     width:180px;
     border-radius:50%;
-    padding-right:2rem;
+  }
+  
+  .contact-text-wrapper{
   }
   
   .contact{
-    font-size: 22px;
+    font-size: 21px;
+    margin-top:6.7rem;
+    border-top:1px solid rgba(0,0,0,0.08);
+    padding-top:.8rem;
+
 
     a{
-      margin:0 .5rem;
       color:lighten(#000, 75%);
       transition:$transition-time;
+      display: block;
+      border-bottom:1px solid rgba(0,0,0,0.08);
+      width:100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom:.8rem;
+      padding-bottom:.8rem;
 
       &:hover{
         color:lighten(#000, 15%);
+        text-decoration: none;
       }
       
     }
@@ -48,6 +56,14 @@
       font-size: 17px;
     }
 
+  }
+  
+  .text-wrapper{
+    
+    p{
+      margin-bottom:20px;
+    }
+    
   }
   
   .intro-wrapper{
@@ -59,7 +75,7 @@
   .description{
     @include gitan-regular();
     font-size:16.5px;
-    line-height:1.7;
+    line-height:1.6;
     
     .uppercase{
       text-transform: uppercase;
@@ -81,9 +97,5 @@
     }
     
   }
-      
-
-  
-
   
 }
