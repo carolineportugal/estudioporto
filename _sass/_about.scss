@@ -7,9 +7,6 @@
     padding-bottom:20rem;
     width:100%;
   }
-    
-  .text-wrapper{
-  }
   
   .picture-contact-wrapper{
     width:100%;
@@ -50,6 +47,9 @@
 
   }
   
+  .text-wrapper{
+  }
+  
   .intro-wrapper{
     @include gitan-semibold();
     font-size: 16.5px;
@@ -59,7 +59,7 @@
   .description{
     @include gitan-regular();
     font-size:16.5px;
-    line-height:1.7;
+    line-height:1.6;
     
     .uppercase{
       text-transform: uppercase;
@@ -81,9 +81,5 @@
     }
     
   }
-      
-
-  
-
   
 }
