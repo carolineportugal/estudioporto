@@ -10,40 +10,32 @@
   
   .picture-wrapper{
     width:100%;
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom:2rem;
-    padding-bottom:2.5rem;
-    border-bottom:1px solid rgba(0,0,0,0.08);
+    padding-bottom:2rem;
   }
       
   .picture{
-    height:180px;
-    min-width:180px;
-    width:180px;
-    border-radius:50%;
-  }
-  
-  .contact-text-wrapper{
+    height:200px;
+    min-width:200px;
+    width:200px;
+    border-radius: 50%;
   }
   
   .contact{
-    font-size: 21px;
-    margin-top:6.7rem;
-    border-top:1px solid rgba(0,0,0,0.08);
-    padding-top:.8rem;
-
+    font-size: 20px;
+    margin-top:1rem;
+    width:200px;
+    margin-top:1rem;
 
     a{
-      color:lighten(#000, 75%);
+      color:lighten(#000,75%);
       transition:$transition-time;
       display: block;
-      border-bottom:1px solid rgba(0,0,0,0.08);
+      border-top:1px solid rgba(0,0,0,0.07);
       width:100%;
       display: flex;
       justify-content: flex-end;
       margin-bottom:.8rem;
-      padding-bottom:.8rem;
+      padding-top:.8rem;
 
       &:hover{
         color:lighten(#000, 15%);
@@ -53,12 +45,14 @@
     }
     
     .fa-envelope{
-      font-size: 17px;
+      font-size: 16px;
     }
 
   }
   
   .text-wrapper{
+    border-top:1px solid rgba(0,0,0,0.07);
+    padding-top:1.5rem;
     
     p{
       margin-bottom:20px;
@@ -79,7 +73,7 @@
     
     .uppercase{
       text-transform: uppercase;
-      font-size: 13px;
+      font-size: 13.5px;
       @include gitan-medium();
       letter-spacing: 0.03rem;
     }
