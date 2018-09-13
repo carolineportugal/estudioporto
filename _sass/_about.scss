@@ -8,52 +8,45 @@
     width:100%;
   }
   
-  .picture-wrapper{
-    width:100%;
+  .picture-contact-wrapper{
     display: flex;
-    justify-content: flex-end;
-    margin-bottom:2rem;
-    padding-bottom:2.5rem;
-    border-bottom:1px solid rgba(0,0,0,0.08);
+    justify-content: space-between;
+    align-items: flex-end;
   }
       
   .picture{
-    height:180px;
-    min-width:180px;
-    width:180px;
+    height:200px;
+    min-width:200px;
+    width:200px;
     border-radius:50%;
   }
-  
-  .contact-text-wrapper{
-  }
-  
+
   .contact{
-    font-size: 21px;
-    margin-top:6.7rem;
-    border-top:1px solid rgba(0,0,0,0.08);
-    padding-top:.8rem;
-
-
+    font-size: 16.5px;
+    display: flex;
+    
     a{
-      color:lighten(#000, 75%);
+      color:#fff;
+      background: lighten(#000, 85%);
+      border-radius: 50%;
       transition:$transition-time;
-      display: block;
-      border-bottom:1px solid rgba(0,0,0,0.08);
-      width:100%;
+      text-decoration: none;
+      height:26px;
+      width:26px;
       display: flex;
-      justify-content: flex-end;
-      margin-bottom:.8rem;
-      padding-bottom:.8rem;
+      justify-content: center;
+      align-items: center;
+      margin-left:1.4rem;
 
       &:hover{
-        color:lighten(#000, 15%);
+        background:#000;
         text-decoration: none;
       }
       
     }
     
     .fa-envelope{
-      font-size: 17px;
+      font-size: 12.5px;
     }
 
   }
@@ -79,7 +72,7 @@
     
     .uppercase{
       text-transform: uppercase;
-      font-size: 13px;
+      font-size: 13.5px;
       @include gitan-medium();
       letter-spacing: 0.03rem;
     }
