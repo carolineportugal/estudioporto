@@ -8,51 +8,50 @@
     width:100%;
   }
   
-  .picture-wrapper{
-    width:100%;
-    padding-bottom:2rem;
+  .picture-contact-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
   }
       
   .picture{
     height:200px;
     min-width:200px;
     width:200px;
-    border-radius: 50%;
+    border-radius:50%;
   }
-  
-  .contact{
-    font-size: 20px;
-    margin-top:1rem;
-    width:200px;
-    margin-top:1rem;
 
+  .contact{
+    font-size: 16.5px;
+    display: flex;
+    
     a{
-      color:lighten(#000,75%);
+      color:#fff;
+      background: lighten(#000, 85%);
+      border-radius: 50%;
       transition:$transition-time;
-      display: block;
-      border-top:1px solid rgba(0,0,0,0.07);
-      width:100%;
+      text-decoration: none;
+      height:26px;
+      width:26px;
       display: flex;
-      justify-content: flex-end;
-      margin-bottom:.8rem;
-      padding-top:.8rem;
+      justify-content: center;
+      align-items: center;
+      margin-left:1.4rem;
 
       &:hover{
-        color:lighten(#000, 15%);
+        background:#000;
         text-decoration: none;
       }
       
     }
     
     .fa-envelope{
-      font-size: 16px;
+      font-size: 12.5px;
     }
 
   }
   
   .text-wrapper{
-    border-top:1px solid rgba(0,0,0,0.07);
-    padding-top:1.5rem;
     
     p{
       margin-bottom:20px;
