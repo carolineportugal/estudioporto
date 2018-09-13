@@ -96,6 +96,21 @@
       flex-direction: column;
       align-items: center;
     }
+    
+    .contact{
+      font-size: 17.5px;
+      
+      a{
+        height:27px;
+        width:27px;
+        margin-left:1.5rem;
+      }
+      
+      .fa-envelope{
+        font-size: 13.5px;
+      }
+
+    }
 
   }
   
