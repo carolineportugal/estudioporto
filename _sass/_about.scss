@@ -3,9 +3,7 @@
   min-height: 100%;
   
   .general-wrapper{
-    padding-top:5rem;
-    padding-bottom:20rem;
-    width:100%;
+    padding:4rem 0rem 17rem 0rem;
   }
   
   .picture-contact-wrapper{
@@ -24,6 +22,7 @@
   .contact{
     font-size: 16.5px;
     display: flex;
+    margin-top:2.5rem;
     
     a{
       color:#fff;
@@ -89,6 +88,15 @@
       
     }
     
+  }
+  
+  @media (max-width:767px) {
+    
+    .picture-contact-wrapper{
+      flex-direction: column;
+      align-items: center;
+    }
+
   }
   
 }
