@@ -31,21 +31,17 @@ title: Work
 
 <script src="https://unpkg.com/scrollreveal"></script>
 <script>
-  
-(function scrollReveal() {
+
+      
+  var boxReveal = {
+    duration: 500,
+    interval: 100,
+    easing: 'ease-out',
+    distance: '30px'
+  };
+
   window.sr = ScrollReveal();
-  
-  sr.reveal('.project', {
-    duration   : 600,
-    distance   : '20px',
-    easing     : 'ease-out',
-    origin     : 'bottom',
-    reset      : true,
-    scale      : 1,
-    viewFactor : 0,
-    afterReveal  : revealChildren,
-  }, 150);
-
-})();
-
+  sr.reveal('.project', boxReveal);
+    
+    
 </script>
