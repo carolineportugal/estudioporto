@@ -32,28 +32,20 @@ title: Work
 <script src="https://unpkg.com/scrollreveal"></script>
 <script>
   
-    // var show = new TimelineMax()
-    //     show.staggerFromTo(".project", .5, {autoAlpha: 0}, {autoAlpha: 1, ease:Power4.easeInOut}, 0.1);
-    //
-    //   show.pause();
-    //
-    //   // var boxReveal = {
-    //   //   delay    : 200,
-    //   //   distance : '50px'
-    //   //   // rotate   : { z: 6 }
-    //   // };
-    //
-    //   window.sr = ScrollReveal();
-    //   sr.reveal('.project', show.resume());
-    //
-    //                                   // var boxReveal = {
-    //                                   //   delay    : 200,
-    //                                   //   distance : '50px'
-    //                                   //   // rotate   : { z: 6 }
-    //                                   // };
-    //                                   //
-    //                                   // window.sr = ScrollReveal();
-    //                                   // sr.reveal('.project', boxReveal);
+(function scrollReveal() {
+  window.sr = ScrollReveal();
+  
+  sr.reveal('.project', {
+    duration   : 600,
+    distance   : '20px',
+    easing     : 'ease-out',
+    origin     : 'bottom',
+    reset      : true,
+    scale      : 1,
+    viewFactor : 0,
+    afterReveal  : revealChildren,
+  }, 150);
 
+})();
 
 </script>
