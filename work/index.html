@@ -30,18 +30,20 @@ title: Work
 </section>
 
 <script src="https://unpkg.com/scrollreveal"></script>
-<script>
+<script type="text/javascript">
 
-      
-  var boxReveal = {
-    duration: 500,
-    interval: 100,
-    easing: 'ease-out',
-    distance: '30px'
-  };
+  $(document).ready(function() {
+  
+    var cardReveal = {
+      duration: 500,
+      interval: 100,
+      easing: 'ease-out',
+      distance: '30px'
+    };
 
-  window.sr = ScrollReveal();
-  sr.reveal('.project', boxReveal);
+    window.sr = ScrollReveal();
+    sr.reveal('.project', cardReveal);
     
-    
+  });
+        
 </script>
