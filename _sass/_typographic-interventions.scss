@@ -223,7 +223,7 @@ $transition-time:.2s;
 
     a{
       transition:$transition-time;
-      color:lighten(#000, 20%);
+      color:#000;
       cursor: pointer;
       text-decoration: none;
 
