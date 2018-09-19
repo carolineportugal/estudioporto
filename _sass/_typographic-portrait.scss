@@ -94,6 +94,7 @@ $background:#DCE0E5;
 @media (max-width:768px) {
   
   #typographic-portrait{
+    height: calc(100% - 50px);
   }
   
 }
