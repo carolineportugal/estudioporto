@@ -53,10 +53,10 @@ $background:#DCE0E5;
 #typographic-portrait{
   @include remove-font-smoothing();
   position: relative;
-  height: 100vh;
+  height: calc(100% - 55px);
 
   .portrait-wrapper {
-    height: calc(100% - 55px);
+    height: 100%;
     background: $background;
     display:flex;
     align-items: flex-end;
