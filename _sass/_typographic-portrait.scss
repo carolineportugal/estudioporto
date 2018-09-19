@@ -53,7 +53,8 @@ $background:#DCE0E5;
 #typographic-portrait{
   @include remove-font-smoothing();
   position: relative;
-  height: calc(100vh - 55px);
+  height: 100vh;
+  padding-bottom:55px;
 
   .portrait-wrapper {
     height: 100%;
@@ -94,7 +95,8 @@ $background:#DCE0E5;
 @media (max-width:768px) {
   
   #typographic-portrait{
-    height: calc(100vh - 50px);
+    height: 100vh;
+    padding-bottom:50px;
   }
   
 }
