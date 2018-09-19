@@ -171,7 +171,7 @@ $transition-time:.2s;
     .link-text{
       font-family: 'Playfair Bold', serif;
       color:$red;
-      font-size: 19px;
+      font-size: 19.5px;
       letter-spacing: .5px;
       text-decoration: underline;
       text-align: center;
@@ -318,40 +318,3 @@ $transition-time:.2s;
   }
 
 }
-
-// @media (max-width:399px) {
-//
-//   #quotes-generator{
-//
-//     .text-wrapper{
-//
-//       .two-column-wrapper{
-//
-//         .text1,
-//         .text2{
-//           font-size:16.5px;
-//         }
-//
-//       }
-//
-//     }
-//
-//     .link-wrapper{
-//
-//       .link-text{
-//         font-size: 18px;
-//       }
-//
-//     }
-//
-//     .quote-text{
-//       font-size: 17px;
-//     }
-//
-//     .quote-author{
-//       font-size: 13px;
-//     }
-//
-//   }
-//
-// }
