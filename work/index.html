@@ -12,7 +12,7 @@ title: Work
     {% assign sorted_projects = (site.work | sort: 'order' | reverse ) %}
     {% for project in sorted_projects %}
     
-    <a class="project" href="{{ site.baseurl}}{{ project.url }}">
+    <a class="project load-hidden" href="{{ site.baseurl}}{{ project.url }}">
       <div class="image {{project.class}}" style="background: url('{{ site.baseurl}}/media/work/{{ project.image }}');  background-size:cover; background-repeat:no-repeat; background-position:center center"></div>
       <div class="text">
         <div>
@@ -29,7 +29,6 @@ title: Work
   
 </section>
 
-<script src="https://unpkg.com/scrollreveal"></script>
 <script type="text/javascript">
 
   $(document).ready(function() {
