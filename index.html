@@ -9,7 +9,7 @@ title: Home
 
   <div class="video-wrapper">
         
-    <video autoplay loop muted>
+    <video autoplay loop muted preload>
       <source src="{{ site.baseurl}}/media/home/porthole-light.mp4" type="video/mp4">
     </video>
     
@@ -19,8 +19,8 @@ title: Home
 
 <script>
 
-$(document).ready(function() {
-  $('nav').css("box-shadow", "none");
-});
+  $(document).ready(function() {
+    $('nav').css("box-shadow", "none");
+  });
   
 </script>
