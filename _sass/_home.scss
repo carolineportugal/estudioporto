@@ -11,6 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   
     video{
       // border:5px solid red;
@@ -18,14 +19,14 @@
       transform: rotate(180deg);
     }
     
-    // @media screen and (orientation:portrait) {
-    //
-    //   video{
-    //     height:auto;
-    //     width:170%;
-    //   }
-    //
-    // }
+    @media screen and (orientation:portrait) {
+    
+      video{
+        // height:auto;
+        width:170%;
+      }
+    
+    }
   
   }
     
@@ -37,12 +38,12 @@
   #home{
     height:calc(100vh - 50px);
     
-    .video-wrapper{
-      video{
-        height:auto;
-        width:170%;
-      }
-    }
+    // .video-wrapper{
+    //   video{
+    //     height:auto;
+    //     width:170%;
+    //   }
+    // }
     
   }
   
