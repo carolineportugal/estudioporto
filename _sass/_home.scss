@@ -8,14 +8,25 @@
     height:100%;
     width:100%;
     // border:5px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   
     video{
       // border:5px solid red;
       height:100%;
-      width:100%;
       transform: rotate(180deg);
     }
   
+  }
+  
+  @media screen and (orientation:portrait) {
+    
+    video{
+      height:auto;
+      max-width:180%;
+    }
+      
   }
     
 }
