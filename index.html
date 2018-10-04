@@ -8,8 +8,10 @@ title: Home
   <h2 class="hidden-page-name">Home</h2>
 
   <div class="video-wrapper">
+    
+    <!-- <div>Iteration: <span id="iteration"></span></div> -->
         
-    <video autoplay loop muted preload poster="poster.png">
+    <video id="myVideo" autoplay muted preload poster="poster.png">
       <source src="{{ site.baseurl}}/media/home/porthole-light.mp4" type="video/mp4">
     </video>
     
@@ -20,7 +22,26 @@ title: Home
 <script>
 
   $(document).ready(function() {
+    
+    //hides navbar shadow on home
     $('nav').css("box-shadow", "none");
+  
+    //plays video only 4 times before pausing
+    var iterations = 1;
+    
+    // document.getElementById('iteration').innerText = iterations;
+    
+    myVideo.addEventListener('ended', function () {
+
+        if (iterations < 4) {
+            this.currentTime = 0;
+            this.play();
+            iterations ++;
+            // document.getElementById('iteration').innerText = iterations;
+        }
+
+    }, false);
+  
   });
   
 </script>
