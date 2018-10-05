@@ -22,8 +22,8 @@
     @media screen and (orientation:portrait) {
     
       video{
-        // height:auto;
-        // width:170%;
+        height:auto;
+        width:170%;
       }
     
     }
@@ -37,14 +37,6 @@
   
   #home{
     height:calc(100vh - 50px);
-    
-    // .video-wrapper{
-    //   video{
-    //     height:auto;
-    //     width:170%;
-    //   }
-    // }
-    
   }
   
 }
