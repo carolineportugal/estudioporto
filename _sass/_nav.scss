@@ -2,19 +2,21 @@ nav{
   position:fixed;
   background: #fff;
   width: 100%;
-  height:55px;
+  height:355px;
   z-index:999;
   box-shadow: 0px 1px 30px 0px rgba(0,0,0,0.1);
   display: flex;
-  align-items: center;
-  bottom:0;
+  bottom:-300px;
+  // border: 5px solid red;
       
   .nav-wrapper{
+    height:55px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 4rem;
     width:100%;
+    // border: 5px solid green;
   }
     
   a.title{
@@ -45,9 +47,10 @@ nav{
 @media (max-width:768px) {
   
   nav{
-    height:50px;
+    bottom:-305px;
     
     .nav-wrapper{
+      height:50px;
       padding:0 2rem;
     }
           
