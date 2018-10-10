@@ -17,11 +17,11 @@
   font-weight: 500;
 }
 
-@mixin gitan-medium-italic{
-  font-family: "gitan-latin",sans-serif;
-  font-style: italic;
-  font-weight: 500;
-}
+// @mixin gitan-medium-italic{
+//   font-family: "gitan-latin",sans-serif;
+//   font-style: italic;
+//   font-weight: 500;
+// }
 
 @mixin gitan-semibold{
   font-family: "gitan-latin",sans-serif;
@@ -41,11 +41,11 @@
   font-weight: 700;
 }
 
-@mixin gitan-extrabold{
-  font-family: "gitan-latin",sans-serif;
-  font-style: normal;
-  font-weight: 800;
-}
+// @mixin gitan-extrabold{
+//   font-family: "gitan-latin",sans-serif;
+//   font-style: normal;
+//   font-weight: 800;
+// }
 
 //Embed Fonts
 // @font-face{
