@@ -1,0 +1,33 @@
+// Code
+#di-15{
+  @include background-offwhite();
+  padding:5rem 0 8rem 0;
+  min-height: 100vh;
+  
+  .full{
+    margin-bottom:8rem;
+  }
+
+  .ipad{
+    margin-bottom:8rem;
+  }
+
+}
+
+// Media Queries
+@media (max-width:767px) {
+
+  #di-15{
+    padding:5rem 0 15rem 0;
+    
+    .full{
+      margin-bottom:5rem;
+    }
+
+    .ipad{
+      margin-bottom:4rem;
+    }
+  
+  }
+
+}
