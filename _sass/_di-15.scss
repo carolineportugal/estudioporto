@@ -1,23 +1,33 @@
 // Code
 #di-15{
   @include background-offwhite();
-  padding:5rem 0 8rem 0;
+  padding:7rem 0 23rem 0;
   min-height: 100vh;
   
-  .full{
-    margin-bottom:8rem;
-  }
+  .main{
 
-  .ipad{
-    margin-bottom:8rem;
+    .scene{
+      margin-bottom:9rem;
+    }
+  
   }
   
   .alternative{
-    background: #ccc;
-    padding:2rem;
-    img{
-      margin-bottom:25px;
+    margin-top:4rem;
+    background: #ddd;
+    padding:2rem 2rem 0 2rem;
+    
+    p{
+      color:lighten(#000,50%);
+      text-align: right;
+      margin-bottom:2rem;
+      @include gitan-italic();
     }
+    
+    img{
+      margin-bottom:5.5rem;
+    }
+    
   }
 
 }
