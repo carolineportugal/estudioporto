@@ -1,0 +1,60 @@
+// Code
+#di-15{
+  @include background-offwhite();
+  padding:7rem 0 23rem 0;
+  min-height: 100vh;
+  
+  .main{
+
+    .scene{
+      margin-bottom:9rem;
+    }
+  
+  }
+  
+  .alternative{
+    margin-top:4rem;
+    background: #ddd;
+    padding:2rem 2rem 0 2rem;
+    
+    p{
+      color:lighten(#000,50%);
+      text-align: right;
+      margin-bottom:2rem;
+      @include gitan-italic();
+    }
+    
+    img{
+      margin-bottom:5.5rem;
+    }
+    
+  }
+
+}
+
+// Media Queries
+@media (max-width:767px) {
+
+  #di-15{
+    padding:5rem 0 15rem 0;
+    
+    .main{
+
+      .scene{
+        margin-bottom:6rem;
+      }
+    
+    }
+
+    .alternative{
+      margin-top:1rem;
+      
+      img{
+        margin-bottom:4rem;
+      }
+      
+    }
+  
+  }
+
+}
