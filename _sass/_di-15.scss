@@ -38,12 +38,21 @@
   #di-15{
     padding:5rem 0 15rem 0;
     
-    .full{
-      margin-bottom:5rem;
+    .main{
+
+      .scene{
+        margin-bottom:6rem;
+      }
+    
     }
 
-    .ipad{
-      margin-bottom:4rem;
+    .alternative{
+      margin-top:1rem;
+      
+      img{
+        margin-bottom:4rem;
+      }
+      
     }
   
   }
