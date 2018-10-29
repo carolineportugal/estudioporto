@@ -63,6 +63,11 @@
     
   }
   
+  html.sr .load-hidden {
+      visibility: hidden;
+  }
+  
+  
   //Media Queries
   @media (max-width:1339px) {
     
