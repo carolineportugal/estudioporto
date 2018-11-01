@@ -16,7 +16,8 @@
     text-decoration: none;
     color:#000;
     background: darken(#fafafa, 2%);
-
+    visibility:visible;
+    
     &:hover{
       box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
       .image{
