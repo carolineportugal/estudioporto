@@ -57,3 +57,19 @@ nav{
   }
   
 }
+
+@media (max-width:767px) {
+  
+  nav{
+    
+    .menu{
+      
+      a{
+        margin-left:2rem;
+      }
+      
+    }
+          
+  }
+  
+}
