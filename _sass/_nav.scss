@@ -23,7 +23,7 @@ nav{
     color:#000;
     text-decoration: none;
     font-size:22px;
-    @include gitan-bold();
+    @include neo-black();
     margin-bottom:.5rem;
     letter-spacing: -0.04rem;
   }
@@ -33,10 +33,10 @@ nav{
     a{
       color:#000;
       margin-left:3rem;
-      font-size:12.5px;
-      @include gitan-regular();
+      font-size:13px;
+      @include sans-book();
       text-transform: uppercase;
-      letter-spacing: 0.04rem;
+      letter-spacing: 0.02rem;
     }
     
   }

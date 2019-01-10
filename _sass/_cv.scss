@@ -1,0 +1,50 @@
+// Code
+#cv{
+  // min-height: 100%;
+  
+  .general-wrapper{
+    padding:4rem 0rem 17rem 0rem;
+  }
+  
+  .text-wrapper{
+    @include serif-book();
+    font-size: 19px;
+    
+    p{
+      margin-bottom:20px;
+    }
+    
+  }
+
+    
+  .description{
+    
+    .uppercase{
+      text-transform: uppercase;
+      font-size: 13.5px;
+      letter-spacing: 0.03rem;
+    }
+    
+    a{
+      color:#000;
+      transition:$transition-time;
+      text-decoration: underline;
+
+      &:hover{
+        opacity:.8;
+      }
+      
+    }
+    
+  }
+  
+  @media (max-width:767px) {
+    
+    .picture-contact-wrapper{
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+  
+}
