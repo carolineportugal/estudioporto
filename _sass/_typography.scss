@@ -1,3 +1,231 @@
+//Freight Neo
+
+@mixin neo-light{
+  font-family: freight-neo-pro, serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin neo-light-italic{
+  font-family: freight-neo-pro, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@mixin neo-book{
+  font-family: freight-neo-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin neo-book-italic{
+  font-family: freight-neo-pro, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@mixin neo-medium{
+  font-family: freight-neo-pro, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin neo-medium-italic{
+  font-family: freight-neo-pro, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+@mixin neo-semibold{
+  font-family: freight-neo-pro, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin neo-semibold-italic{
+  font-family: freight-neo-pro, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+@mixin neo-bold{
+  font-family: freight-neo-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin neo-bold-italic{
+  font-family: freight-neo-pro, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@mixin neo-black{
+  font-family: freight-neo-pro, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+@mixin neo-black-italic{
+  font-family: freight-neo-pro, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+//Freight Text
+
+@mixin serif-light{
+  font-family: freight-text-pro, serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin serif-light-italic{
+  font-family: freight-text-pro, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@mixin serif-book{
+  font-family: freight-text-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin serif-book-italic{
+  font-family: freight-text-pro, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@mixin serif-medium{
+  font-family: freight-text-pro, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin serif-medium-italic{
+  font-family: freight-text-pro, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+@mixin serif-semibold{
+  font-family: freight-text-pro, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin serif-semibold-italic{
+  font-family: freight-text-pro, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+@mixin serif-bold{
+  font-family: freight-text-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin serif-bold-italic{
+  font-family: freight-text-pro, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@mixin serif-black{
+  font-family: freight-text-pro, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+@mixin serif-black-italic{
+  font-family: freight-text-pro, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+//Freight Sans
+
+@mixin sans-light{
+  font-family: freight-sans-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin sans-light-italic{
+  font-family: freight-sans-pro, sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@mixin sans-book{
+  font-family: freight-sans-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin sans-book-italic{
+  font-family: freight-sans-pro, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@mixin sans-medium{
+  font-family: freight-sans-pro, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin sans-medium-italic{
+  font-family: freight-sans-pro, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+@mixin sans-semibold{
+  font-family: freight-sans-pro, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@mixin sans-semibold-italic{
+  font-family: freight-sans-pro, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+@mixin sans-bold{
+  font-family: freight-sans-pro, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin sans-bold-italic{
+  font-family: freight-sans-pro, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+@mixin sans-black{
+  font-family: freight-sans-pro, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+@mixin sans-black-italic{
+  font-family: freight-sans-pro, sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+
+
+
+
+
 ///////////////////////////////////////////////////Gitan
 @mixin gitan-regular{
   font-family: "gitan-latin",sans-serif;
@@ -40,12 +268,6 @@
   font-style: normal;
   font-weight: 700;
 }
-
-// @mixin gitan-extrabold{
-//   font-family: "gitan-latin",sans-serif;
-//   font-style: normal;
-//   font-weight: 800;
-// }
 
 //Embed Fonts
 // @font-face{
