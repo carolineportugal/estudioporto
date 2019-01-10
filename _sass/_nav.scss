@@ -22,8 +22,8 @@ nav{
   a.title{
     color:#000;
     text-decoration: none;
-    font-size:22.5px;
-    @include neo-bold();
+    font-size:22px;
+    @include neo-black();
     margin-bottom:.5rem;
     letter-spacing: -0.04rem;
   }
@@ -36,7 +36,7 @@ nav{
       font-size:13px;
       @include sans-book();
       text-transform: uppercase;
-      letter-spacing: 0.04rem;
+      letter-spacing: 0.02rem;
     }
     
   }
