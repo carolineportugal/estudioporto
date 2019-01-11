@@ -5,24 +5,16 @@
   .general-wrapper{
     padding:4rem 0rem 17rem 0rem;
   }
-  
-  .text-wrapper{
-    @include serif-book();
-    font-size: 19px;
-    
-    p{
-      margin-bottom:20px;
-    }
-    
-  }
-
     
   .description{
+    @include serif-book();
     font-size: 17.5px;
+    line-height:1.4;
     
     .uppercase{
       text-transform: uppercase;
-      font-size: 13.5px;
+      font-size: 14px;
+      @include serif-medium();
       letter-spacing: 0.03rem;
     }
     
