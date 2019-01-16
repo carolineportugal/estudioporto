@@ -2,33 +2,68 @@
 #cv{
   
   .general-wrapper{
-    padding:4rem 0rem 17rem 0rem;
+    padding:4rem 0rem 25rem 0rem;
   }
   
   .item{
-    padding:3.5rem 0rem;
+    padding:2.5rem 0rem;
   }
   
-  .left{
+  .intro{
+    margin-bottom:18rem;
+    
+    p{
+      @include serif-book();
+      font-size: 17.5px;
+      line-height:1.4;
+      
+      span{
+        @include serif-semibold();
+      }
+    }
+    
+    a{
+      color:#000;
+      transition:$transition-time;
+      text-decoration: underline;
+
+      &:hover{
+        opacity:.8;
+      }
+      
+    }
+    
+  }
+  
+  h3{
+    margin-top:5rem;
+    @include neo-semibold();
+    font-size:22px;
+  }
+  
+  hr{
+    margin:0px 0px;
   }
   
   .title{
     @include serif-medium();
     font-size: 17.5px;
-    line-height:1.5;
+    line-height:1.4;
   }
   
   .firm-school{
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 13.5px;
     @include serif-medium();
     letter-spacing: 0.03rem;
+    line-height: 1.35;
+    margin-top:.8rem;
   }
   
   .date-location{
     @include sans-book();
     font-size:14.5px;
-    margin-top:.7rem;
+    margin-top:.8rem;
   }
     
   .description{
