@@ -5,21 +5,23 @@
     padding:4rem 0rem 25rem 0rem;
   }
   
-  .item{
-    padding:2.5rem 0rem;
-  }
-  
-  .intro{
-    margin-bottom:18rem;
+  .intro-wrapper{
+    margin-bottom:20rem;
+    display: flex;
+    // background: #eee;
+    justify-content: center;
     
     p{
-      @include serif-book();
-      font-size: 17.5px;
+      @include neo-book();
+      font-size: 16.5px;
       line-height:1.4;
+      margin: 0 2rem 0 0;
+      // color: white;
       
       span{
-        @include serif-semibold();
+        @include neo-semibold();
       }
+      
     }
     
     a{
@@ -43,6 +45,10 @@
   
   hr{
     margin:0px 0px;
+  }
+  
+  .item{
+    padding:2.5rem 0rem;
   }
   
   .title{
