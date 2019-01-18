@@ -6,15 +6,17 @@
   }
   
   .intro-wrapper{
+    padding:0 2rem;
     margin-bottom:20rem;
     display: flex;
     // background: #eee;
     justify-content: center;
+    flex-wrap: wrap;
     
     p{
       @include neo-book();
       font-size: 16.5px;
-      line-height:1.4;
+      line-height:1.5;
       margin: 0 2rem 0 0;
       // color: white;
       
@@ -102,6 +104,10 @@
   }
   
   @media (max-width:767px) {
+    
+    .intro-wrapper{
+      display:block;
+    }
     
     .date-location{
       margin-bottom:1rem;
