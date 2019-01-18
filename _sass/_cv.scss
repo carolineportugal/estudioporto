@@ -2,7 +2,7 @@
 #cv{
   
   .general-wrapper{
-    padding:4rem 0rem 25rem 0rem;
+    padding:4rem 0rem 30rem 0rem;
   }
   
   .intro-wrapper{
@@ -103,6 +103,13 @@
   
   @media (max-width:767px) {
     
+    .date-location{
+      margin-bottom:1rem;
+    }
+    
+    .remove-margin{
+      margin-bottom:0;
+    }
 
   }
   
