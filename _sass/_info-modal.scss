@@ -18,15 +18,15 @@
     color:#fff;
     height:24.5px;
     width:24.5px;
-    font-size:16px;
+    font-size:17px;
     border-radius: 50%;
     line-height:1.1;
-    padding-bottom:4px;
+    padding-bottom:3px;
     padding-right:1px;
     display: flex;
     align-items:center;
     justify-content: center;
-    @include gitan-italic();
+    @include serif-book-italic();
     border:1px solid #fff;
 
     &:hover{
@@ -42,7 +42,7 @@
   padding:0 1.5rem !important;
 
   .modal-dialog{
-    max-width: 550px;
+    max-width: 600px;
     margin: 60px auto;
   }
 
@@ -52,15 +52,15 @@
   }
 
   .modal-header{
-    padding: 8px 25px 0 25px;
+    padding: 8px 20px 0 25px;
     border-bottom:0px;
     margin-bottom:-10px;
 
     .close {
       font-size: 28px;
       color: #000;
+      opacity:.3;
       margin-top:0;
-      opacity: 1;
       position: relative;
       z-index: 300;
     }
@@ -68,8 +68,9 @@
   }
 
   .modal-body{
-    font-size:16px;
-    line-height: 1.4;
+    @include serif-book();
+    font-size:18px;
+    line-height: 1.5;
     padding: 0px 25px 20px 25px;
     
     a{
@@ -82,21 +83,26 @@
       }
     }
     
-  }
   
-  ul{
-    list-style: none;
-    -webkit-padding-start: 0px;
-    padding:0 !important;
-    
-    li{
-      margin-bottom:10px;
-    }
-    
-  }
+    ul{
+      list-style: none;
+      -webkit-padding-start: 0px;
+      padding:0 !important;
+      
+      li{
+        margin-bottom:20px;
+      }
+      
+      .italic{
+        @include serif-book-italic();
+      }
 
-  .item-title{
-    @include gitan-bold();
+      .item-title{
+        @include neo-semibold();
+      }
+      
+    }
+  
   }
   
   //Media Queries

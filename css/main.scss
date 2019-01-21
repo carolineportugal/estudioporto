@@ -39,7 +39,7 @@ html, body{
   height:100%;
   color:#000;
   @include font-smoothing();
-  @include gitan-regular();
+  @include sans-book();
   @include oldstyle-figures();
 }
 
@@ -50,14 +50,6 @@ html, body{
   position:absolute;
   top:0;
   left:-9999px;
-}
-
-.italic{
-  @include gitan-italic();
-}
-
-.semibold-italic{
-  @include gitan-semibold-italic();
 }
 
 .loader {

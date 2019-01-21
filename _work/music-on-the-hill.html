@@ -6,7 +6,7 @@ project-date: 2013
 image: music-hill.png
 order: 11
 category: Graphic Design & Typography
-description: "Poster and postcard series for the music festival <span class=\"italic\">Music On The Hill</span>. Use of typography and compositional elements to capture different musical styles (jazz & classical) and create a unified yet unique look from piece to piece."
+description: "Poster and postcard series for the music festival &#8216;Music On The Hill&#8217;. Use of typography and compositional elements to capture different musical styles (jazz & classical) and create a unified yet unique look from piece to piece."
 ---
 
 <section id="music-hill">
@@ -2040,14 +2040,14 @@ $(document).ready(function() {
   posterOne.to("#box3",1.2,{rotation:-5,transformOrigin:"100% 50%", ease:Power1.easeInOut, repeat:-1, yoyo:true}, 0)
            .to("#box4",1.2,{rotation:-5,transformOrigin:"0% 50%", ease:Power1.easeInOut, repeat:-1, yoyo:true}, 0)
            .to("#box2",1.2,{rotation:2,transformOrigin:"50% 100%", ease:Power1.easeInOut, repeat:-1, yoyo:true}, 0)
-           .to(".jazz-blink",0.4,{opacity:0, ease:Power1.easeIn, repeat:-1, yoyo:true}, 0);
+           .to(".jazz-blink",0.3,{opacity:0, ease:Power1.easeIn, repeat:-1, yoyo:true}, 0);
 
   var posterTwo = new TimelineMax()
-  posterTwo.fromTo(".band1",1.4,{y:-45},{y:65, transformOrigin:"50% 50%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
-           .fromTo(".band2",1.4,{y:65}, {y:-45, transformOrigin:"50% 50%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
-           .fromTo(".spine",1.4,{x:-30},{x:30, transformOrigin:"50% 50%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
-           .fromTo(".rectangle",2.8,{x:0},{x:-805,transformOrigin:"0% 0%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
-           .to(".line",1.4,{x:-140.4,transformOrigin:"0% 100%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0);
+  posterTwo.to(".band1",1.1,{y:65, transformOrigin:"50% 50%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
+           .to(".band2",1.1,{y:-45, transformOrigin:"50% 50%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
+           .to(".spine",1.1,{x:30, transformOrigin:"50% 50%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
+           .to(".rectangle",2.2,{x:-805,transformOrigin:"0% 0%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0)
+           .to(".line",1.1,{x:-140.4,transformOrigin:"0% 100%", ease:Linear.easeNone, repeat:-1, yoyo:true}, 0);
 
 
   function animationsMusicOnTheHill(){
