@@ -18,10 +18,11 @@
     padding:1.5rem 2rem 0 2rem;
     
     p{
-      color:lighten(#000,55%);
+      color:lighten(#000, 50%);
       text-align: right;
       margin-bottom:1.5rem;
-      @include gitan-italic();
+      @include serif-medium();
+      font-size: 15px;
     }
     
     img{
