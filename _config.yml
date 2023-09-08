@@ -17,7 +17,6 @@ title: Estúdio Porto
 email: estudioportodc@gmail.com
 description: Estúdio Porto is Caroline Portugal. I'm a Design Technologist based in Washington, DC. I design and build digital products.
 # baseurl: "/estudioporto" # the subpath of your site, e.g. /blog
-url: "https://estudioporto.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
